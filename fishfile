@@ -7,5 +7,5 @@ fisherman/dartfish
 omf/ssh
 omf/wifi-password
 laughedelic/brew-completions
-fisherman/docker-completions
+barnybug/docker-fish-completion
 brgmnn/fish-docker-compose
