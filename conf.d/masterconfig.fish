@@ -17,6 +17,7 @@ if status --is-interactive
     alias ls="ls -color"
     alias dps="grc docker ps"
     alias dpi="grc docker images"
+    alias dshell="docker run -it --rm --entrypoint /bin/sh"
     alias dc=docker-compose
     alias pgstart="brew services start postgresql"
     alias pgstop="brew services stop postgresql"
