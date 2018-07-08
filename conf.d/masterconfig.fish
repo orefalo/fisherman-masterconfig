@@ -73,7 +73,7 @@ if status --is-interactive
         npm install -g typesync webpack
         npm install -g fuge gtop pegjs
         npm install -g spot prisma prettier
-        npm install -g graphql graphql-cli-get-raw-schema graphql-cli-voyager graphql-docs get-graphql-schema
+        npm install -g graphql graphql-cli graphql-cli-get-raw-schema graphql-cli-voyager graphql-docs get-graphql-schema
         npm install -g hiper ksuid-cli spot
         npm install -g spoof
 
