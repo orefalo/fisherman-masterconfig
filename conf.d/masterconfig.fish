@@ -46,7 +46,8 @@ if status --is-interactive
         brew install graphviz node
         brew install stop jq nmap
         brew install xmp maven xz
-        brew cask install aerial inna
+        brew cask install aerial
+        brew cask install iina
         brew cask install kafka-tool
         brew cask install qlcolorcode # Preview source code files with syntax highlighting
         brew cask install qlstephen # Preview plain text files without a file extension. Example: README, CHANGELOG, etc.
