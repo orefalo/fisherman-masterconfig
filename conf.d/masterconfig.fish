@@ -15,10 +15,14 @@ if status --is-interactive
     alias j=z
     alias ll="ls -lh"
     alias ls="ls -color"
+
+    # docker stuff
     alias dps="grc docker ps"
     alias dpi="grc docker images"
     alias dshell="docker run -it --rm --entrypoint /bin/sh"
     alias dc=docker-compose
+
+    # postgres stuff
     alias pgstart="brew services start postgresql"
     alias pgstop="brew services stop postgresql"
     alias pgtop=pg_top
@@ -26,6 +30,54 @@ if status --is-interactive
     # fixes my typos
     alias gti=git
     alias sl=ls
+
+    function setup_everything_for_olivier
+
+        #if test ! -x (which brew)
+            # install brew if not installed
+        #    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        #end
+
+        brew install git ant maven node arc vim
+        brew install grafana influxdb fish openssl wget kafka htop tig ffmpeg
+        brew install pgcli postgresql  pg_top kafkacat imagemagick kafkacat netcat nmap 
+        brew install cockroach iftop pstree jq tree telnet docker-clean
+        brew install docker-ls grc
+        brew install graphviz node
+        brew install stop jq nmap
+        brew install xmp maven xz
+        brew cask install aerial inna
+        brew cask install kafka-tool
+        brew cask install qlcolorcode # Preview source code files with syntax highlighting
+        brew cask install qlstephen # Preview plain text files without a file extension. Example: README, CHANGELOG, etc.
+        brew cask install qlmarkdown # Preview Markdown files
+        brew cask install quicklook-json # Preview JSON files
+        brew cask install qlprettypatch # Preview .patch files
+        brew cask install quicklook-csv # Preview CSV files
+        brew cask install betterzipql # Preview archives
+        brew cask install qlimagesize # Display image size and resolution
+        brew cask install webpquicklook # Preview WebP images
+        brew cask install suspicious-package # Preview the contents of a standard Apple installer package
+
+        brew tap loadimpact/k6
+        brew install k6
+
+        #if test ! -x (which fisher)
+            # install fisher if not installed
+        #    curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+        #end
+
+        npm install -g yarn npm-check yarn-check
+        npm install -g typescript tslint eslint
+        npm install -g typesync webpack
+        npm install -g fuge gtop pegjs
+        npm install -g spot prisma prettier
+        npm install -g graphql graphql-cli-get-raw-schema graphql-cli-voyager graphql-docs get-graphql-schema
+        npm install -g hiper ksuid-cli spot
+        npm install -g spoof
+
+    end
+
 
     # specific osx aliases
     if test (uname) = "Darwin"
