@@ -38,7 +38,7 @@ if status --is-interactive
         #    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
         #end
 
-        brew install git ant maven node arc vim
+        brew install git ant maven node@8 arc vim
         brew install grafana influxdb fish openssl wget kafka htop tig ffmpeg
         brew install pgcli postgresql  pg_top kafkacat imagemagick kafkacat netcat nmap 
         brew install cockroach iftop pstree jq tree telnet docker-clean
