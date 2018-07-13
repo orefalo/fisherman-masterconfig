@@ -43,9 +43,12 @@ if status --is-interactive
         brew install pgcli postgresql  pg_top kafkacat imagemagick kafkacat netcat nmap 
         brew install cockroach iftop pstree jq tree telnet docker-clean
         brew install docker-ls grc
-        brew install graphviz node
+        brew install graphviz node ncdu inav
         brew install stop jq nmap
         brew install xmp maven xz
+        brew install kubernetes-cli
+
+        brew cask install minikube
         brew cask install aerial
         brew cask install iina
         brew cask install kafka-tool
@@ -76,6 +79,7 @@ if status --is-interactive
         npm install -g graphql graphql-cli graphql-cli-get-raw-schema graphql-cli-voyager graphql-docs get-graphql-schema
         npm install -g hiper ksuid-cli spot
         npm install -g spoof
+        npm install -g git-commander
 
     end
 
