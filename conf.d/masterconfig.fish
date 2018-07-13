@@ -46,7 +46,7 @@ if status --is-interactive
         brew install graphviz node ncdu inav
         brew install stop jq nmap
         brew install xmp maven xz
-        brew install kubernetes-cli
+        brew install kubernetes-cli kubernetes-helm
 
         brew cask install minikube
         brew cask install aerial
