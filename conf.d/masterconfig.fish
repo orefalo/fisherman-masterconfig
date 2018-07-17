@@ -44,7 +44,7 @@ if status --is-interactive
         brew install cockroach iftop pstree jq tree telnet docker-clean
         brew install docker-ls grc
         brew install graphviz node ncdu inav
-        brew install stop jq nmap
+        brew install stop jq nmap mdcat
         brew install xmp maven xz
         brew install kubernetes-cli kubernetes-helm
 
