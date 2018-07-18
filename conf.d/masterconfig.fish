@@ -46,9 +46,13 @@ if status --is-interactive
         brew install graphviz node ncdu inav
         brew install stop jq nmap mdcat
         brew install xmp maven xz
-        brew install kubernetes-cli kubernetes-helm
 
+        # Kubernates stuff
         brew cask install minikube
+        brew install kubernetes-cli kubernetes-helm
+        brew install docker-machine-driver-hyperkit
+        
+
         brew cask install aerial
         brew cask install iina
         brew cask install kafka-tool

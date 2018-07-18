@@ -9,3 +9,4 @@ omf/wifi-password
 laughedelic/brew-completions
 barnybug/docker-fish-completion
 brgmnn/fish-docker-compose
+kubectl-completions
