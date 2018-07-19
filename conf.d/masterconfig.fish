@@ -78,7 +78,6 @@ if status --is-interactive
         brew cask install quicklook-json # Preview JSON files
         brew cask install qlprettypatch # Preview .patch files
         brew cask install quicklook-csv # Preview CSV files
-        brew cask install betterzipql # Preview archives
         brew cask install qlimagesize # Display image size and resolution
         brew cask install webpquicklook # Preview WebP images
         brew cask install suspicious-package # Preview the contents of a standard Apple installer package
@@ -88,13 +87,28 @@ if status --is-interactive
         #    curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
         #end
 
-        npm install -g yarn npm-check yarn-check
-        npm install -g typescript tslint eslint
-        npm install -g typesync webpack
-        npm install -g fuge gtop pegjs
-        npm install -g spot prisma prettier
-        npm install -g graphql graphql-cli graphql-cli-get-raw-schema graphql-cli-voyager graphql-docs get-graphql-schema
-        npm install -g hiper ksuid-cli spot
+        npm install -g yarn
+        npm install -g npm-check 
+        npm install -g yarn-check
+        npm install -g typescript
+        npm install -g tslint
+        npm install -g eslint
+        npm install -g typesync
+        npm install -g webpack
+        npm install -g fuge
+        npm install -g gtop
+        npm install -g pegjs
+        npm install -g spot
+        npm install -g prisma
+        npm install -g prettier
+        npm install -g graphql
+        npm install -g graphql-cli 
+        npm install -g graphql-cli-get-raw-schema 
+        npm install -g graphql-cli-voyager graphql-docs
+        npm install -g get-graphql-schema
+        npm install -g hiper
+        npm install -g ksuid-cli
+        npm install -g spot
         npm install -g spoof
         npm install -g git-commander
 
