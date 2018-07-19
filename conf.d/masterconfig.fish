@@ -38,24 +38,40 @@ if status --is-interactive
         #    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
         #end
 
-        brew install git ant maven node@8 arc vim
-        brew install grafana influxdb fish openssl wget kafka htop tig ffmpeg
-        brew install pgcli postgresql  pg_top kafkacat imagemagick kafkacat netcat nmap 
-        brew install cockroach iftop pstree jq tree telnet docker-clean
-        brew install docker-ls grc
-        brew install graphviz node ncdu inav
-        brew install stop jq nmap mdcat
-        brew install xmp maven xz
+        brew install git node@8 arc vim
+        brew install grafana influxdb fish openssl wget htop tig ffmpeg
+        brew install imagemagick netcat nmap 
+        brew install iftop pstree jq tree telnet 
+        brew install grc
+        brew install graphviz ncdu inav
+        brew install stop jq nmap mdcat xmp xz
+
+        # Kafka stuff
+        brew install kafka kafkacat
+        brew cask install kafka-tool
+
+        # DB stuff
+        brew install pgcli postgresql pg_top 
+        brew install cockroach
+
+        # Java stuff
+        brew install maven ant
+
+        # Docker stuff
+        brew install docker-ls docker-clean
 
         # Kubernates stuff
         brew cask install minikube
         brew install kubernetes-cli kubernetes-helm
         brew install docker-machine-driver-hyperkit
+        # need some chmod +s here
         
+        # Best load tester
+        brew tap loadimpact/k6
+        brew install k6
 
         brew cask install aerial
         brew cask install iina
-        brew cask install kafka-tool
         brew cask install qlcolorcode # Preview source code files with syntax highlighting
         brew cask install qlstephen # Preview plain text files without a file extension. Example: README, CHANGELOG, etc.
         brew cask install qlmarkdown # Preview Markdown files
@@ -66,9 +82,6 @@ if status --is-interactive
         brew cask install qlimagesize # Display image size and resolution
         brew cask install webpquicklook # Preview WebP images
         brew cask install suspicious-package # Preview the contents of a standard Apple installer package
-
-        brew tap loadimpact/k6
-        brew install k6
 
         #if test ! -x (which fisher)
             # install fisher if not installed
