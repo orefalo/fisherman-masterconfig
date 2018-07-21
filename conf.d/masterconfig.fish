@@ -111,6 +111,7 @@ if status --is-interactive
         npm install -g spot
         npm install -g spoof
         npm install -g git-commander
+        npm install -g ndb
 
     end
 
