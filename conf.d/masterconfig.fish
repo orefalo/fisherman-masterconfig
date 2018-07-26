@@ -62,8 +62,10 @@ if status --is-interactive
 
         # Kubernates stuff
         brew cask install minikube
-        brew install kubernetes-cli kubernetes-helm
+        brew install kubernetes-cli
+        brew install kubernetes-helm
         brew install docker-machine-driver-hyperkit
+        brew install kubectx
         # need some chmod +s here
         
         # Best load tester
