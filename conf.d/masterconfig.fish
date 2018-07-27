@@ -38,27 +38,54 @@ if status --is-interactive
         #    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
         #end
 
-        brew install git node@8 arc vim
-        brew install grafana influxdb fish openssl wget htop tig ffmpeg
-        brew install imagemagick netcat nmap 
-        brew install iftop pstree jq tree telnet 
+        brew install git
+        brew install node@8
+        brew install arc
+        brew install vim
+        brew install grafana
+        brew install influxdb
+        brew install fish
+        brew install openssl
+        brew install wget 
+        brew install htop 
+        brew install tig 
+        brew install ffmpeg
+        brew install imagemagick
+        brew install netcat 
+        brew install nmap 
+        brew install iftop 
+        brew install pstree 
+        brew install jq 
+        brew install tree 
+        brew install telnet 
         brew install grc
-        brew install graphviz ncdu inav
-        brew install stop jq nmap mdcat xmp xz
+        brew install graphviz
+        brew install ncdu
+        brew install inav
+        brew install jq
+        brew install nmap
+        brew install mdcat
+        brew install xmp
+        brew install xz
 
         # Kafka stuff
-        brew install kafka kafkacat
+        brew install kafka
+        brew install kafkacat
         brew cask install kafka-tool
 
         # DB stuff
-        brew install pgcli postgresql pg_top 
+        brew install pgcli
+        brew install postgresql
+        brew install pg_top 
         brew install cockroach
 
         # Java stuff
-        brew install maven ant
+        brew install maven
+        brew install ant
 
         # Docker stuff
-        brew install docker-ls docker-clean
+        brew install docker-ls
+        brew install docker-clean
 
         # Kubernates stuff
         brew cask install minikube
