@@ -40,7 +40,6 @@ if status --is-interactive
 
         brew install git
         brew install node@8
-        brew install arc
         brew install vim
         brew install grafana
         brew install influxdb
