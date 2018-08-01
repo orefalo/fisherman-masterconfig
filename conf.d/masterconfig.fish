@@ -92,6 +92,7 @@ if status --is-interactive
         brew install kubernetes-helm
         brew install docker-machine-driver-hyperkit
         brew install kubectx
+        brew install kubernetic
         # need some chmod +s here
         
         # Best load tester
