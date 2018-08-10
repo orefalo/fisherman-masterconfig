@@ -141,6 +141,7 @@ if status --is-interactive
         npm install -g spoof
         npm install -g git-commander
         npm install -g ndb
+        npm install -g graphqurl
 
     end
 
