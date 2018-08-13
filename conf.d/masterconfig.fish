@@ -38,6 +38,7 @@ if status --is-interactive
         #    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
         #end
 
+        brew install mkcert
         brew install git
         brew install node@8
         brew install vim
