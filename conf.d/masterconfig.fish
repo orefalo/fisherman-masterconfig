@@ -13,8 +13,17 @@ if status --is-interactive
 
     # my key aliases
     alias j=z
-    alias ll="ls -lh"
-    alias ls="ls -color"
+    alias ll="ls-go -l"
+    alias ls="ls-go"
+
+    # specific osx aliases
+    if test (uname) = "Darwin"
+        set -x EDITOR "subl -w"
+        alias top=htop
+        alias preview="open -a '$PREVIEW'"
+        alias mou="open -a MacDown"
+        alias jd="open -a JD-GUI"
+    end
 
     # docker stuff
     alias dps="grc docker ps"
@@ -67,6 +76,8 @@ if status --is-interactive
         brew install mdcat
         brew install xmp
         brew install xz
+        brew install acarl005/homebrew-formulas/ls-go
+
 
         # Kafka stuff
         brew install kafka
@@ -144,16 +155,6 @@ if status --is-interactive
         npm install -g ndb
         npm install -g graphqurl
 
-    end
-
-
-    # specific osx aliases
-    if test (uname) = "Darwin"
-        set -x EDITOR "subl -w"
-        alias top=htop
-        alias preview="open -a '$PREVIEW'"
-        alias mou="open -a MacDown"
-        alias jd="open -a JD-GUI"
     end
 
     # Setup the subl alias to SublimeText
