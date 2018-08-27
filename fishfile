@@ -10,4 +10,6 @@ laughedelic/brew-completions
 barnybug/docker-fish-completion
 brgmnn/fish-docker-compose
 kubectl-completions
-fisher patrickf3139/Colored-Man-Pages
+patrickf3139/Colored-Man-Pages
+laughedelic/pisces
+
