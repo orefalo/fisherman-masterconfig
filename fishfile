@@ -1,10 +1,10 @@
+fisherman/dartfish
 fisherman/g2
 fisherman/free
 fisherman/javahome
-fisherman/z
 fisherman/grc
-fisherman/dartfish
 omf/ssh
+omf/fasd
 omf/wifi-password
 laughedelic/brew-completions
 barnybug/docker-fish-completion
@@ -12,4 +12,3 @@ brgmnn/fish-docker-compose
 kubectl-completions
 patrickf3139/Colored-Man-Pages
 laughedelic/pisces
-
