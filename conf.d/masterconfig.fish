@@ -18,6 +18,7 @@ if status --is-interactive
     alias ping=prettyping
     alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
     alias cat=bat
+    alias spot=rg
 
     # specific osx aliases
     if test (uname) = "Darwin"
@@ -73,17 +74,20 @@ if status --is-interactive
         brew install telnet 
         brew install grc
         brew install graphviz
-        brew install ncdu
-        brew install bat
         brew install inav
         brew install jq
         brew install nmap
         brew install mdcat
         brew install xmp
         brew install xz
+
+        # colored versions
         brew install acarl005/homebrew-formulas/ls-go
         brew install prettyping
         brew install ranger
+        brew install ripgrep
+        brew install ncdu
+        brew install bat
 
 
         # Kafka stuff
@@ -146,7 +150,6 @@ if status --is-interactive
         npm install -g fuge
         npm install -g gtop
         npm install -g pegjs
-        npm install -g spot
         npm install -g prisma
         npm install -g prettier
         npm install -g graphql
