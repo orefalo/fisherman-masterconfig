@@ -19,6 +19,7 @@ if status --is-interactive
     alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
     alias cat=bat
     alias spot=rg
+    alias diff=icdiff
 
     # specific osx aliases
     if test (uname) = "Darwin"
@@ -88,6 +89,7 @@ if status --is-interactive
         brew install ripgrep
         brew install ncdu
         brew install bat
+        brew install icdiff
 
 
         # Kafka stuff
