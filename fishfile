@@ -3,13 +3,13 @@ fisherman/g2
 fisherman/free
 fisherman/javahome
 fisherman/grc
-omf/ssh
-omf/fasd
-omf/wifi-password
+oh-my-fish/ssh
+oh-my-fish/fasd
+oh-my-fish/wifi-password
 laughedelic/brew-completions
 barnybug/docker-fish-completion
 brgmnn/fish-docker-compose
 kubectl-completions
 patrickf3139/Colored-Man-Pages
 laughedelic/pisces
-omf/weather
+oh-my-fish/weather
