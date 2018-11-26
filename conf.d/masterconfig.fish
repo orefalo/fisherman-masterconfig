@@ -120,6 +120,10 @@ if status --is-interactive
         brew install kubernetic
         # need some chmod +s here
         
+        # A tool for exploring each layer in a docker image
+        brew tap wagoodman/dive
+        brew install dive
+
         # Best load tester
         brew tap loadimpact/k6
         brew install k6
