@@ -1,5 +1,8 @@
 if status --is-interactive
 
+    # for matchai/spacefish
+    set -x SPACEFISH_KUBECONTEXT_SHOW false
+
     # not used anymore 'fisher grc' takes care of it
     #set grc_wrap_commands "cat cvs df diff dig gcc g++ ifconfig make mount mtr netstat ping ps tail traceroute wdiff"
 
