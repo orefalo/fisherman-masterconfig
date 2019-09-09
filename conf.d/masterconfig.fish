@@ -48,6 +48,9 @@ if status --is-interactive
     alias gti=git
     alias sl=ls
 
+    alias tfp=terraform plan | scenery
+    alias tf=terraform
+
     function setup_everything_for_olivier
 
         #if test ! -x (which brew)
@@ -58,14 +61,14 @@ if status --is-interactive
         brew install fasd
         brew install mkcert
         brew install git
-        brew install node@8
+        #brew install node@8
+        brew install node
         brew install vim
         brew install grafana
         brew install influxdb
         brew install fish
         brew install openssl
         brew install wget 
-        brew install htop 
         brew install tig 
         brew install ffmpeg
         brew install imagemagick
@@ -85,6 +88,11 @@ if status --is-interactive
         brew install xmp
         brew install xz
 
+        brew install htop
+        brew install ctop
+        brew install ktop
+        brew install pg_top
+
         # colored versions
         brew install acarl005/homebrew-formulas/ls-go
         brew install prettyping
@@ -94,7 +102,6 @@ if status --is-interactive
         brew install bat
         brew install icdiff
 
-
         # Kafka stuff
         brew install kafka
         brew install kafkacat
@@ -103,7 +110,7 @@ if status --is-interactive
         # DB stuff
         brew install pgcli
         brew install postgresql
-        brew install pg_top 
+     
         brew install cockroach
 
         # Java stuff
@@ -115,12 +122,11 @@ if status --is-interactive
         brew install docker-clean
 
         # Kubernates stuff
-        brew cask install minikube
+        #brew cask install minikube
         brew install kubernetes-cli
         brew install kubernetes-helm
-        brew install docker-machine-driver-hyperkit
-        brew install kubectx
-        brew install kubernetic
+        #brew install kubectx
+        #brew install kubernetic
         # need some chmod +s here
         
         # A tool for exploring each layer in a docker image
@@ -130,6 +136,9 @@ if status --is-interactive
         # Best load tester
         brew tap loadimpact/k6
         brew install k6
+
+        brew install terraform
+        brew install terragrunt
 
         brew cask install aerial
         brew cask install iina
@@ -159,7 +168,7 @@ if status --is-interactive
         npm install -g fuge
         npm install -g gtop
         npm install -g pegjs
-        npm install -g prisma
+        #npm install -g prisma
         npm install -g prettier
         npm install -g graphql
         npm install -g graphql-cli 
@@ -174,6 +183,8 @@ if status --is-interactive
         npm install -g ndb
         npm install -g graphqurl
 
+        go get -u github.com/dmlittle/scenery
+
     end
 
     # Setup the subl alias to SublimeText
@@ -182,6 +193,8 @@ if status --is-interactive
        rm -f /usr/local/bin/subl
        ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
     end
+
+
 
 end
 
