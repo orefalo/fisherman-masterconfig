@@ -177,10 +177,11 @@ if status --is-interactive
         npm install -g get-graphql-schema
         npm install -g hiper
         npm install -g ksuid-cli
-        npm install -g spot
+        # replaced by rg
+        # npm install -g spot
         npm install -g spoof
         npm install -g git-commander
-        npm install -g ndb
+        #npm install -g ndb
         npm install -g graphqurl
 
         go get -u github.com/dmlittle/scenery
