@@ -48,7 +48,7 @@ if status --is-interactive
     alias gti=git
     alias sl=ls
 
-    alias tfp=terraform plan | scenery
+    alias tfp="terraform plan | scenery"
     alias tf=terraform
 
     function setup_everything_for_olivier
