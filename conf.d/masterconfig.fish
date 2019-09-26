@@ -72,6 +72,7 @@ if status --is-interactive
         brew install tig 
         brew install ffmpeg
         brew install imagemagick
+        brew install denisidoro/tools/navi
         brew install netcat 
         brew install nmap 
         brew install iftop 
@@ -85,6 +86,7 @@ if status --is-interactive
         brew install jq
         brew install nmap
         brew install mdcat
+        brew install vegeta
         brew install xmp
         brew install xz
 
@@ -96,7 +98,7 @@ if status --is-interactive
         # colored versions
         brew install acarl005/homebrew-formulas/ls-go
         brew install prettyping
-        brew install ranger
+        #brew install ranger
         brew install ripgrep
         brew install ncdu
         brew install bat
