@@ -111,9 +111,8 @@ if status --is-interactive
 
         # DB stuff
         brew install pgcli
-        brew install postgresql
-     
-        brew install cockroach
+        #brew install postgresql
+        #brew install cockroach
 
         # Java stuff
         brew install maven
@@ -127,8 +126,10 @@ if status --is-interactive
         #brew cask install minikube
         brew install kubernetes-cli
         brew install kubernetes-helm
-        #brew install kubectx
-        #brew install kubernetic
+        brew install kubectx
+     
+        brew install stern
+        brew install linkerd
         # need some chmod +s here
         
         # A tool for exploring each layer in a docker image
@@ -140,8 +141,9 @@ if status --is-interactive
         brew install k6
 
         brew install terraform
-        brew install terragrunt
+        #brew install terragrunt
 
+        brew cask install kubernetic
         brew cask install aerial
         brew cask install iina
         brew cask install qlcolorcode # Preview source code files with syntax highlighting
