@@ -127,7 +127,8 @@ if status --is-interactive
         brew install kubernetes-cli
         brew install kubernetes-helm
         brew install kubectx
-     
+        brew install derailed/popeye/popeye
+        brew install derailed/k9s/k9s
         brew install stern
         brew install linkerd
         # need some chmod +s here
@@ -155,6 +156,8 @@ if status --is-interactive
         brew cask install qlimagesize # Display image size and resolution
         brew cask install webpquicklook # Preview WebP images
         brew cask install suspicious-package # Preview the contents of a standard Apple installer package
+
+
 
         #if test ! -x (which fisher)
             # install fisher if not installed
