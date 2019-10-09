@@ -23,6 +23,11 @@ if status --is-interactive
     alias cat=bat
     alias spot=rg
     alias diff=icdiff
+    alias kgp="kubectl get pods"
+    alias kgn="kubectl get nodes --label-columns failure-domain.beta.kubernetes.io/region,failure-domain.beta.kubernetes.io/zone"
+    alias kctx=kubectx
+    alias kns=kubens
+    alias kl=stern
 
     # specific osx aliases
     if test (uname) = "Darwin"
