@@ -31,7 +31,7 @@ if status --is-interactive
     alias kgn="kubectl get nodes --label-columns failure-domain.beta.kubernetes.io/region,failure-domain.beta.kubernetes.io/zone"
     alias kcx=kubectx
     alias kns=kubens
-    alias kl=stern
+    alias klog=stern
 
     # specific osx aliases
     if test (uname) = "Darwin"
