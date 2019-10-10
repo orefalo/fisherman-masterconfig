@@ -26,8 +26,10 @@ if status --is-interactive
     alias k='kubectl'
     alias kg='kubectl get'
     alias kgp="kubectl get pods"
+    alias kps="kubectl get pods"
+    alias ktop="k9s"
     alias kgn="kubectl get nodes --label-columns failure-domain.beta.kubernetes.io/region,failure-domain.beta.kubernetes.io/zone"
-    alias kctx=kubectx
+    alias kcx=kubectx
     alias kns=kubens
     alias kl=stern
 
@@ -99,7 +101,7 @@ if status --is-interactive
 
         brew install htop
         brew install ctop
-        brew install ktop
+        #brew install ktop
         brew install pg_top
 
         # colored versions
