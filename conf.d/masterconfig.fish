@@ -140,6 +140,9 @@ if status --is-interactive
         brew install derailed/k9s/k9s
         brew install stern
         brew install linkerd
+
+        brew tap robscott/tap
+        brew install robscott/tap/kube-capacity
         # need some chmod +s here
         
         # A tool for exploring each layer in a docker image
