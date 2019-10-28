@@ -45,7 +45,7 @@ if status --is-interactive
     # docker stuff
     alias dps="grc docker ps"
     alias dpi="grc docker images"
-    alias dsh="docker run -it --rm --entrypoint /bin/sh"
+    alias dshell="docker run -it --rm --entrypoint /bin/sh"
     alias dclean="docker rmi -f (docker images -f "dangling=true" -q)"
     alias dc=docker-compose
 
