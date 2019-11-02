@@ -28,6 +28,7 @@ if status --is-interactive
     alias kgp="kubectl get pods"
     alias kps="kubectl get services"
     alias kgs="kubectl get services"
+    alias kge="kubectl get event -A"
     alias ktop="k9s"
     alias kgn="kubectl get nodes --label-columns failure-domain.beta.kubernetes.io/region,failure-domain.beta.kubernetes.io/zone"
     alias kcx=kubectx
