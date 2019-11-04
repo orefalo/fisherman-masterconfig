@@ -159,6 +159,7 @@ if status --is-interactive
         brew install terraform
         #brew install terragrunt
 
+        brew cask install open-in-code
         brew cask install kubernetic
         brew cask install aerial
         brew cask install iina
