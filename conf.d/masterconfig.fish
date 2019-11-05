@@ -155,6 +155,7 @@ if status --is-interactive
         #brew tap loadimpact/k6
         #brew install k6
         brew install hey
+        npm install -g hiper
 
         brew install terraform
         #brew install terragrunt
@@ -190,19 +191,16 @@ if status --is-interactive
         npm install -g fuge
         npm install -g gtop
         npm install -g pegjs
-        #npm install -g prisma
         npm install -g prettier
         npm install -g graphql
         npm install -g graphql-cli 
         npm install -g graphql-cli-get-raw-schema 
         npm install -g graphql-cli-voyager graphql-docs
         npm install -g get-graphql-schema
-        npm install -g hiper
         npm install -g ksuid-cli
         # replaced by rg
         # npm install -g spot
         npm install -g spoof
-        #npm install -g git-commander
         npm install -g ndb
         npm install -g graphqurl
         npm install -g lerna
