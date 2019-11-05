@@ -24,12 +24,14 @@ if status --is-interactive
     alias spot=rg
     alias diff=icdiff
     alias k='kubectl'
+    alias kp="kube-prompt"
     alias kg='kubectl get'
     alias kgp="kubectl get pods"
     alias kps="kubectl get services"
     alias kgs="kubectl get services"
     alias kge="kubectl get event -A"
     alias ktop="k9s"
+    alias kcapacity="kube-capacity"
     alias kgn="kubectl get nodes --label-columns failure-domain.beta.kubernetes.io/region,failure-domain.beta.kubernetes.io/zone"
     alias kcx=kubectx
     alias kns=kubens
@@ -80,7 +82,7 @@ if status --is-interactive
         brew install fish
         brew install openssl
         brew install wget 
-        brew install tig 
+        #brew install tig 
         brew install ffmpeg
         brew install imagemagick
         brew install denisidoro/tools/navi
@@ -144,6 +146,7 @@ if status --is-interactive
 
         brew tap robscott/tap
         brew install robscott/tap/kube-capacity
+        brew install kube-prompt
         # need some chmod +s here
         
         # A tool for exploring each layer in a docker image
