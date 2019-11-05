@@ -73,7 +73,6 @@ if status --is-interactive
         brew install fasd
         brew install mkcert
         brew install git
-        #brew install node@8
         brew install node
         brew install vim
         brew install grafana
@@ -89,13 +88,12 @@ if status --is-interactive
         brew install nmap 
         brew install iftop 
         brew install pstree 
-        brew install jq 
+        brew install jq yq 
         brew install tree 
         brew install telnet 
         brew install grc
         brew install graphviz
         brew install inav
-        brew install jq
         brew install nmap
         brew install mdcat
         brew install vegeta
@@ -110,16 +108,16 @@ if status --is-interactive
         # colored versions
         brew install acarl005/homebrew-formulas/ls-go
         brew install prettyping
-        #brew install ranger
         brew install ripgrep
         brew install ncdu
         brew install bat
         brew install icdiff
 
         # Kafka stuff
-        brew install kafka
-        brew install kafkacat
-        brew cask install kafka-tool
+        # I deploy it in k8s
+        # brew install kafka
+        # brew install kafkacat
+        # brew cask install kafka-tool
 
         # DB stuff
         brew install pgcli
@@ -153,12 +151,15 @@ if status --is-interactive
         brew install dive
 
         # Best load tester
-        brew tap loadimpact/k6
-        brew install k6
+        # I prefer hey
+        #brew tap loadimpact/k6
+        #brew install k6
+        brew install hey
 
         brew install terraform
         #brew install terragrunt
 
+        brew cask install open-in-code
         brew cask install kubernetic
         brew cask install aerial
         brew cask install iina
@@ -201,10 +202,11 @@ if status --is-interactive
         # replaced by rg
         # npm install -g spot
         npm install -g spoof
-        npm install -g git-commander
-        #npm install -g ndb
+        #npm install -g git-commander
+        npm install -g ndb
         npm install -g graphqurl
-
+        npm install -g lerna
+        
         go get -u github.com/dmlittle/scenery
 
     end
