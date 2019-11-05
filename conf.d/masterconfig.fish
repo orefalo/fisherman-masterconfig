@@ -77,20 +77,21 @@ if status --is-interactive
         brew install git
         brew install node
         brew install vim
-        brew install grafana
-        brew install influxdb
+        #brew install grafana
+        #brew install influxdb
         brew install fish
         brew install openssl
         brew install wget 
         #brew install tig 
         brew install ffmpeg
         brew install imagemagick
-        brew install denisidoro/tools/navi
+        #brew install denisidoro/tools/navi
         brew install netcat 
         brew install nmap 
         brew install iftop 
         brew install pstree 
-        brew install jq yq 
+        brew install jq
+        brew install yq 
         brew install tree 
         brew install telnet 
         brew install grc
@@ -133,14 +134,19 @@ if status --is-interactive
         # Docker stuff
         brew install docker-ls
         brew install docker-clean
+        # get htop for docker
+        brew install lazydocker
 
         # Kubernates stuff
         #brew cask install minikube
         brew install kubernetes-cli
         brew install kubernetes-helm
         brew install kubectx
+        # A Kubernetes cluster resource sanitizer
         brew install derailed/popeye/popeye
+        # great k8s top
         brew install derailed/k9s/k9s
+        # great for aggregate logging
         brew install stern
         brew install linkerd
 
@@ -208,6 +214,7 @@ if status --is-interactive
         npm install -g graphqurl
         npm install -g lerna
         
+        # terraform prettyfier/colorizer
         go get -u github.com/dmlittle/scenery
 
     end
