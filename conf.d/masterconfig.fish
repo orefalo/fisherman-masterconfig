@@ -30,6 +30,7 @@ if status --is-interactive
     alias kps="kubectl get services"
     alias kgs="kubectl get services"
     alias kge="kubectl get event -A"
+    alias kpf="kubectl port-forward"
     alias ktop="k9s"
     alias kcapacity="kube-capacity"
     alias kgn="kubectl get nodes --label-columns failure-domain.beta.kubernetes.io/region,failure-domain.beta.kubernetes.io/zone"
