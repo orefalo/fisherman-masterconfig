@@ -42,14 +42,15 @@ if status --is-interactive
         set -x EDITOR "subl -w"
         alias top=htop
         alias preview="open -a '$PREVIEW'"
-        alias mou="open -a MacDown"
-        alias jd="open -a JD-GUI"
+        alias mou="open -a Typora"
     end
 
     # docker stuff
+    alias d=docker
     alias dps="grc docker ps"
     alias dpi="grc docker images"
-    alias dshell="docker run -it --rm --entrypoint /bin/sh"
+    alias dsh="docker run -it --rm --entrypoint /bin/sh"
+    alias dtop=lazydocker
     alias dclean="docker rmi -f (docker images -f "dangling=true" -q)"
     alias dc=docker-compose
 
