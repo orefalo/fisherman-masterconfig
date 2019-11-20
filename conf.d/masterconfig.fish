@@ -37,6 +37,7 @@ if status --is-interactive
     alias kcx=kubectx
     alias kns=kubens
     alias klog=stern
+    alias kshell="kubectl exec -it $1 -- /bin/sh"
 
     # specific osx aliases
     if test (uname) = "Darwin"
@@ -50,7 +51,7 @@ if status --is-interactive
     alias d=docker
     alias dps="grc docker ps"
     alias dpi="grc docker images"
-    alias dsh="docker run -it --rm --entrypoint /bin/sh"
+    alias dshell="docker run -it --rm --entrypoint /bin/sh"
     alias dtop=lazydocker
     alias dclean="docker rmi -f (docker images -f "dangling=true" -q)"
     alias dc=docker-compose
@@ -144,6 +145,12 @@ if status --is-interactive
         brew install kubernetes-cli
         brew install kubernetes-helm
         brew install kubectx
+
+        # OIC login to k8s
+        brew install int128/kubelogin/kubelogin
+        # Docker-for-mac is not required anymore 
+        brew install minikube
+
         # A Kubernetes cluster resource sanitizer
         brew install derailed/popeye/popeye
         # great k8s top
