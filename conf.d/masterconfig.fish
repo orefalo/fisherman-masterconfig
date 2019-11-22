@@ -61,6 +61,9 @@ if status --is-interactive
     alias pgstop="brew services stop postgresql"
     alias pgtop=pg_top
 
+    alias start_minikube="minikube start && eval (minikube docker-env)"
+    alias stop_minikube="minikube stop && eval (minikube docker-env -u)"
+
     # fixes my typos
     alias gti=git
     alias sl=ls
@@ -141,7 +144,7 @@ if status --is-interactive
         brew install lazydocker
 
         # Kubernates stuff
-        #brew cask install minikube
+ 
         brew install kubernetes-cli
         brew install kubernetes-helm
         brew install kubectx
@@ -150,6 +153,7 @@ if status --is-interactive
         brew install int128/kubelogin/kubelogin
         # Docker-for-mac is not required anymore 
         brew install minikube
+
 
         # A Kubernetes cluster resource sanitizer
         brew install derailed/popeye/popeye
