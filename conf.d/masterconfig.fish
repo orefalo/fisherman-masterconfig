@@ -71,6 +71,12 @@ if status --is-interactive
     alias tfp="terraform plan | scenery"
     alias tf=terraform
 
+    minikube status 1>/dev/null 2>/dev/null
+    if test $status -eq 0
+            eval (minikube docker-env)
+    end
+
+
     function setup_everything_for_olivier
 
         #if test ! -x (which brew)
@@ -230,16 +236,14 @@ if status --is-interactive
         # terraform prettyfier/colorizer
         go get -u github.com/dmlittle/scenery
 
+
+        # Setup the subl alias to SublimeText
+        if not test -L /usr/local/bin/subl
+               and test -f "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
+           rm -f /usr/local/bin/subl
+           ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+        end
+
     end
-
-    # Setup the subl alias to SublimeText
-    if not test -L /usr/local/bin/subl
-           and test -f "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
-       rm -f /usr/local/bin/subl
-       ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
-    end
-
-
 
 end
-
