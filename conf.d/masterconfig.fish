@@ -13,6 +13,7 @@ if status --is-interactive
     set -x LESS "--RAW-CONTROL-CHARS"
     set -x GREP_OPTIONS '--color=auto'
     set -x GREP_COLOR '1;33'
+    set -x PATH $PATH $HOME/.krew/bin
 
     # my key aliases
     alias j=z
@@ -160,6 +161,18 @@ if status --is-interactive
         brew install int128/kubelogin/kubelogin
         # Docker-for-mac is not required anymore 
         brew install minikube
+
+        # Install krew
+        begin
+          set -x; set temp_dir (mktemp -d); cd "$temp_dir" &&
+          curl -fsSLO "https://github.com/kubernetes-sigs/krew/releases/download/v0.3.2/krew.{tar.gz,yaml}" &&
+          tar zxvf krew.tar.gz &&
+          set KREWNAME krew-(uname | tr '[:upper:]' '[:lower:]')_amd64 &&
+          ./$KREWNAME install \
+            --manifest=krew.yaml --archive=krew.tar.gz &&
+          set -e KREWNAME; set -e temp_dir
+        end
+        # kubectl krew install config-cleanup
 
 
         # A Kubernetes cluster resource sanitizer
