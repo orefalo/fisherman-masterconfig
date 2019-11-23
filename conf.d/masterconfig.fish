@@ -30,6 +30,7 @@ if status --is-interactive
     alias kps="kubectl get services"
     alias kgs="kubectl get services"
     alias kge="kubectl get event -A"
+    alias kgi="kubectl get ingress"   
     alias kpf="kubectl port-forward"
     alias ktop="k9s"
     alias kcapacity="kube-capacity"
