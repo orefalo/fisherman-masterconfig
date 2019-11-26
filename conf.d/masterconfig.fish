@@ -17,8 +17,9 @@ if status --is-interactive
 
     # my key aliases
     alias j=z
-    alias ls="lsd"
+    alias ls=lsd
     alias ll="lsd -l"
+    alias find=fd
     alias tree="lsd --tree"
     alias ping=prettyping
     alias ps=procs
@@ -66,7 +67,7 @@ if status --is-interactive
     alias pgstop="brew services stop postgresql"
     alias pgtop=pg_top
 
-    alias start_minikube="minikube start && eval (minikube docker-env)"
+    alias start_minikube="minikube start --vm-driver=hyperkit && eval (minikube docker-env)"
     alias stop_minikube="minikube stop && eval (minikube docker-env -u)"
 
     # fixes my typos
@@ -181,6 +182,11 @@ if status --is-interactive
         brew install int128/kubelogin/kubelogin
         # Docker-for-mac is not required anymore 
         brew install minikube
+
+        brew install --HEAD xhyve
+        brew install docker-machine-driver-xhyve
+        sudo chown root:wheel (brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+        sudo chmod u+s (brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 
         # Install krew
         begin
