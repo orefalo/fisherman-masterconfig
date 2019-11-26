@@ -19,13 +19,15 @@ if status --is-interactive
     alias j=z
     alias ls="lsd"
     alias ll="lsd -l"
-    alias tree='lsd --tree'
+    alias tree="lsd --tree"
     alias ping=prettyping
+    alias ps=procs
+    alias pstree="procs --tree"
     alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
     alias cat=bat
     alias spot=rg
     alias diff=icdiff
-    alias k='kubectl'
+    alias k=kubectl
     alias kp="kube-prompt"
     alias kg="kubectl get"
     alias kgp="kubectl get pods"
@@ -87,6 +89,12 @@ if status --is-interactive
         #    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
         #end
 
+        # ps replacement
+        brew install procs
+
+        # find replacement
+        brew install fd
+
         brew install fasd
         brew install mkcert
         brew install git
@@ -103,11 +111,13 @@ if status --is-interactive
         #brew install denisidoro/tools/navi
         brew install netcat 
         brew install nmap 
-        brew install iftop 
-        brew install pstree 
+        brew install iftop
+        # procs --tree 
+        #brew install pstree 
         brew install jq
         brew install yq 
-        brew install tree 
+        # lsd --tree comes with icons and coloring
+        # brew install tree 
         brew install telnet 
         brew install grc
         brew install graphviz
@@ -123,6 +133,7 @@ if status --is-interactive
         #brew install ktop
         brew install pg_top
 
+        brew install neofetch
         # colored versions
         # lsd seems better
         #brew install acarl005/homebrew-formulas/ls-go
