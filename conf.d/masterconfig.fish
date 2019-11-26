@@ -17,8 +17,9 @@ if status --is-interactive
 
     # my key aliases
     alias j=z
-    alias ll="ls-go -l"
-    alias ls="ls-go"
+    alias ls="lsd"
+    alias ll="lsd -l"
+    alias tree='lsd --tree'
     alias ping=prettyping
     alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
     alias cat=bat
@@ -26,7 +27,7 @@ if status --is-interactive
     alias diff=icdiff
     alias k='kubectl'
     alias kp="kube-prompt"
-    alias kg='kubectl get'
+    alias kg="kubectl get"
     alias kgp="kubectl get pods"
     alias kps="kubectl get services"
     alias kgs="kubectl get services"
@@ -123,7 +124,15 @@ if status --is-interactive
         brew install pg_top
 
         # colored versions
-        brew install acarl005/homebrew-formulas/ls-go
+        # lsd seems better
+        #brew install acarl005/homebrew-formulas/ls-go
+        brew install lsd
+        # lsd required nerd fonts
+        brew tap homebrew/cask-fonts
+        # don't use the -mono version, icons are off, too small
+        # and don't forget to configure iTerm to use the font
+        brew cask install font-hack-nerd-font
+
         brew install prettyping
         brew install ripgrep
         brew install ncdu
