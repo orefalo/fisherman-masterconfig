@@ -172,22 +172,15 @@ if status --is-interactive
         # get htop for docker
         brew install lazydocker
 
-        # Kubernates stuff
- 
+        # Kubernates stuff ---------------------
         brew install kubernetes-cli
         brew install kubernetes-helm
         brew install kubectx
-
         # OIC login to k8s
         brew install int128/kubelogin/kubelogin
         # Docker-for-mac is not required anymore 
         brew install minikube
-
-        brew install --HEAD xhyve
-        brew install docker-machine-driver-xhyve
-        sudo chown root:wheel (brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-        sudo chmod u+s (brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-
+        brew install hyperkit
         # Install krew
         begin
           set -x; set temp_dir (mktemp -d); cd "$temp_dir" &&
