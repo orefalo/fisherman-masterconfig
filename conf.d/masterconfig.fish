@@ -142,7 +142,7 @@ if status --is-interactive
         brew tap homebrew/cask-fonts
         # don't use the -mono version, icons are off, too small
         # and don't forget to configure iTerm to use the font
-        brew cask install font-hack-nerd-font
+        brew cask install font-meslo-nerd-font
 
         brew install prettyping
         brew install ripgrep
