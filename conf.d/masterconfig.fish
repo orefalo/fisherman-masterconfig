@@ -29,6 +29,10 @@ if status --is-interactive
     alias cat=bat
     alias spot=rg
     alias diff=icdiff
+
+    alias h=helm
+    alias hl="helm list --all-namespaces"
+
     alias k=kubectl
     alias kp="kube-prompt"
     alias kg="kubectl get"
