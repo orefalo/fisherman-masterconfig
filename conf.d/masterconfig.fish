@@ -90,10 +90,14 @@ if status --is-interactive
 
     function setup_everything_for_olivier
 
-        #if test ! -x (which brew)
-            # install brew if not installed
-        #    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-        #end
+        # install brew if not installed
+        if test ! -x (which brew)
+
+            /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        end
+
+        # cli prompt
+        brew install starship
 
         # ps replacement
         brew install procs
@@ -101,6 +105,7 @@ if status --is-interactive
         # find replacement
         brew install fd
 
+        # replacement for j or z
         brew install fasd
         brew install mkcert
         brew install git
@@ -127,7 +132,7 @@ if status --is-interactive
         brew install telnet 
         brew install grc
         brew install graphviz
-        brew install inav
+        #brew install inav
         brew install nmap
         brew install mdcat
         brew install vegeta
