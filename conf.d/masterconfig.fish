@@ -92,8 +92,7 @@ if status --is-interactive
 
         # install brew if not installed
         if test ! -x (which brew)
-
-            /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+            /usr/bin/ruby -e "(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
         end
 
         # cli prompt
