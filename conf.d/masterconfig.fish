@@ -18,13 +18,14 @@ if status --is-interactive
 
     # my key aliases
     alias j=z
-    alias ls=lsd
-    alias ll="lsd -l"
+    alias ls="ls --group-dirs"
+    alias ll="ls -l"
+    alias ll="ls -a"
+    alias tree="ls --tree"
     alias find=fd
-    alias tree="lsd --tree"
     alias ping=prettyping
     alias ps=procs
-    alias pstree="procs --tree"
+    alias pstree="procs --tree --depth=4"
     alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
     alias cat=bat
     alias spot=rg
