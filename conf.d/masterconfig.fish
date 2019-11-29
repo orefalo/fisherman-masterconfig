@@ -19,13 +19,13 @@ if status --is-interactive
     # my key aliases
     alias j=z
     alias ls="lsd --group-dirs first"
-    alias ll="ls -l"
-    alias ll="ls -a"
-    alias tree="ls --tree"
+    alias ll="lsd --group-dirs first -l"
+    alias ll="lsd --group-dirs first -a"
+    alias tree="lsd --tree --group-dirs first --depth=4"
     alias find=fd
     alias ping=prettyping
     alias ps=procs
-    alias pstree="procs --tree --depth=4"
+    alias pstree="procs --tree"
     alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
     alias cat=bat
     alias spot=rg
