@@ -18,7 +18,7 @@ if status --is-interactive
 
     # my key aliases
     alias j=z
-    alias ls="ls --group-dirs"
+    alias ls="lsd --group-dirs first"
     alias ll="ls -l"
     alias ll="ls -a"
     alias tree="ls --tree"
