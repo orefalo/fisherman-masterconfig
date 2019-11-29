@@ -88,7 +88,7 @@ if status --is-interactive
 
     # for now needs to be manually installed from https://github.com/euank/pazi
     if test -x /usr/local/bin/pazi
-        starship init fish | source
+        pazi init fish | source
     end
 
     minikube status 1>/dev/null 2>/dev/null
