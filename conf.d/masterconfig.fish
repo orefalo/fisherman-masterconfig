@@ -8,13 +8,13 @@ if status --is-interactive
     #set grc_wrap_commands "cat cvs df diff dig gcc g++ ifconfig make mount mtr netstat ping ps tail traceroute wdiff"
 
     # colors
-    set -x LSCOLORS 'GxfxhxhxcxegedaCaCgxgx'
-    set -x CLICOLOR 1
+    #set -x LSCOLORS 'GxfxhxhxcxegedaCaCgxgx'
+    #set -x CLICOLOR 1
     set -x MAVEN_COLOR true
     set -x LESS "--RAW-CONTROL-CHARS"
     set -x GREP_OPTIONS '--color=auto'
     set -x GREP_COLOR '1;33'
-    set -x PATH $PATH $HOME/.krew/bin
+    #set -x PATH $PATH $HOME/.krew/bin
 
     # my key aliases
     alias j=z
