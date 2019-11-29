@@ -86,6 +86,11 @@ if status --is-interactive
         starship init fish | source
     end
 
+    # for now needs to be manually installed from https://github.com/euank/pazi
+    if test -x /usr/local/bin/pazi
+        starship init fish | source
+    end
+
     minikube status 1>/dev/null 2>/dev/null
     if test $status -eq 0
             eval (minikube docker-env)
@@ -109,7 +114,7 @@ if status --is-interactive
         brew install fd
 
         # replacement for j or z
-        brew install fasd
+        #brew install fasd
         brew install mkcert
         brew install git
         brew install node
