@@ -105,6 +105,8 @@ if status --is-interactive
             /usr/bin/ruby -e "(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
         end
 
+        brew install https://raw.githubusercontent.com/orefalo/homebrew-core/pazi/Formula/pazi.rb
+
         # cli prompt
         brew install starship
 
