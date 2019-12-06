@@ -14,7 +14,7 @@ if status --is-interactive
     set -x LESS "--RAW-CONTROL-CHARS"
     set -x GREP_OPTIONS '--color=auto'
     set -x GREP_COLOR '1;33'
-    #set -x PATH $PATH $HOME/.krew/bin
+    set -x PATH $PATH $HOME/.krew/bin
 
     # my key aliases
     alias j=z
@@ -205,7 +205,7 @@ if status --is-interactive
         # Install krew
         begin
           set -x; set temp_dir (mktemp -d); cd "$temp_dir" &&
-          curl -fsSLO "https://github.com/kubernetes-sigs/krew/releases/download/v0.3.2/krew.{tar.gz,yaml}" &&
+          curl -fsSLO "https://github.com/kubernetes-sigs/krew/releases/download/v0.3.3/krew.{tar.gz,yaml}" &&
           tar zxvf krew.tar.gz &&
           set KREWNAME krew-(uname | tr '[:upper:]' '[:lower:]')_amd64 &&
           ./$KREWNAME install \
