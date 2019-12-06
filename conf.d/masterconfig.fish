@@ -35,11 +35,14 @@ if status --is-interactive
     alias hl="helm list --all-namespaces"
 
     alias k=kubectl
+    alias kd="kubectl describe"
+    alias kdp="kubectl describe pod"
+    alias kds="kubectl describe service"
     alias kp="kube-prompt"
     alias kg="kubectl get"
     alias kgp="kubectl get pods"
-    alias kps="kubectl get services"
     alias kgs="kubectl get services"
+    alias kgn="kubectl get nodes"
     alias kge="kubectl get event -A"
     alias kgi="kubectl get ingress"   
     alias kpf="kubectl port-forward"
