@@ -210,9 +210,11 @@ if status --is-interactive
         # Install krew
         brew install krew
 
+        # ---
         brew tap superbrothers/minikube-ingress-dns git://github.com/superbrothers/minikube-ingress-dns.git
         brew install minikube-ingress-dns
-
+        brew install dnsmasq
+        # ----
 
         # A Kubernetes cluster resource sanitizer
         brew install derailed/popeye/popeye
