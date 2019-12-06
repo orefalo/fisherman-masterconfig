@@ -74,7 +74,9 @@ if status --is-interactive
     alias pgstop="brew services stop postgresql"
     alias pgtop=pg_top
 
-    alias start_minikube="minikube start --vm-driver=hyperkit --memory=6144 --cpus=4 --disk-size=50g && eval (minikube docker-env) && minikube addons enable ingress && minikube addons enable ingress-dns && sudo /usr/local/bin/setMinikubeDns"
+    alias minikube=/usr/local/etc/minikube-ingress-dns/minikube-ingress-dns-macos
+
+    alias start_minikube="minikube start --vm-driver=hyperkit --memory=6144 --cpus=4 --disk-size=50g && eval (minikube docker-env) && minikube addons enable ingress"
     alias stop_minikube="minikube stop && eval (minikube docker-env -u)"
 
     # fixes my typos
@@ -83,6 +85,8 @@ if status --is-interactive
 
     alias tfp="terraform plan | scenery"
     alias tf=terraform
+
+
 
     if test -x /usr/local/bin/starship
         starship init fish | source
@@ -206,6 +210,8 @@ if status --is-interactive
         # Install krew
         brew install krew
 
+        brew tap superbrothers/minikube-ingress-dns git://github.com/superbrothers/minikube-ingress-dns.git
+        brew install minikube-ingress-dns
 
 
         # A Kubernetes cluster resource sanitizer
