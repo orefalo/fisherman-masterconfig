@@ -14,7 +14,7 @@ if status --is-interactive
     set -x LESS "--RAW-CONTROL-CHARS"
     set -x GREP_OPTIONS '--color=auto'
     set -x GREP_COLOR '1;33'
-    #set -x PATH $PATH $HOME/.krew/bin
+    set -x PATH $PATH $HOME/.krew/bin
 
     # my key aliases
     alias j=z
@@ -46,6 +46,7 @@ if status --is-interactive
     alias kge="kubectl get event -A"
     alias kgi="kubectl get ingress"   
     alias kpf="kubectl port-forward"
+    alias kosvc="kubectl open-svc"
     alias ktop="k9s"
     alias kcapacity="kube-capacity"
     alias kgn="kubectl get nodes --label-columns failure-domain.beta.kubernetes.io/region,failure-domain.beta.kubernetes.io/zone"
