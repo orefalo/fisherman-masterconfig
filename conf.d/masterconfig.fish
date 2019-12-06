@@ -14,7 +14,7 @@ if status --is-interactive
     set -x LESS "--RAW-CONTROL-CHARS"
     set -x GREP_OPTIONS '--color=auto'
     set -x GREP_COLOR '1;33'
-    set -x PATH $PATH $HOME/.krew/bin
+    #set -x PATH $PATH $HOME/.krew/bin
 
     # my key aliases
     alias j=z
@@ -47,6 +47,7 @@ if status --is-interactive
     alias kcapacity="kube-capacity"
     alias kgn="kubectl get nodes --label-columns failure-domain.beta.kubernetes.io/region,failure-domain.beta.kubernetes.io/zone"
     alias kcx=kubectx
+    alias krew="kubectl krew"
     alias kns=kubens
     alias klog=stern
     alias kshell="kubectl exec -it $1 -- /bin/sh"
@@ -203,16 +204,8 @@ if status --is-interactive
         brew install minikube
         brew install hyperkit
         # Install krew
-        begin
-          set -x; set temp_dir (mktemp -d); cd "$temp_dir" &&
-          curl -fsSLO "https://github.com/kubernetes-sigs/krew/releases/download/v0.3.3/krew.{tar.gz,yaml}" &&
-          tar zxvf krew.tar.gz &&
-          set KREWNAME krew-(uname | tr '[:upper:]' '[:lower:]')_amd64 &&
-          ./$KREWNAME install \
-            --manifest=krew.yaml --archive=krew.tar.gz &&
-          set -e KREWNAME; set -e temp_dir
-        end
-        # kubectl krew install config-cleanup
+        brew install krew
+
 
 
         # A Kubernetes cluster resource sanitizer
@@ -236,8 +229,8 @@ if status --is-interactive
         # I prefer hey
         #brew tap loadimpact/k6
         #brew install k6
-        brew install hey
-        npm install -g hiper
+        brew install hey wrk2
+
 
         brew install terraform
         #brew install terragrunt
@@ -282,11 +275,23 @@ if status --is-interactive
         npm install -g ksuid-cli
         # replaced by rg
         # npm install -g spot
+
+        # http bench
+        npm install -g hiper
         npm install -g spoof
         npm install -g ndb
         npm install -g graphqurl
         npm install -g lerna
         
+
+        kubectl krew update
+
+        # https://github.com/superbrothers/kubectl-open-svc-plugin
+        kubectl krew install open-svc
+        kubectl krew install doctor
+        kubectl krew install oidc-login
+        kubectl krew install cssh
+
         # terraform prettyfier/colorizer
         go get -u github.com/dmlittle/scenery
 
