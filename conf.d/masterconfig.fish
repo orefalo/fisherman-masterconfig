@@ -76,7 +76,7 @@ if status --is-interactive
 
     alias minikube=/usr/local/etc/minikube-ingress-dns/minikube-ingress-dns-macos
 
-    alias start_minikube="minikube start --vm-driver=hyperkit --memory=6144 --cpus=4 --disk-size=50g && eval (minikube docker-env) && minikube addons enable ingress"
+    alias start_minikube="minikube start --vm-driver=hyperkit --memory=6144 --cpus=4 --disk-size=50g && eval (command minikube docker-env) && minikube addons enable ingress"
     alias stop_minikube="minikube stop && eval (minikube docker-env -u)"
 
     # fixes my typos
@@ -97,9 +97,9 @@ if status --is-interactive
         pazi init fish | source
     end
 
-    minikube status 1>/dev/null 2>/dev/null
+    command minikube status 1>/dev/null 2>/dev/null
     if test $status -eq 0
-            eval (minikube docker-env)
+            eval (command minikube docker-env)
     end
 
 
