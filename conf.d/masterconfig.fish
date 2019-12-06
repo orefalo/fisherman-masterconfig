@@ -44,6 +44,8 @@ if status --is-interactive
     alias kgs="kubectl get services"
     alias kgn="kubectl get nodes"
     alias kge="kubectl get event -A"
+    # kga --since 5m
+    alias kga="kubectl get-all"
     alias kgi="kubectl get ingress"   
     alias kpf="kubectl port-forward"
     alias kosvc="kubectl open-svc"
@@ -54,7 +56,16 @@ if status --is-interactive
     alias krew="kubectl krew"
     alias kns=kubens
     alias klog=stern
-    alias kshell="kubectl exec -it $1 -- /bin/sh"
+    alias kwhoami="kubectl whoami"
+    # kvu
+    # kvu namespaces
+    # kvu -n kube-system
+    alias kvu="kubectl view-utilization -h"
+
+    alias kva="kubectl view-allocations"
+    # kshell podname /bin/sh
+    alias kshell="kubectl iexec"
+    alias krbac="kubectl access-matrix"
 
     # specific osx aliases
     if test (uname) = "Darwin"
@@ -103,7 +114,7 @@ if status --is-interactive
 
     command minikube status 1>/dev/null 2>/dev/null
     if test $status -eq 0
-            eval (command minikube docker-env)
+        eval (command minikube docker-env)
     end
 
 
@@ -302,7 +313,12 @@ if status --is-interactive
         kubectl krew install open-svc
         kubectl krew install doctor
         kubectl krew install oidc-login
-        kubectl krew install cssh
+        kubectl krew install get-all
+        kubectl krew install access-matrix
+        kubectl krew install iexec
+        kubectl krew install view-utilization
+        kubectl krew install view-allocations
+        kubectl krew install whoami
 
         # terraform prettyfier/colorizer
         go get -u github.com/dmlittle/scenery
