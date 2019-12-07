@@ -226,7 +226,7 @@ if status --is-interactive
         brew install krew
 
         # ---
-        brew tap superbrothers/minikube-ingress-dns git://github.com/superbrothers/minikube-ingress-dns.git
+        brew tap orefalo/minikube-ingress-dns git://github.com/orefalo/minikube-ingress-dns.git
         brew install minikube-ingress-dns
         brew install dnsmasq
         # ----
