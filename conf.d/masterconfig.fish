@@ -89,7 +89,7 @@ if status --is-interactive
     alias pgstop="brew services stop postgresql"
     alias pgtop=pg_top
 
-    alias minikube=/usr/local/etc/minikube-ingress-dns/minikube-ingress-dns-macos
+  #  alias minikube=/usr/local/etc/minikube-ingress-dns/minikube-ingress-dns-macos
 
     alias start_minikube="minikube start --vm-driver=hyperkit --memory=6144 --cpus=4 --disk-size=50g && eval (command minikube docker-env) && minikube addons enable ingress"
     alias stop_minikube="minikube stop && eval (minikube docker-env -u)"
@@ -217,7 +217,8 @@ if status --is-interactive
         brew install kubernetes-cli
         brew install kubernetes-helm
         brew install kubectx
-        # OIC login to k8s
+        # OIC login to k8s - 
+        #  same as krew install oidc-login
         brew install int128/kubelogin/kubelogin
         # Docker-for-mac is not required anymore 
         brew install minikube
@@ -245,7 +246,7 @@ if status --is-interactive
         # need some chmod +s here
         
         # A tool for exploring each layer in a docker image
-        brew tap wagoodman/dive
+        # brew tap wagoodman/dive
         brew install dive
 
         # Best load tester
