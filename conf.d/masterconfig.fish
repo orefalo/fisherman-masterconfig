@@ -227,10 +227,15 @@ if status --is-interactive
         brew install krew
 
         # ---
-        brew tap orefalo/minikube-ingress-dns git://github.com/orefalo/minikube-ingress-dns.git
-        brew install minikube-ingress-dns
-        brew install dnsmasq
+        #brew tap orefalo/minikube-ingress-dns git://github.com/orefalo/minikube-ingress-dns.git
+        #brew install minikube-ingress-dns
+        #brew install dnsmasq
+
+
         # ----
+        brew install helmsman
+        # watch - this installs helm3! we need helm2
+
 
         # A Kubernetes cluster resource sanitizer
         brew install derailed/popeye/popeye
@@ -306,7 +311,7 @@ if status --is-interactive
         npm install -g ndb
         npm install -g graphqurl
         npm install -g lerna
-        
+        npm install -g bolt
 
         kubectl krew update
 
@@ -320,6 +325,10 @@ if status --is-interactive
         kubectl krew install view-utilization
         kubectl krew install view-allocations
         kubectl krew install whoami
+
+        # for helmsman
+        helm plugin install https://github.com/futuresimple/helm-secrets
+        helm plugin install https://github.com/databus23/helm-diff --version master
 
         # terraform prettyfier/colorizer
         go get -u github.com/dmlittle/scenery
