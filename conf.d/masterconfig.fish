@@ -43,6 +43,7 @@ if status --is-interactive
     alias kgp="kubectl get pods"
     alias kgs="kubectl get services"
     alias kgn="kubectl get nodes"
+    alias kgd="kubectl get deployments"
     alias kge="kubectl get event -A"
     # kga --since 5m
     alias kga="kubectl get-all"
