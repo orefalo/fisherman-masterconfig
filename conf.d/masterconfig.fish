@@ -86,9 +86,9 @@ if status --is-interactive
     alias dc=docker-compose
 
     # postgres stuff
-    alias pgstart="brew services start postgresql"
-    alias pgstop="brew services stop postgresql"
-    alias pgtop=pg_top
+    # alias pgstart="brew services start postgresql"
+    # alias pgstop="brew services stop postgresql"
+    # alias pgtop=pg_top
 
   #  alias minikube=/usr/local/etc/minikube-ingress-dns/minikube-ingress-dns-macos
 
