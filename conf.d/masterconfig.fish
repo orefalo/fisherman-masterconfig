@@ -220,8 +220,12 @@ if status --is-interactive
 
         # Kubernates stuff ---------------------
         brew install kubernetes-cli
-        brew install kubernetes-helm
+        brew install helm
         brew install kubectx
+        # cluster visual browser
+        brew install octant
+        # CICD platform
+        brew install fluxctl
         # OIC login to k8s - 
         #  same as krew install oidc-login
         brew install int128/kubelogin/kubelogin
