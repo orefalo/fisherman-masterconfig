@@ -49,7 +49,7 @@ if status --is-interactive
     alias kga="kubectl get-all"
     alias kgi="kubectl get ingress"   
     alias kpf="kubectl port-forward"
-    alias kosvc="kubectl open-svc"
+    alias kopen="kubectl open-svc"
     alias ktop="k9s"
     alias kcapacity="kube-capacity"
     alias kgn="kubectl get nodes --label-columns failure-domain.beta.kubernetes.io/region,failure-domain.beta.kubernetes.io/zone"
