@@ -184,6 +184,7 @@ if status --is-interactive
         # lsd seems better
         #brew install acarl005/homebrew-formulas/ls-go
         brew install lsd
+        brew install rargs
         # lsd required nerd fonts
         brew tap homebrew/cask-fonts
         # don't use the -mono version, icons are off, too small
