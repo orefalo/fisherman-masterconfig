@@ -42,7 +42,6 @@ if status --is-interactive
     alias kg="kubectl get"
     alias kgp="kubectl get pods"
     alias kgs="kubectl get services"
-    alias kps=kubeps
     alias kgn="kubectl get nodes"
     alias kgd="kubectl get deployments"
     alias kge="kubectl get event -A"
@@ -59,7 +58,8 @@ if status --is-interactive
     alias kns=kubens
     alias klog=stern
     alias kwhoami="kubectl whoami"
-    alias klistimages="kubectl get pods --all-namespaces -o=jsonpath='{range .items[*]}{\"\n\"}{.metadata.name}{\":\t\"}{range .spec.containers[*]}{.image}{\", \"}{end}{end}' | sort"
+    alias klistimages="kubectl get deployments -o wide -A"
+    #alias klistimages="kubectl get pods --all-namespaces -o=jsonpath='{range .items[*]}{\"\n\"}{.metadata.name}{\":\t\"}{range .spec.containers[*]}{.image}{\", \"}{end}{end}' | sort"
     # kvu
     # kvu namespaces
     # kvu -n kube-system
@@ -104,8 +104,6 @@ if status --is-interactive
     alias tfp="terraform plan | scenery"
     alias tf=terraform
 
-
-
     if test -x /usr/local/bin/starship
         starship init fish | source
     end
@@ -119,7 +117,6 @@ if status --is-interactive
     if test $status -eq 0
         eval (command minikube docker-env)
     end
-
 
     function setup_everything_for_olivier
 
