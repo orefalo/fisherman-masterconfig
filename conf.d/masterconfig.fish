@@ -42,6 +42,7 @@ if status --is-interactive
     alias kg="kubectl get"
     alias kgp="kubectl get pods"
     alias kgs="kubectl get services"
+    alias kps=kubeps
     alias kgn="kubectl get nodes"
     alias kgd="kubectl get deployments"
     alias kge="kubectl get event -A"
@@ -58,6 +59,7 @@ if status --is-interactive
     alias kns=kubens
     alias klog=stern
     alias kwhoami="kubectl whoami"
+    alias klistimages="kubectl get pods --all-namespaces -o=jsonpath='{range .items[*]}{\"\n\"}{.metadata.name}{\":\t\"}{range .spec.containers[*]}{.image}{\", \"}{end}{end}' | sort"
     # kvu
     # kvu namespaces
     # kvu -n kube-system
@@ -234,6 +236,9 @@ if status --is-interactive
         brew install hyperkit
         # Install krew
         brew install krew
+
+        brew tap koudaiii/tools
+        brew install kubeps
 
         # ---
         #brew tap orefalo/minikube-ingress-dns git://github.com/orefalo/minikube-ingress-dns.git
