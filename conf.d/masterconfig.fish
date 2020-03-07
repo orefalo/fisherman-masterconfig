@@ -34,7 +34,7 @@ if status --is-interactive
     alias h=helm
     alias hl="helm list --all-namespaces"
 
-    alias k=kubectl
+    alias k="kubectl"
     alias kd="kubectl describe"
     alias kdp="kubectl describe pod"
     alias kds="kubectl describe service"
@@ -44,21 +44,25 @@ if status --is-interactive
     alias kgs="kubectl get services"
     alias kgn="kubectl get nodes"
     alias kgd="kubectl get deployments"
-    alias kge="kubectl get event -A"
     # kga --since 5m
     alias kga="kubectl get-all"
     alias kgi="kubectl get ingress"   
     alias kpf="kubectl port-forward"
+    alias kgna="kubectl get nodes -A -owide"
+    alias kgda="kubectl get deployments -A -owide"
+    alias kgpa="kubectl get pods -A -owide"
+    alias kgsa="kubectl get services -A -owide"
+    alias kgea="kubectl get event -A -owide"
+    alias kgia="kubectl get ingress -A -owide"
+
     alias kopen="kubectl open-svc"
     alias ktop="k9s"
     alias kcapacity="kube-capacity"
-    alias kgn="kubectl get nodes --label-columns failure-domain.beta.kubernetes.io/region,failure-domain.beta.kubernetes.io/zone"
-    alias kcx=kubectx
+    alias kcx="kubectx"
     alias krew="kubectl krew"
-    alias kns=kubens
-    alias klog=stern
-    alias kwhoami="kubectl whoami"
-    alias klistimages="kubectl get deployments -o wide -A"
+    alias kns="kubens"
+    alias klog="stern"
+
     #alias klistimages="kubectl get pods --all-namespaces -o=jsonpath='{range .items[*]}{\"\n\"}{.metadata.name}{\":\t\"}{range .spec.containers[*]}{.image}{\", \"}{end}{end}' | sort"
     # kvu
     # kvu namespaces
