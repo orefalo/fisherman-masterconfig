@@ -15,6 +15,7 @@ if status --is-interactive
     set -x GREP_OPTIONS '--color=auto'
     set -x GREP_COLOR '1;33'
     set -x PATH $PATH $HOME/.krew/bin
+    set -x KUBECONFIG "$HOME/.kube/config:$HOME/.kube/config.snapcore"
 
     # my key aliases
     alias j=z
