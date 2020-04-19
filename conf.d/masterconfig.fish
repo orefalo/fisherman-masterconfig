@@ -43,7 +43,7 @@ if status --is-interactive
     alias kg="kubectl get"
     alias kgp="kubectl get pods"
     alias kgs="kubectl get services"
-    alias kgn="kubectl get nodes"
+    alias kgn="kubectl get nodes -o wide"
     alias kgd="kubectl get deployments"
     # kga --since 5m
     alias kga="kubectl get-all"
