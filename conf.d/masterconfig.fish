@@ -65,6 +65,8 @@ if status --is-interactive
     alias kns="kubens"
     alias klog="stern"
 
+    alias klistimages="kubectl get pods --all-namespaces -o jsonpath='{..image}' | tr -s '[[:space:]]' '\n' | sort | uniq -c"
+
     #alias klistimages="kubectl get pods --all-namespaces -o=jsonpath='{range .items[*]}{\"\n\"}{.metadata.name}{\":\t\"}{range .spec.containers[*]}{.image}{\", \"}{end}{end}' | sort"
     # kvu
     # kvu namespaces
