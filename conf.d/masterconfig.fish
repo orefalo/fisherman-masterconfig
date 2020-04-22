@@ -345,9 +345,12 @@ if status --is-interactive
         kubectl krew install view-allocations
         kubectl krew install whoami
 
+        # like npm-check
+        helm plugin install https://github.com/fabmation-gmbh/helm-whatup
+
         # for helmsman
-        helm plugin install https://github.com/futuresimple/helm-secrets
-        helm plugin install https://github.com/databus23/helm-diff --version master
+        #helm plugin install https://github.com/futuresimple/helm-secrets
+        #helm plugin install https://github.com/databus23/helm-diff --version master
 
         # terraform prettyfier/colorizer
         go get -u github.com/dmlittle/scenery
