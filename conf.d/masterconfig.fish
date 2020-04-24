@@ -33,8 +33,7 @@ if status --is-interactive
     alias diff=icdiff
 
     alias h=helm
-    alias hl="helm list --all-namespaces"
-
+    alias hl="helm ls -A"
     alias k="kubectl"
     alias kd="kubectl describe"
     alias kdp="kubectl describe pod"
@@ -55,7 +54,6 @@ if status --is-interactive
     alias kgsa="kubectl get services -A -o wide"
     alias kgea="kubectl get event -A -o wide"
     alias kgia="kubectl get ingress -A -o wide"
-
     alias kpf="kubectl port-forward"
     alias kopen="kubectl open-svc"
     alias ktop="k9s"
@@ -64,16 +62,10 @@ if status --is-interactive
     alias krew="kubectl krew"
     alias kns="kubens"
     alias klog="stern"
-
+    alias kls="kubectl get-all"
+    alias kwhoami="kubectl whoami"
     alias klistimages="kubectl get pods --all-namespaces -o jsonpath='{..image}' | tr -s '[[:space:]]' '\n' | sort | uniq -c"
-
-    #alias klistimages="kubectl get pods --all-namespaces -o=jsonpath='{range .items[*]}{\"\n\"}{.metadata.name}{\":\t\"}{range .spec.containers[*]}{.image}{\", \"}{end}{end}' | sort"
-    # kvu
-    # kvu namespaces
-    # kvu -n kube-system
-    alias kvu="kubectl view-utilization -h"
-
-    alias kva="kubectl view-allocations"
+    alias kfree="kubectl view-utilization -h"
     # kshell podname /bin/sh
     alias kshell="kubectl iexec"
     alias krbac="kubectl access-matrix"
@@ -325,14 +317,18 @@ if status --is-interactive
         kubectl krew update
 
         # https://github.com/superbrothers/kubectl-open-svc-plugin
+        #kopen
         kubectl krew install open-svc
         kubectl krew install doctor
         kubectl krew install oidc-login
+        #kls
         kubectl krew install get-all
         kubectl krew install access-matrix
+        #kshell
         kubectl krew install iexec
+        #kfree
         kubectl krew install view-utilization
-        kubectl krew install view-allocations
+        #kwhoami
         kubectl krew install whoami
 
         # terraform prettyfier/colorizer
