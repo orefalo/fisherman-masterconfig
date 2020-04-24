@@ -210,26 +210,28 @@ if status --is-interactive
         # brew install kafkacat
         # brew cask install kafka-tool
 
-        # DB stuff
+        # DB stuff -------------------------
         brew install pgcli
         #brew install postgresql
         #brew install cockroach
 
-        # Java stuff
+        # Java stuff -------------------------
         brew install maven
         brew install ant
 
-        # Docker stuff
+        # Docker stuff -------------------------
         brew install docker-ls
         brew install docker-clean
         # get htop for docker
         brew install lazydocker
+        # A tool for exploring each layer in a docker image
+        # brew tap wagoodman/dive
+        brew install dive
 
         # Kubernates stuff ---------------------
         brew install kubernetes-cli
         brew install helm
         brew install kubectx
-
 
         # OIC login to k8s - 
         #  same as krew install oidc-login
@@ -237,61 +239,53 @@ if status --is-interactive
         # Docker-for-mac is not required anymore 
         brew install minikube
         brew install hyperkit
-        # Install krew
+
+        # Install krew pkg mgr
         brew install krew
-
-        brew tap koudaiii/tools
-        brew install kubeps
-
-        # ---
-        #brew tap orefalo/minikube-ingress-dns git://github.com/orefalo/minikube-ingress-dns.git
-        #brew install minikube-ingress-dns
-        #brew install dnsmasq
-
 
         # A helm chart installer
         brew install helmsman
-     
+        # for helmsman
+        helm plugin install https://github.com/futuresimple/helm-secrets
+        helm plugin install https://github.com/databus23/helm-diff --version master 
 
         # A Kubernetes cluster resource sanitizer
         brew install derailed/popeye/popeye
+
         # great k8s top
         brew install derailed/k9s/k9s
         # great for aggregate logging
         brew install stern
         brew install linkerd
 
+        # shows k8s resource usage
         brew tap robscott/tap
         brew install robscott/tap/kube-capacity
+
+        # interactive kubectl shell with completion
         brew install kube-prompt
         # need some chmod +s here
-        
-        # A tool for exploring each layer in a docker image
-        # brew tap wagoodman/dive
-        brew install dive
 
-        # Best load tester
+
+        # like npm-check
+        helm plugin install https://github.com/fabmation-gmbh/helm-whatup
+
+
+
+
+        
         # I prefer hey
         #brew tap loadimpact/k6
         #brew install k6
         brew install hey wrk2
 
         brew install terraform
-        #brew install terragrunt
 
         brew cask install open-in-code
         brew cask install kubernetic
         brew cask install aerial
         brew cask install iina
-        # broken with catalina
-        # brew cask install qlcolorcode # Preview source code files with syntax highlighting
-        # brew cask install qlstephen # Preview plain text files without a file extension. Example: README, CHANGELOG, etc.
-        # brew cask install qlmarkdown # Preview Markdown files
-        # brew cask install quicklook-json # Preview JSON files
-        # brew cask install qlprettypatch # Preview .patch files
-        # brew cask install quicklook-csv # Preview CSV files
-        # brew cask install qlimagesize # Display image size and resolution
-        # brew cask install webpquicklook # Preview WebP images
+
         brew cask install suspicious-package # Preview the contents of a standard Apple installer package
 
         #if test ! -x (which fisher)
@@ -340,13 +334,6 @@ if status --is-interactive
         kubectl krew install view-utilization
         kubectl krew install view-allocations
         kubectl krew install whoami
-
-        # like npm-check
-        helm plugin install https://github.com/fabmation-gmbh/helm-whatup
-
-        # for helmsman
-        helm plugin install https://github.com/futuresimple/helm-secrets
-        helm plugin install https://github.com/databus23/helm-diff --version master
 
         # terraform prettyfier/colorizer
         go get -u github.com/dmlittle/scenery
