@@ -229,10 +229,8 @@ if status --is-interactive
         brew install kubernetes-cli
         brew install helm
         brew install kubectx
-        # cluster visual browser
-        brew install octant
-        # CICD platform
-        brew install fluxctl
+
+
         # OIC login to k8s - 
         #  same as krew install oidc-login
         brew install int128/kubelogin/kubelogin
@@ -251,10 +249,9 @@ if status --is-interactive
         #brew install dnsmasq
 
 
-        # ----
+        # A helm chart installer
         brew install helmsman
-        # watch - this installs helm3! we need helm2
-
+     
 
         # A Kubernetes cluster resource sanitizer
         brew install derailed/popeye/popeye
@@ -278,7 +275,6 @@ if status --is-interactive
         #brew tap loadimpact/k6
         #brew install k6
         brew install hey wrk2
-
 
         brew install terraform
         #brew install terragrunt
@@ -349,8 +345,8 @@ if status --is-interactive
         helm plugin install https://github.com/fabmation-gmbh/helm-whatup
 
         # for helmsman
-        #helm plugin install https://github.com/futuresimple/helm-secrets
-        #helm plugin install https://github.com/databus23/helm-diff --version master
+        helm plugin install https://github.com/futuresimple/helm-secrets
+        helm plugin install https://github.com/databus23/helm-diff --version master
 
         # terraform prettyfier/colorizer
         go get -u github.com/dmlittle/scenery
