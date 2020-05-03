@@ -20,8 +20,7 @@ if status --is-interactive
     # my key aliases
     alias j=z
     alias ls="lsd --group-dirs first"
-    alias ll="lsd --group-dirs first -l"
-    alias ll="lsd --group-dirs first -a"
+    alias ll="lsd --group-dirs first -la"
     alias tree="lsd --tree --group-dirs first --depth=4"
     alias find=fd
     alias ping=prettyping
