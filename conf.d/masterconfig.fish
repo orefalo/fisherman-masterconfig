@@ -104,11 +104,12 @@ if status --is-interactive
     alias tfp="terraform plan | scenery"
     alias tf=terraform
 
+    # thats the best cli prompt
     if test -x /usr/local/bin/starship
         starship init fish | source
     end
 
-    # for now needs to be manually installed from https://github.com/euank/pazi
+    # thats autojump -  https://github.com/euank/pazi
     if test -x /usr/local/bin/pazi
         pazi init fish | source
     end
