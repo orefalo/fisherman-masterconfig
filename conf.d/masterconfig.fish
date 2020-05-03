@@ -64,7 +64,7 @@ if status --is-interactive
     alias klog="stern"
     alias kls="kubectl get-all"
     alias kwhoami="kubectl whoami"
-    alias klistimages="kubectl get pods --all-namespaces -o jsonpath='{..image}' | tr -s '[[:space:]]' '\n' | sort | uniq -c"
+    alias klistimages="kubectl images"
     alias kfree="kubectl view-utilization -h"
     # kshell podname /bin/sh
     alias kshell="kubectl iexec"
@@ -130,7 +130,7 @@ if status --is-interactive
         # cli prompt
         brew install starship
 
-        # ps replacement
+        # ps/pstree replacement
         brew install procs
 
         # find replacement
@@ -139,34 +139,26 @@ if status --is-interactive
         # intuitive replacement for sed
         brew install sd 
 
-        # replacement for j or z
-        #brew install fasd
         brew install mkcert
         brew install git
         brew install node
         brew install vim
-        #brew install grafana
-        #brew install influxdb
         brew install fish
         brew install openssl
         brew install wget 
-        #brew install tig 
         brew install ffmpeg
         brew install imagemagick
-        #brew install denisidoro/tools/navi
         brew install netcat 
         brew install nmap 
         brew install iftop
-        # procs --tree 
-        #brew install pstree 
+
         brew install jq
         brew install yq 
-        # lsd --tree comes with icons and coloring
-        # brew install tree 
+
         brew install telnet 
         brew install grc
         brew install graphviz
-        #brew install inav
+ 
         brew install nmap
         brew install mdcat
         brew install vegeta
@@ -174,14 +166,10 @@ if status --is-interactive
         brew install xz
 
         brew install htop
-        brew install ctop
-        #brew install ktop
         brew install pg_top
 
         brew install neofetch
-        # colored versions
-        # lsd seems better
-        #brew install acarl005/homebrew-formulas/ls-go
+        # ls replacement - colored versions
         brew install lsd
         brew install rargs
         # lsd required nerd fonts
@@ -189,6 +177,11 @@ if status --is-interactive
         # don't use the -mono version, icons are off, too small
         # and don't forget to configure iTerm to use the font
         brew cask install font-meslo-nerd-font
+
+        brew cask install open-in-code
+        brew cask install aerial
+        brew cask install iina
+        brew cask install suspicious-package # Preview the contents of a standard Apple installer package
 
         brew install prettyping
         brew install ripgrep
@@ -214,32 +207,35 @@ if status --is-interactive
         # Docker stuff -------------------------
         brew install docker-ls
         brew install docker-clean
-        # get htop for docker
-        brew install lazydocker
+
         # A tool for exploring each layer in a docker image
         # brew tap wagoodman/dive
         brew install dive
+
+        # I prefer hey to generate load!
+        #brew tap loadimpact/k6
+        #brew install k6
+        # another good one: https://github.com/fcsonline/drill
+        brew install hey wrk2
+
+
+        #if test ! -x (which fisher)
+            # install fisher if not installed
+        #    curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
+        #end
+
 
         # Kubernates stuff ---------------------
         brew install kubernetes-cli
         brew install helm
         brew install kubectx
+        # A helm chart installer
+        brew install helmsman
 
-        # OIC login to k8s - 
-        #  same as krew install oidc-login
-        brew install int128/kubelogin/kubelogin
         # Docker-for-mac is not required anymore 
         brew install minikube
         brew install hyperkit
 
-        # Install krew pkg mgr
-        brew install krew
-
-        # A helm chart installer
-        brew install helmsman
-        # for helmsman
-        helm plugin install https://github.com/futuresimple/helm-secrets
-        helm plugin install https://github.com/databus23/helm-diff --version master 
 
         # A Kubernetes cluster resource sanitizer
         brew install derailed/popeye/popeye
@@ -254,36 +250,60 @@ if status --is-interactive
         brew tap robscott/tap
         brew install robscott/tap/kube-capacity
 
-        # interactive kubectl shell with completion
-        brew install kube-prompt
-        # need some chmod +s here
 
+        # Install krew pkg mgr
+        brew install krew
+
+        # for helmsman
+        helm plugin install https://github.com/futuresimple/helm-secrets
+        helm plugin install https://github.com/databus23/helm-diff --version master 
 
         # like npm-check
         helm plugin install https://github.com/fabmation-gmbh/helm-whatup
 
+        kubectl krew upgrade
 
+        # https://github.com/superbrothers/kubectl-open-svc-plugin
+        #kopen
+        kubectl krew install open-svc
 
+        # https://github.com/emirozer/kubectl-doctor
+        kubectl krew install doctor
+        kubectl krew install oidc-login
 
-        
-        # I prefer hey
-        #brew tap loadimpact/k6
-        #brew install k6
-        brew install hey wrk2
+        #kls
+        kubectl krew install get-all
+
+        # https://github.com/Ladicle/kubectl-rolesum
+        kubectl krew install rolesum
+        kubectl krew install access-matrix
+
+        # https://github.com/aquasecurity/kubectl-who-can
+        kubectl krew install who-can
+
+        #kshell
+        kubectl krew install iexec
+
+        #kfree
+        kubectl krew install view-utilization
+
+        #kwhoami
+        kubectl krew install whoami
+
+        # https://github.com/chenjiandongx/kubectl-images
+        kubectl krew install images
+
 
         brew install terraform
+        # terraform prettyfier/colorizer
+        go get -u github.com/dmlittle/scenery
 
-        brew cask install open-in-code
-        brew cask install kubernetic
-        brew cask install aerial
-        brew cask install iina
-
-        brew cask install suspicious-package # Preview the contents of a standard Apple installer package
-
-        #if test ! -x (which fisher)
-            # install fisher if not installed
-        #    curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
-        #end
+        # Setup the subl alias to SublimeText
+        if not test -L /usr/local/bin/subl
+               and test -f "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
+           rm -f /usr/local/bin/subl
+           ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+        end
 
         npm install -g yarn
         npm install -g npm-check 
@@ -314,33 +334,7 @@ if status --is-interactive
         npm install -g lerna
         npm install -g bolt
 
-        kubectl krew update
 
-        # https://github.com/superbrothers/kubectl-open-svc-plugin
-        #kopen
-        kubectl krew install open-svc
-        kubectl krew install doctor
-        kubectl krew install oidc-login
-        #kls
-        kubectl krew install get-all
-        kubectl krew install access-matrix
-        #kshell
-        kubectl krew install iexec
-        #kfree
-        kubectl krew install view-utilization
-        #kwhoami
-        kubectl krew install whoami
-
-        # terraform prettyfier/colorizer
-        go get -u github.com/dmlittle/scenery
-
-
-        # Setup the subl alias to SublimeText
-        if not test -L /usr/local/bin/subl
-               and test -f "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
-           rm -f /usr/local/bin/subl
-           ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
-        end
 
     end
 
