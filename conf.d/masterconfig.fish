@@ -181,6 +181,7 @@ if status --is-interactive
 
         brew cask install open-in-code
         brew cask install aerial
+        brew cask install brooklyn
         brew cask install iina
         brew cask install suspicious-package # Preview the contents of a standard Apple installer package
 
@@ -230,8 +231,7 @@ if status --is-interactive
         brew install kubernetes-cli
         brew install helm
         brew install kubectx
-        # A helm chart installer
-        brew install helmsman
+
 
         # Docker-for-mac is not required anymore 
         brew install minikube
@@ -256,6 +256,8 @@ if status --is-interactive
         brew install krew
 
         # for helmsman
+        # A helm chart installer
+        brew install helmsman
         helm plugin install https://github.com/futuresimple/helm-secrets
         helm plugin install https://github.com/databus23/helm-diff --version master 
 
