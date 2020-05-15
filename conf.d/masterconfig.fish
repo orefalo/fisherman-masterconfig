@@ -1,8 +1,5 @@
 if status --is-interactive
 
-    # for matchai/spacefish
-    # we switch to starfish
-    #set -x SPACEFISH_KUBECONTEXT_SHOW true
 
     # not used anymore 'fisher grc' takes care of it
     #set grc_wrap_commands "cat cvs df diff dig gcc g++ ifconfig make mount mtr netstat ping ps tail traceroute wdiff"
@@ -122,7 +119,7 @@ if status --is-interactive
 
         # install brew if not installed
         if test ! -x (which brew)
-            /usr/bin/ruby -e "(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
         end
 
         brew install https://raw.githubusercontent.com/orefalo/homebrew-core/pazi/Formula/pazi.rb
@@ -294,6 +291,9 @@ if status --is-interactive
 
         # https://github.com/chenjiandongx/kubectl-images
         kubectl krew install images
+
+        # https://github.com/ahmetb/kubectl-tree
+        kubectl krew install tree
 
 
         brew install terraform
