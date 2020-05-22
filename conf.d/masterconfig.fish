@@ -119,7 +119,7 @@ if status --is-interactive
 
         # install brew if not installed
         if test ! -x (which brew)
-            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+            /bin/bash -c "(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
         end
 
         brew install https://raw.githubusercontent.com/orefalo/homebrew-core/pazi/Formula/pazi.rb
