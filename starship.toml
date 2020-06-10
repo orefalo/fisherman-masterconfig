@@ -1,0 +1,33 @@
+# copy into ~/.config
+# Replace the "❯" symbol in the prompt with "➜"
+[character]      # The name of the module we are configuring is "character"
+symbol = "➜"     # The "symbol" segment is being set to "➜"
+
+[kubernetes]
+disabled = false
+symbol = "☸ "
+style = "bold blue"
+
+
+prompt_order = [
+    "username",
+    "hostname",
+    "directory",
+    "git_branch",
+    "git_state",
+    "git_status",
+    "package",
+    "golang",
+    "java",
+    "nodejs",
+    "rust",
+    "nix_shell",
+    "aws",
+    "env_var",
+    "cmd_duration",
+    "line_break",
+    "jobs",
+    "kubernetes",
+    "character"
+]
+
