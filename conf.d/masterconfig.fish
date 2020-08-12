@@ -262,6 +262,10 @@ if status --is-interactive
 
         kubectl krew upgrade
 
+        # https://github.com/replicatedhq/outdated
+        #outdated
+        kubectl krew install outdated
+
         # https://github.com/superbrothers/kubectl-open-svc-plugin
         #kopen
         kubectl krew install open-svc
