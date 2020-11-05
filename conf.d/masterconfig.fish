@@ -163,7 +163,7 @@ if status --is-interactive
         brew install xz
 
         brew install htop
-        brew install pg_top
+        #brew install pg_top
 
         brew install neofetch
         # ls replacement - colored versions
