@@ -106,8 +106,8 @@ if status --is-interactive
     end
 
     # thats autojump -  https://github.com/euank/pazi
-    if test -x /usr/local/bin/pazi
-        pazi init fish | source
+    if command -v pazi >/dev/null
+      status --is-interactive; and pazi init fish | source
     end
 
     command minikube status 1>/dev/null 2>/dev/null
