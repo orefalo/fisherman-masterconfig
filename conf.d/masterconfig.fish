@@ -106,7 +106,11 @@ if status --is-interactive
     end
 
     # thats autojump
-    status --is-interactive; and source (jump shell fish | psub)
+    #status --is-interactive; and source (jump shell fish | psub)
+
+    if command -v jump >/dev/null
+      status --is-interactive; and jump shell fish | source
+    end
 
     command minikube status 1>/dev/null 2>/dev/null
     if test $status -eq 0
@@ -221,17 +225,14 @@ if status --is-interactive
         #    curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
         #end
 
-
         # Kubernates stuff ---------------------
         brew install kubernetes-cli
         brew install helm
         brew install kubectx
 
-
         # Docker-for-mac is not required anymore 
         brew install minikube
         brew install hyperkit
-
 
         # A Kubernetes cluster resource sanitizer
         brew install derailed/popeye/popeye
@@ -298,7 +299,6 @@ if status --is-interactive
         # https://github.com/ahmetb/kubectl-tree
         kubectl krew install tree
 
-
         brew install terraform
         # terraform prettyfier/colorizer
         go get -u github.com/dmlittle/scenery
@@ -338,8 +338,6 @@ if status --is-interactive
         npm install -g graphqurl
         npm install -g lerna
         npm install -g bolt
-
-
 
     end
 
