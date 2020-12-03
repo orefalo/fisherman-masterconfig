@@ -105,10 +105,8 @@ if status --is-interactive
         starship init fish | source
     end
 
-    # thats autojump -  https://github.com/euank/pazi
-    if command -v pazi >/dev/null
-      status --is-interactive; and pazi init fish | source
-    end
+    # thats autojump
+    status --is-interactive; and source (jump shell fish | psub)
 
     command minikube status 1>/dev/null 2>/dev/null
     if test $status -eq 0
@@ -122,7 +120,8 @@ if status --is-interactive
             /bin/bash -c "(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
         end
 
-        brew install https://raw.githubusercontent.com/orefalo/homebrew-core/pazi/Formula/pazi.rb
+        # like autojump
+        brew install jump
 
         # cli prompt
         brew install starship
