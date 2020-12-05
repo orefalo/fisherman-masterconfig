@@ -247,18 +247,18 @@ if status --is-interactive
         brew tap robscott/tap
         brew install robscott/tap/kube-capacity
 
-
-        # Install krew pkg mgr
-        brew install krew
-
         # for helmsman
         # A helm chart installer
         brew install helmsman
+
         helm plugin install https://github.com/futuresimple/helm-secrets
         helm plugin install https://github.com/databus23/helm-diff --version master 
-
-        # like npm-check
+        # like npm-check but for charts
         helm plugin install https://github.com/fabmation-gmbh/helm-whatup
+
+
+        # Install krew pkg mgr
+        brew install krew
 
         kubectl krew upgrade
 
@@ -314,30 +314,31 @@ if status --is-interactive
         npm install -g npm-check 
         npm install -g yarn-check
         npm install -g typescript
-        npm install -g tslint
         npm install -g eslint
         npm install -g typesync
-        npm install -g webpack
-        npm install -g fuge
-        npm install -g gtop
-        npm install -g pegjs
         npm install -g prettier
-        npm install -g graphql
         npm install -g graphql-cli 
         npm install -g graphql-cli-get-raw-schema 
         npm install -g graphql-cli-voyager graphql-docs
-        npm install -g get-graphql-schema
         npm install -g ksuid-cli
-        # replaced by rg
-        # npm install -g spot
-
-        # http bench
         npm install -g hiper
         npm install -g spoof
-        npm install -g ndb
-        npm install -g graphqurl
-        npm install -g lerna
-        npm install -g bolt
+
+        # deprecated for eslint
+        #npm install -g tslint
+        #npm install -g webpack
+        #npm install -g fuge
+        #npm install -g gtop
+        #npm install -g pegjs
+        # npm install -g graphql
+        # npm install -g get-graphql-schema
+        # replaced by rg
+        # npm install -g spot
+        # http bench
+        #npm install -g ndb
+        #npm install -g graphqurl
+        #npm install -g lerna
+        #npm install -g bolt
 
     end
 
