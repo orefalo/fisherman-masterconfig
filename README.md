@@ -13,7 +13,7 @@ One command to run, to set it all
 With [fisherman]
 
 ```
-fisher orefalo/masterconfig
+fisher install orefalo/masterconfig
 ```
 
 ## Usage
@@ -26,4 +26,4 @@ masterconfig
 [travis-badge]: https://img.shields.io/travis/orefalo/masterconfig.svg
 [slack-link]: https://fisherman-wharf.herokuapp.com
 [slack-badge]: https://fisherman-wharf.herokuapp.com/badge.svg
-[fisherman]: https://github.com/fisherman/fisherman
+[fisherman]: https://github.com/jorgebucaran/fisher
