@@ -178,9 +178,10 @@ if status --is-interactive
         # and don't forget to configure iTerm to use the font
         brew cask install font-meslo-nerd-font
 
-        brew cask install open-in-code
+        #brew cask install open-in-code
         brew cask install aerial
         brew cask install brooklyn
+        brew install --cask transmission
         brew cask install iina
         brew cask install suspicious-package # Preview the contents of a standard Apple installer package
 
@@ -197,7 +198,7 @@ if status --is-interactive
         # brew cask install kafka-tool
 
         # DB stuff -------------------------
-        brew install pgcli
+        #brew install pgcli
         #brew install postgresql
         #brew install cockroach
 
