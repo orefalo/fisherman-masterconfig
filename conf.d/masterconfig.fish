@@ -161,7 +161,6 @@ if status --is-interactive
  
         brew install nmap
         brew install mdcat
-        brew install vegeta
         brew install xmp
         brew install xz
 
@@ -217,19 +216,18 @@ if status --is-interactive
         # brew tap wagoodman/dive
         brew install dive
 
-        # I prefer hey to generate load!
-        #brew tap loadimpact/k6
-        #brew install k6
+        # Load testers -----------------
+
         # another good one: https://github.com/fcsonline/drill
-        brew install hey wrk2
+        brew install hey
 
+        brew tap jabley/homebrew-wrk2
+        brew install --HEAD wrk2
 
-        #if test ! -x (which fisher)
-            # install fisher if not installed
-        #    curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
-        #end
+        brew install vegeta
 
         # Kubernates stuff ---------------------
+
         brew install kubernetes-cli
         brew install helm
         brew install kubectx
