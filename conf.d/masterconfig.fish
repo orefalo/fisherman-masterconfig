@@ -181,9 +181,12 @@ if status --is-interactive
         #brew cask install open-in-code
         brew cask install aerial
         brew cask install brooklyn
-        brew install --cask transmission
+        brew cask install transmission
+        brew cask install syntax-highlight
+        brew cask install imageoptim
+        brew cask install tinypng4mac
         brew cask install iina
-        brew cask install suspicious-package # Preview the contents of a standard Apple installer package
+        brew cask install suspicious-package
 
         brew install prettyping
         brew install ripgrep
