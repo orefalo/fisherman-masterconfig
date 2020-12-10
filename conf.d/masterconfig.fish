@@ -147,7 +147,7 @@ if status --is-interactive
         brew install openssl
         brew install wget 
         brew install ffmpeg
-        brew install imagemagick
+        #brew install imagemagick
         brew install netcat 
         brew install nmap 
         brew install iftop
@@ -168,7 +168,7 @@ if status --is-interactive
         brew install htop
         #brew install pg_top
 
-        brew install neofetch
+        #brew install neofetch
         # ls replacement - colored versions
         brew install lsd
         brew install rargs
