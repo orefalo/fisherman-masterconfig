@@ -10,3 +10,5 @@ brgmnn/fish-docker-compose
 evanlucas/fish-kubectl-completions
 patrickf3139/Colored-Man-Pages
 laughedelic/pisces
+fisher markcial/cprintf
+jorgebucaran/gitfu
