@@ -158,6 +158,8 @@ if status --is-interactive
         brew install telnet 
         brew install grc
         brew install graphviz
+
+        brew install glow
  
         brew install nmap
         brew install mdcat
@@ -185,6 +187,8 @@ if status --is-interactive
         brew cask install imageoptim
         brew cask install tinypng4mac
         brew cask install iina
+        brew cask install insomnia
+        brew cask install emby-server
         brew cask install suspicious-package
 
         brew install prettyping
