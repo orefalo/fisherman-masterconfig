@@ -188,6 +188,7 @@ if status --is-interactive
         brew cask install tinypng4mac
         brew cask install iina
         brew cask install insomnia
+        brew cask install skitch
         brew cask install emby-server
         brew cask install suspicious-package
 
