@@ -330,6 +330,7 @@ if status --is-interactive
         npm install -g ksuid-cli
         npm install -g hiper
         npm install -g spoof
+        npm install -g @microsoft/rush
 
         # deprecated for eslint
         #npm install -g tslint
