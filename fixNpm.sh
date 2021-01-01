@@ -1,2 +1,3 @@
 
-echo 'package-lock=false' >> .npmrc
+echo 'package-lock=false' >> ~/.npmrc
+npm config set package-lock false
