@@ -326,10 +326,12 @@ if status --is-interactive
         npm install -g graphql-cli 
         npm install -g graphql-cli-get-raw-schema 
         npm install -g graphql-cli-voyager graphql-docs
+        npm install -g get-graphql-schema
         npm install -g ksuid-cli
         npm install -g hiper
         npm install -g spoof
         npm install -g @microsoft/rush
+        npm install -g lerna
 
         # deprecated for eslint
         #npm install -g tslint
