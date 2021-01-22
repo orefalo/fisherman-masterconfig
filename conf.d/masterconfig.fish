@@ -167,6 +167,7 @@ if status --is-interactive
 
         brew install htop
         #brew install pg_top
+        brew install mycli
 
         #brew install neofetch
         # ls replacement - colored versions
