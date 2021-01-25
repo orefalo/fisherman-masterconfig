@@ -1,3 +1,4 @@
+#!/usr/bin/env fish
 # source it from fish
 
 for i in (cat npm-packages.txt)
@@ -11,6 +12,4 @@ for i in (cat npm-packages.txt)
 
 end
 
-nvm install lts
-nvm use lts
 

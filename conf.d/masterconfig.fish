@@ -266,58 +266,12 @@ if status --is-interactive
         helm plugin install https://github.com/fabmation-gmbh/helm-whatup
 
 
-        # Install krew pkg mgr
-        brew install krew
 
-        kubectl krew upgrade
-
-        # https://github.com/replicatedhq/outdated
-        #outdated
-        kubectl krew install outdated
-
-        # https://github.com/superbrothers/kubectl-open-svc-plugin
-        #kopen
-        kubectl krew install open-svc
-
-        # https://github.com/emirozer/kubectl-doctor
-        kubectl krew install doctor
-        kubectl krew install oidc-login
-
-        #kls
-        kubectl krew install get-all
-
-        # https://github.com/Ladicle/kubectl-rolesum
-        kubectl krew install rolesum
-        kubectl krew install access-matrix
-
-        # https://github.com/aquasecurity/kubectl-who-can
-        kubectl krew install who-can
-
-        #kshell
-        kubectl krew install iexec
-
-        #kfree
-        kubectl krew install view-utilization
-
-        #kwhoami
-        kubectl krew install whoami
-
-        # https://github.com/chenjiandongx/kubectl-images
-        kubectl krew install images
-
-        # https://github.com/ahmetb/kubectl-tree
-        kubectl krew install tree
 
         brew install terraform
+     
         # terraform prettyfier/colorizer
         go get -u github.com/dmlittle/scenery
-
-        # Setup the subl alias to SublimeText
-        if not test -L /usr/local/bin/subl
-               and test -f "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
-           rm -f /usr/local/bin/subl
-           ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
-        end
 
     end
 

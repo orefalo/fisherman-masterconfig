@@ -1,17 +1,19 @@
-#!/usr/bin/env fish
 # source it from fish
 
-for i in (cat fish_plugins)
+# Install krew pkg mgr
+brew install krew
+
+kubectl krew upgrade
+
+for i in (cat krew-packages.txt)
 
 	if test (string sub -l 1 "$i") = "#"
 		echo Skipping $i
 	else if test "(string length $i)" != "0"
 		echo $i
-		fisher install (string trim $i)
+		kubectl krew install (string trim $i)
 	end
 
 end
 
-nvm install lts
-nvm use lts
 
