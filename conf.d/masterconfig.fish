@@ -319,39 +319,6 @@ if status --is-interactive
            ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
         end
 
-        npm install -g yarn
-        npm install -g npm-check 
-        npm install -g yarn-check
-        npm install -g typescript
-        npm install -g eslint
-        npm install -g typesync
-        npm install -g prettier
-        npm install -g graphql-cli 
-        npm install -g graphql-cli-get-raw-schema 
-        npm install -g graphql-cli-voyager graphql-docs
-        npm install -g get-graphql-schema
-        npm install -g ksuid-cli
-        npm install -g hiper
-        npm install -g spoof
-        npm install -g @microsoft/rush
-        npm install -g lerna
-
-        # deprecated for eslint
-        #npm install -g tslint
-        #npm install -g webpack
-        #npm install -g fuge
-        #npm install -g gtop
-        #npm install -g pegjs
-        # npm install -g graphql
-        # npm install -g get-graphql-schema
-        # replaced by rg
-        # npm install -g spot
-        # http bench
-        #npm install -g ndb
-        #npm install -g graphqurl
-        #npm install -g lerna
-        #npm install -g bolt
-
     end
 
 end

@@ -1,0 +1,32 @@
+yarn
+npm-check
+typescript
+eslint
+typesync
+prettier
+get-graphql-schema
+ksuid-cli
+hiper
+lerna
+
+#spoof
+#@microsoft/rush
+#graphql-cli 
+#graphql-cli-get-raw-schema 
+#graphql-cli-voyager graphql-docs
+
+# deprecated for eslint
+#tslint
+#webpack
+#fuge
+#gtop
+#pegjs
+#graphql
+#get-graphql-schema
+#replaced by rg
+#spot
+#http bench
+#ndb
+#graphqurl
+#lerna
+#bolt
