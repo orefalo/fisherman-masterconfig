@@ -1,3 +1,4 @@
+#!/usr/bin/env fish
 # source it from fish
 
 # Install krew pkg mgr
