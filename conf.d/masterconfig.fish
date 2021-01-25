@@ -18,6 +18,7 @@ if status --is-interactive
     alias j=z
     alias ls="lsd --group-dirs first"
     alias ll="lsd --group-dirs first -la"
+    alias sl=ls
     alias tree="lsd --tree --group-dirs first --depth=4"
     alias find=fd
     alias ping=prettyping
@@ -94,7 +95,7 @@ if status --is-interactive
 
     # fixes my typos
     alias gti=git
-    alias sl=ls
+
 
     alias tfp="terraform plan | scenery"
     alias tf=terraform
