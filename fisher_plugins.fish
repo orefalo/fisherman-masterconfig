@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 # source it from fish
 
-for i in (cat fish_plugins)
+for i in (cat fisher-packages.txt)
 
 	if test (string sub -l 1 "$i") = "#"
 		echo Skipping $i
@@ -14,4 +14,3 @@ end
 
 nvm install lts
 nvm use lts
-

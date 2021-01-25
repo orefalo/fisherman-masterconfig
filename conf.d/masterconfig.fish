@@ -105,9 +105,6 @@ if status --is-interactive
         starship init fish | source
     end
 
-    # thats autojump
-    #status --is-interactive; and source (jump shell fish | psub)
-
     if command -v jump >/dev/null
       status --is-interactive; and jump shell fish | source
     end
@@ -124,152 +121,11 @@ if status --is-interactive
             /bin/bash -c "(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
         end
 
-        # like autojump
-        brew install jump
-
-        # cli prompt
-        brew install starship
-
-        # ps/pstree replacement
-        brew install procs
-
-        # find replacement
-        brew install fd
-
-        # intuitive replacement for sed
-        brew install sd 
-
-        brew install mkcert
-        brew install git
-        # prefer nvm.fish
-        # brew install node
-        brew install vim
-        brew install fish
-        brew install openssl
-        brew install wget 
-        brew install ffmpeg
-        #brew install imagemagick
-        brew install netcat 
-        brew install nmap 
-        brew install iftop
-
-        brew install jq
-        brew install yq 
-
-        brew install telnet 
-        brew install grc
-        brew install graphviz
-
-        brew install glow
- 
-        brew install nmap
-        brew install mdcat
-        brew install xmp
-        brew install xz
-
-        brew install htop
-        #brew install pg_top
-        brew install mycli
-
-        #brew install neofetch
-        # ls replacement - colored versions
-        brew install lsd
-        brew install rargs
-        # lsd required nerd fonts
-        brew tap homebrew/cask-fonts
-        # don't use the -mono version, icons are off, too small
-        # and don't forget to configure iTerm to use the font
-        brew cask install font-meslo-nerd-font
-
-        #brew cask install open-in-code
-        brew cask install aerial
-        brew cask install brooklyn
-        brew cask install transmission
-        brew cask install syntax-highlight
-        brew cask install imageoptim
-        brew cask install tinypng4mac
-        brew cask install iina
-        brew cask install insomnia
-        brew cask install skitch
-        brew cask install emby-server
-        brew cask install suspicious-package
-
-        brew install prettyping
-        brew install ripgrep
-        brew install ncdu
-        brew install bat
-        brew install icdiff
-
-        # Kafka stuff
-        # I deploy it in k8s
-        # brew install kafka
-        # brew install kafkacat
-        # brew cask install kafka-tool
-
-        # DB stuff -------------------------
-        #brew install pgcli
-        #brew install postgresql
-        #brew install cockroach
-
-        # Java stuff -------------------------
-        brew install maven
-        brew install ant
-
-        # Docker stuff -------------------------
-        brew install docker-ls
-        brew install docker-clean
-
-        # A tool for exploring each layer in a docker image
-        # brew tap wagoodman/dive
-        brew install dive
-
-        # Load testers -----------------
-
-        # another good one: https://github.com/fcsonline/drill
-        brew install hey
-
-        brew tap jabley/homebrew-wrk2
-        brew install --HEAD wrk2
-
-        brew install vegeta
-
-        # Kubernates stuff ---------------------
-
-        brew install kubernetes-cli
-        brew install helm
-        brew install kubectx
-
-        # Docker-for-mac is not required anymore 
-        brew install minikube
-        brew install hyperkit
-
-        # A Kubernetes cluster resource sanitizer
-        brew install derailed/popeye/popeye
-
-        # great k8s top
-        brew install derailed/k9s/k9s
-        # great for aggregate logging
-        brew install stern
-        brew install linkerd
-
-        # shows k8s resource usage
-        brew tap robscott/tap
-        brew install robscott/tap/kube-capacity
-
-        # for helmsman
-        # A helm chart installer
-        brew install helmsman
-
         helm plugin install https://github.com/futuresimple/helm-secrets
         helm plugin install https://github.com/databus23/helm-diff --version master 
         # like npm-check but for charts
         helm plugin install https://github.com/fabmation-gmbh/helm-whatup
-
-
-
-
-        brew install terraform
-     
+    
         # terraform prettyfier/colorizer
         go get -u github.com/dmlittle/scenery
 
