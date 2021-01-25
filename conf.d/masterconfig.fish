@@ -141,7 +141,8 @@ if status --is-interactive
 
         brew install mkcert
         brew install git
-        brew install node
+        # prefer nvm.fish
+        # brew install node
         brew install vim
         brew install fish
         brew install openssl
