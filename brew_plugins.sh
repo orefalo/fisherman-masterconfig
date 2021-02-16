@@ -20,17 +20,17 @@ brew tap derailed/popeye
 brew install popeye
 brew install k9s
 
-brew cask install aerial
-brew cask install brooklyn
-brew cask install transmission
-brew cask install syntax-highlight
-brew cask install imageoptim
-brew cask install tinypng4mac
-brew cask install iina
-brew cask install insomnia
-brew cask install skitch
-brew cask install emby-server
-brew cask install suspicious-package
+brew install aerial
+brew install brooklyn
+brew install transmission
+brew install syntax-highlight
+brew install imageoptim
+brew install tinypng4mac
+brew install iina
+brew install insomnia
+brew install skitch
+#brew install emby-server
+brew install suspicious-package
 
 
 for i in (cat brew-packages.txt)
