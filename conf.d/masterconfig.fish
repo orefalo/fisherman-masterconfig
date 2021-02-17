@@ -90,8 +90,8 @@ if status --is-interactive
 
   #  alias minikube=/usr/local/etc/minikube-ingress-dns/minikube-ingress-dns-macos
 
-    alias start_minikube="minikube start --vm-driver=hyperkit --memory=5120 --cpus=4 --disk-size=50g && eval (command minikube docker-env) && minikube addons enable ingress"
-    alias stop_minikube="minikube stop && eval (minikube docker-env -u)"
+  #  alias start_minikube="minikube start --vm-driver=hyperkit --memory=5120 --cpus=4 --disk-size=50g && eval (command minikube docker-env) && minikube addons enable ingress"
+  #  alias stop_minikube="minikube stop && eval (minikube docker-env -u)"
 
     # fixes my typos
     alias gti=git
@@ -109,28 +109,9 @@ if status --is-interactive
       status --is-interactive; and jump shell fish | source
     end
 
-    if type -t nvm
+    if test (type -t nvm) = "function"
         nvm install lts
-        nvm use lts
-    end
-
-    function setup_everything_for_olivier
-
-        # install brew if not installed
-        if test ! -x (which brew)
-            /bin/bash -c "(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-        end
-
-        
-
-        helm plugin install https://github.com/futuresimple/helm-secrets
-        helm plugin install https://github.com/databus23/helm-diff --version master 
-        # like npm-check but for charts
-        helm plugin install https://github.com/fabmation-gmbh/helm-whatup
-    
-        # terraform prettyfier/colorizer
-        go get -u github.com/dmlittle/scenery
-
+        nvm use v14
     end
 
 end
