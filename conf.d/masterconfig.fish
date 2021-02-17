@@ -109,10 +109,8 @@ if status --is-interactive
       status --is-interactive; and jump shell fish | source
     end
 
-    command minikube status 1>/dev/null 2>/dev/null
-    if test $status -eq 0
-        eval (command minikube docker-env)
-    end
+    nvm install lts
+    nvm use lts
 
     function setup_everything_for_olivier
 

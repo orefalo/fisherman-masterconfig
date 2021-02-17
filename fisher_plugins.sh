@@ -12,5 +12,3 @@ for i in (cat fisher-packages.txt)
 
 end
 
-nvm install lts
-nvm use lts
