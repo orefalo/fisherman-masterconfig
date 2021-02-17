@@ -51,3 +51,15 @@ stern
 linkerd
 helmsman
 terraform
+openjdk
+aerial
+brooklyn
+transmission
+syntax-highlight
+imageoptim
+tinypng4mac
+iina
+insomnia
+skitch
+#emby-server
+suspicious-package

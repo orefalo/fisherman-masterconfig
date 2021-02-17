@@ -109,8 +109,10 @@ if status --is-interactive
       status --is-interactive; and jump shell fish | source
     end
 
-    nvm install lts
-    nvm use lts
+    if type -t nvm
+        nvm install lts
+        nvm use lts
+    end
 
     function setup_everything_for_olivier
 

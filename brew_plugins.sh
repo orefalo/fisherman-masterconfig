@@ -1,11 +1,10 @@
 #!/usr/bin/env fish
 # source it from fish
 
-
 brew tap homebrew/cask-fonts
 # don't use the -mono version, icons are off, too small
 # and don't forget to configure iTerm to use the font
-brew cask install font-meslo-nerd-font
+brew install font-meslo-nerd-font
 
 brew tap jabley/homebrew-wrk2
 brew install --HEAD wrk2
@@ -19,19 +18,6 @@ brew tap derailed/popeye
 
 brew install popeye
 brew install k9s
-
-brew install aerial
-brew install brooklyn
-brew install transmission
-brew install syntax-highlight
-brew install imageoptim
-brew install tinypng4mac
-brew install iina
-brew install insomnia
-brew install skitch
-#brew install emby-server
-brew install suspicious-package
-
 
 for i in (cat brew-packages.txt)
 

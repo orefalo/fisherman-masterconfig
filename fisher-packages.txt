@@ -5,7 +5,6 @@ orefalo/grc
 oh-my-fish/plugin-ssh
 oh-my-fish/plugin-wifi-password
 laughedelic/brew-completions
-# barnybug/docker-fish-completion -> https://github.com/docker/cli/blob/master/contrib/completion/fish/docker.fish
 brgmnn/fish-docker-compose
 evanlucas/fish-kubectl-completions
 patrickf3139/Colored-Man-Pages
@@ -13,3 +12,4 @@ laughedelic/pisces
 markcial/cprintf
 jorgebucaran/fish-bax
 jorgebucaran/nvm.fish
+# barnybug/docker-fish-completion -> https://github.com/docker/cli/blob/master/contrib/completion/fish/docker.fish
