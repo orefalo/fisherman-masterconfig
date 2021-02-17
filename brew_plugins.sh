@@ -4,7 +4,7 @@
 brew tap homebrew/cask-fonts
 # don't use the -mono version, icons are off, too small
 # and don't forget to configure iTerm to use the font
-brew install font-meslo-nerd-font
+brew install --cask font-meslo-lg-nerd-font
 
 brew tap jabley/homebrew-wrk2
 brew install --HEAD wrk2
