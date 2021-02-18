@@ -110,7 +110,6 @@ if status --is-interactive
     end
 
     if test (type -t nvm) = "function"
-        nvm install lts
         nvm use v14
     end
 

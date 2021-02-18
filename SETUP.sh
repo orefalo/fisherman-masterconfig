@@ -6,7 +6,6 @@ if test ! -x (which brew)
 end
 
 
-
 helm plugin install https://github.com/futuresimple/helm-secrets
 helm plugin install https://github.com/databus23/helm-diff --version master 
 # like npm-check but for charts
