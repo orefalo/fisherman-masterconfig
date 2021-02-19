@@ -45,7 +45,6 @@ vegeta
 kubernetes-cli
 helm
 kubectx
-minikube
 hyperkit
 stern
 linkerd
@@ -63,3 +62,5 @@ insomnia
 skitch
 #emby-server
 suspicious-package
+cakebrew
+
