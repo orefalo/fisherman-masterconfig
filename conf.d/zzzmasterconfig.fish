@@ -24,7 +24,8 @@ if status --is-interactive
     alias ping=prettyping
     alias ps=procs
     alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
-    alias cat=bat
+    alias cat='bat --style=header,grid'
+    alias tree='exa --tree -F'
     alias spot=rg
     alias diff=icdiff
 
