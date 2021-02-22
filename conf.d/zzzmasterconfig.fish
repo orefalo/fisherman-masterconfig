@@ -110,8 +110,8 @@ if status --is-interactive
       status --is-interactive; and jump shell fish | source
     end
 
-    if test (type -t nvm) = "function"
-        nvm use v14
-    end
+    # if test (type -t nvm) = "function"
+    #     nvm use v14
+    # end
 
 end
