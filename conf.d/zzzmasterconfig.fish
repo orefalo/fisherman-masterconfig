@@ -26,6 +26,8 @@ if status --is-interactive
     alias ps=procs
     alias du="dust"
     alias cat='bat --style=header,grid'
+    alias more=cat
+    alias mroe=cat
     alias spot=rg
     alias diff=icdiff
 
