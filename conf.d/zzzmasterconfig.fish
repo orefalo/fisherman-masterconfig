@@ -19,13 +19,13 @@ if status --is-interactive
     alias ls="lsd --group-dirs first"
     alias ll="lsd --group-dirs first -la"
     alias sl=ls
-    alias tree="lsd --tree --group-dirs first --depth=4"
+    #alias tree="lsd --tree --group-dirs first --depth=4"
+    alias tree="broot"
     alias find=fd
     alias ping=prettyping
     alias ps=procs
-    alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+    alias du="dust"
     alias cat='bat --style=header,grid'
-    alias tree='exa --tree -F'
     alias spot=rg
     alias diff=icdiff
 

@@ -31,7 +31,6 @@ lsd
 rargs
 prettyping
 ripgrep
-ncdu
 golang
 bat
 icdiff
@@ -63,3 +62,10 @@ skitch
 #emby-server
 suspicious-package
 cakebrew
+dust
+interactive-rebase-tool
+broot
+rustscan
+hyperfine
+
+
