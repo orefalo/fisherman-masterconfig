@@ -7,6 +7,7 @@ prettier
 get-graphql-schema
 ksuid-cli
 hiper
+graphql-schema-linter
 lerna
 
 #spoof
@@ -19,7 +20,6 @@ lerna
 #tslint
 #webpack
 #fuge
-#gtop
 #pegjs
 #graphql
 #get-graphql-schema
@@ -28,5 +28,4 @@ lerna
 #http bench
 #ndb
 #graphqurl
-#lerna
 #bolt
