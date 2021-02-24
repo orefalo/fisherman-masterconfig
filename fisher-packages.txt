@@ -3,17 +3,11 @@ orefalo/free
 orefalo/javahome
 orefalo/grc
 oh-my-fish/plugin-ssh
-#security risk
-#oh-my-fish/plugin-wifi-password
 laughedelic/brew-completions
 brgmnn/fish-docker-compose
 evanlucas/fish-kubectl-completions
 patrickf3139/Colored-Man-Pages
-# replaced with autopair
-#laughedelic/pisces
 markcial/cprintf
-#jorgebucaran/fish-bax
 jorgebucaran/nvm.fish
 jorgebucaran/autopair.fish
 jorgebucaran/getopts.fish
-# barnybug/docker-fish-completion -> https://github.com/docker/cli/blob/master/contrib/completion/fish/docker.fish
