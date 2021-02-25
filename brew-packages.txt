@@ -67,5 +67,7 @@ interactive-rebase-tool
 broot
 rustscan
 hyperfine
+runjs
+
 
 
