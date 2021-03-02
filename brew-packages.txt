@@ -49,8 +49,9 @@ stern
 linkerd
 helmsman
 terraform
-openjdk
+adoptopenjdk
 aerial
+plantuml
 brooklyn
 transmission
 syntax-highlight
