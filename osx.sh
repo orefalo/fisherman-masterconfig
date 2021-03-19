@@ -1,6 +1,5 @@
-
-
 #!/bin/sh
+
 ## https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 
 
