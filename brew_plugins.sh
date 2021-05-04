@@ -14,10 +14,13 @@ brew tap robscott/tap
 brew install kube-capacity
 
 brew tap derailed/k9s
-brew tap derailed/popeye
-
-brew install popeye
 brew install k9s
+
+brew tap derailed/popeye
+brew install popeye
+
+brew tap nats-io/nats-tools
+brew install nats-io/nats-tools/nats
 
 for i in (cat brew-packages.txt)
 
