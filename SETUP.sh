@@ -1,4 +1,4 @@
-
+#!/bin/sh
 
 # install brew if not installed
 if test ! -x (which brew)
