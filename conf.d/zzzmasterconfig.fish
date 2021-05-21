@@ -57,7 +57,7 @@ if status --is-interactive
     alias kopen="kubectl open-svc"
     alias ktop="k9s"
     alias kcapacity="kube-capacity"
-    alias kcx="kubectx"
+    alias kctx="kubectx"
     alias krew="kubectl krew"
     alias kns="kubens"
     alias klog="stern"
