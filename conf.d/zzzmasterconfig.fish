@@ -18,7 +18,10 @@ if status --is-interactive
     alias j=z
     alias ls="lsd --group-dirs first"
     alias ll="lsd --group-dirs first -la"
+    alias l='ls -l'
+    alias lt='ls --tree --depth=3'
     alias sl=ls
+    # broot bellow is a better tree alternative
     #alias tree="lsd --tree --group-dirs first --depth=4"
     alias tree="broot"
     alias find=fd
