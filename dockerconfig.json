@@ -1,0 +1,10 @@
+# File: /Users/orefalo/.docker/config.json
+{
+    "auths": {
+        "https://index.docker.io/v1/": {},
+        "registry.gitlab.com": {}
+    },
+    "credsStore": "osxkeychain",
+    "experimental": "disabled",
+    "stackOrchestrator": "swarm"
+}
