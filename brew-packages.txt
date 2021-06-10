@@ -71,6 +71,8 @@ hyperfine
 runjs
 docker-credential-helper
 docker
+# 4 kns kctx interactive mode
+fzf
 
 
 
