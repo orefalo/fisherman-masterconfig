@@ -83,7 +83,7 @@ if status --is-interactive
     # docker stuff
     alias d=docker
     alias dc=docker-compose
-    alias dps="docker ps -a | docker-color-output"
+    alias dps="docker ps | docker-color-output"
     alias dcps="docker-compose ps -a | docker-color-output"
     alias dpi="docker images | docker-color-output"
     alias dshell="docker run -it --rm --entrypoint /bin/sh"
