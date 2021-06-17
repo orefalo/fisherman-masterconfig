@@ -82,12 +82,13 @@ if status --is-interactive
 
     # docker stuff
     alias d=docker
-    alias dps="grc docker ps"
-    alias dpi="grc docker images"
+    alias dc=docker-compose
+    alias dps="docker ps -a | docker-color-output"
+    alias dcps="docker-compose ps -a | docker-color-output"
+    alias dpi="docker images | docker-color-output"
     alias dshell="docker run -it --rm --entrypoint /bin/sh"
     alias dtop=lazydocker
     alias dclean="docker rmi -f (docker images -f "dangling=true" -q)"
-    alias dc=docker-compose
 
     # postgres stuff
     # alias pgstart="brew services start postgresql"
