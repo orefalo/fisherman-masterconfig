@@ -1,14 +1,14 @@
 
 dldash/core/docker-color-output
 # a better z
-zoxide
+#zoxide
 dog
 httpie
 choose
 git-delta
 duf
 interactive-rebase-tool
-#jump
+jump
 starship
 procs
 fd
