@@ -1,4 +1,12 @@
-jump
+
+# a better z
+zoxide
+dog
+httpie
+choose
+git-delta
+duf
+#jump
 starship
 procs
 fd

@@ -21,6 +21,7 @@ if status --is-interactive
     alias l='ls -l'
     alias lt='ls --tree --depth=3'
     alias sl=ls
+    alias dig=dog
     # broot bellow is a better tree alternative
     #alias tree="lsd --tree --group-dirs first --depth=4"
     alias tree="broot"
@@ -28,6 +29,7 @@ if status --is-interactive
     alias ping=prettyping
     alias ps=procs
     alias du="dust"
+    alias df=duf
     alias cat='bat --style=header,grid'
     alias more=cat
     alias mroe=cat
@@ -111,9 +113,15 @@ if status --is-interactive
         starship init fish | source
     end
 
-    if command -v jump >/dev/null
-      status --is-interactive; and jump shell fish | source
+    # if command -v jump >/dev/null
+    #   status --is-interactive; and jump shell fish | source
+    # end
+
+
+    if command -v zoxide >/dev/null
+      status --is-interactive; and zoxide init fish | source
     end
+
 
     # if test (type -t nvm) = "function"
     #     nvm use v14
