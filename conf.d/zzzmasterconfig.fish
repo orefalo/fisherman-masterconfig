@@ -113,14 +113,14 @@ if status --is-interactive
         starship init fish | source
     end
 
-    if command -v jump >/dev/null
-      status --is-interactive; and jump shell fish | source
-    end
-
-
-    # if command -v zoxide >/dev/null
-    #   status --is-interactive; and zoxide init fish | source
+    # if command -v jump >/dev/null
+    #   status --is-interactive; and source (jump shell fish | psub)
     # end
+
+
+    if command -v zoxide >/dev/null
+      status --is-interactive; and source (zoxide init fish | psub)
+    end
 
 
     # if test (type -t nvm) = "function"
