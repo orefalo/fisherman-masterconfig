@@ -1,4 +1,7 @@
 #!/usr/bin/perl
+# This is for my imac 2020 - the fan spins forever.
+# it requires smcFanControl.app to be installed
+# it needs to be run with sudo
 
 use strict;
 use warnings;
