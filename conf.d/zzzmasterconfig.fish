@@ -13,6 +13,7 @@ if status --is-interactive
     set -x GREP_COLOR '1;33'
     set -x PATH $PATH $HOME/.krew/bin
     set -x KUBECONFIG "$HOME/.kube/config:$HOME/.kube/config.snapcore"
+    set -x SAM_CLI_TELEMETRY 0
 
     # my key aliases
     alias j=z

@@ -9,6 +9,7 @@ ksuid-cli
 hiper
 graphql-schema-linter
 lerna
+aws-cdk
 
 #spoof
 #@microsoft/rush

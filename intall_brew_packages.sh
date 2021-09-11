@@ -22,6 +22,9 @@ brew install popeye
 brew tap nats-io/nats-tools
 brew install nats-io/nats-tools/nats
 
+brew tap aws/tap
+brew install aws-sam-cli
+
 for i in (cat brew-packages.txt)
 
 	if test (string sub -l 1 "$i") = "#"
