@@ -9,7 +9,10 @@ ksuid-cli
 hiper
 graphql-schema-linter
 lerna
-aws-cdk
+http-server
+js-to-ts-converter
+husky
+tsup
 
 #spoof
 #@microsoft/rush
@@ -17,7 +20,9 @@ aws-cdk
 #graphql-cli-get-raw-schema 
 #graphql-cli-voyager graphql-docs
 
-# deprecated for eslint
+# deprecated 
+@@dbml/cli
+#aws-cdk
 #tslint
 #webpack
 #fuge
