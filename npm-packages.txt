@@ -21,7 +21,7 @@ tsup
 #graphql-cli-voyager graphql-docs
 
 # deprecated 
-@@dbml/cli
+#@dbml/cli
 #aws-cdk
 #tslint
 #webpack
