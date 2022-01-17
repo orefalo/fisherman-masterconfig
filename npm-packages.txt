@@ -29,11 +29,9 @@ graphql
 #webpack
 #fuge
 #pegjs
-#graphql
 #get-graphql-schema
 #replaced by rg
 #spot
 #http bench
 #ndb
 #graphqurl
-#bolt
