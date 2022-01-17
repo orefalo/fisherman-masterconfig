@@ -1,18 +1,20 @@
 yarn
 npm-check
 typescript
-eslint
 typesync
+eslint
 prettier
-get-graphql-schema
 ksuid-cli
 hiper
-graphql-schema-linter
 lerna
 http-server
 js-to-ts-converter
 husky
 tsup
+graphql-schema-linter
+get-graphql-schema
+@graphql-inspector/cli
+graphql
 
 #spoof
 #@microsoft/rush
