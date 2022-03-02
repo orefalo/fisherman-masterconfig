@@ -13,6 +13,9 @@ brew install --HEAD wrk2
 brew tap robscott/tap
 brew install kube-capacity
 
+brew tap tinygo-org/tools
+brew install tinygo
+
 brew tap derailed/k9s
 brew install k9s
 
