@@ -71,17 +71,17 @@ syntax-highlight
 imageoptim
 tinypng4mac
 iina
-insomnia
+#insomnia
 skitch
 #emby-server
 suspicious-package
-cakebrew
+#cakebrew
 dust
 interactive-rebase-tool
 broot
 rustscan
 hyperfine
-runjs
+#runjs
 docker-credential-helper
 docker
 # 4 kns kctx interactive mode

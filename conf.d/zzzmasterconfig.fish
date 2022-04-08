@@ -1,6 +1,4 @@
 if status --is-interactive
-
-
     # not used anymore 'fisher grc' takes care of it
     #set grc_wrap_commands "cat cvs df diff dig gcc g++ ifconfig make mount mtr netstat ping ps tail traceroute wdiff"
 
@@ -110,7 +108,7 @@ if status --is-interactive
     alias tf=terraform
 
     # thats the best cli prompt
-    if test -x /usr/local/bin/starship
+    if test -x (which starship)
         starship init fish | source
     end
 
