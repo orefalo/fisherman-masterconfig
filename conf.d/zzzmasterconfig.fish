@@ -121,9 +121,9 @@ if status --is-interactive
     #   status --is-interactive; and source (zoxide init fish | psub)
     # end
 
-
-    # if test (type -t nvm) = "function"
-    #     nvm use v14
-    # end
+    # Activate version from nearest .nvmrc file
+    if test (type -t nvm) = "function"
+      nvm use 
+    end
 
 end
