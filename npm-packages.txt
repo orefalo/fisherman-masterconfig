@@ -6,6 +6,7 @@ eslint
 prettier
 ksuid-cli
 hiper
+svgo
 lerna
 http-server
 js-to-ts-converter
@@ -13,8 +14,8 @@ husky
 tsup
 graphql-schema-linter
 get-graphql-schema
-@graphql-inspector/cli
-graphql
+#@graphql-inspector/cli
+#graphql
 
 #spoof
 #@microsoft/rush

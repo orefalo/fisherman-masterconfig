@@ -19,8 +19,11 @@ interactive-rebase-tool
 jump
 starship
 procs
+pgcli
 fd
 sd 
+# hex viewer
+hexyl
 mkcert
 git
 # prefer nvm.fish
@@ -67,7 +70,6 @@ stern
 linkerd
 helmsman
 terraform
-adoptopenjdk
 aerial
 plantuml
 brooklyn
@@ -76,17 +78,14 @@ syntax-highlight
 imageoptim
 tinypng4mac
 iina
-#insomnia
 skitch
 #emby-server
 suspicious-package
-#cakebrew
 dust
 interactive-rebase-tool
 broot
 rustscan
 hyperfine
-#runjs
 docker-credential-helper
 docker
 # 4 kns kctx interactive mode
