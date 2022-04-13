@@ -4,9 +4,14 @@ aws-shell
 dldash/core/docker-color-output
 # a better z
 #zoxide
+# a better dig
 dog
-# installed via pip
-#httpie
+# reverse:installed via pip
+httpie
+# a better diff
+difftastic
+# a better top
+zenith
 choose
 git-delta
 duf

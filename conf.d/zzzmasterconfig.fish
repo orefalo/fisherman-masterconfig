@@ -76,7 +76,8 @@ if status --is-interactive
     # specific osx aliases
     if test (uname) = "Darwin"
         set -x EDITOR "subl -w"
-        alias top=htop
+        alias top=zenith
+        alias diff=difftastic
         alias preview="open -a '$PREVIEW'"
         alias mou="open -a Typora"
     end
