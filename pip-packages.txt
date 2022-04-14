@@ -1,3 +1,0 @@
-httpie
-httpie-jwt-auth
-httpie-aws-authv4

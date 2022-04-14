@@ -1,13 +1,14 @@
-awslogs
-awscli
-aws-shell
+#awslogs
+#awscli
+#aws-shell
 dldash/core/docker-color-output
 # a better z
 #zoxide
 # a better dig
 dog
-# reverse:installed via pip
-httpie
+# replaced with xh + alias
+# httpie
+xh
 # a better diff
 difftastic
 # a better top
@@ -54,7 +55,9 @@ prettyping
 ripgrep
 golang
 bat
-icdiff
+# replaced with difftastic
+# icdiff
+difftastic
 maven
 ant
 docker-ls

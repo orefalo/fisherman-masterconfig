@@ -33,7 +33,8 @@ if status --is-interactive
     alias more=cat
     alias mroe=cat
     alias spot=rg
-    alias diff=icdiff
+    alias diff=difftastic
+    alias httpie=xh
 
     alias h=helm
     alias hl="helm ls -A"
