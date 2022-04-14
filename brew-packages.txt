@@ -41,17 +41,19 @@ wget
 ffmpeg
 netcat 
 nmap 
-iftop
+#iftop
 jq
 yq 
-telnet 
+telnet
 grc
 graphviz
 # md for cli
 glow
 nmap
-mdcat
+# replaceed with glow
+#mdcat
 xmp
+# za compression format
 xz
 #htop
 # a better mysql cli
@@ -61,9 +63,12 @@ lsd
 rargs
 # cli file sharing
 croc
+# better ping
 prettyping
+# better grep
 ripgrep
 golang
+# better cat
 bat
 # replaced with difftastic
 # icdiff
@@ -99,7 +104,6 @@ iina
 suspicious-package
 # a better du
 dust
-interactive-rebase-tool
 # New way to see and navigate directory trees
 broot
 # Modern Day Portscanner
