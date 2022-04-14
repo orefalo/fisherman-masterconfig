@@ -1,9 +1,9 @@
 #awslogs
 #awscli
 #aws-shell
+
+# color output for docker
 dldash/core/docker-color-output
-# a better z
-#zoxide
 # a better dig
 dog
 # replaced with xh + alias
@@ -17,10 +17,15 @@ choose
 git-delta
 duf
 interactive-rebase-tool
+# like z just better
 jump
+# cli prompt
 starship
+# modern ps replacement
 procs
+# a better psql
 pgcli
+# find replacement
 fd
 sd 
 # hex viewer
@@ -42,15 +47,20 @@ yq
 telnet 
 grc
 graphviz
+# md for cli
 glow
 nmap
 mdcat
 xmp
 xz
-htop
+#htop
+# a better mysql cli
 mycli
+# a better ls
 lsd
 rargs
+# cli file sharing
+croc
 prettyping
 ripgrep
 golang
@@ -63,31 +73,38 @@ ant
 docker-ls
 docker-clean
 dive
+# wrk2 is installed from the .sh
+# load testing
 hey
+# load testing
 vegeta
 kubernetes-cli
 helm
 kubectx
-hyperkit
+#hyperkit
 stern
-linkerd
+#linkerd
 helmsman
 terraform
 aerial
 plantuml
-brooklyn
+#brooklyn
 transmission
 syntax-highlight
 imageoptim
-tinypng4mac
+#tinypng4mac
 iina
-skitch
+#skitch
 #emby-server
 suspicious-package
+# a better du
 dust
 interactive-rebase-tool
+# New way to see and navigate directory trees
 broot
+# Modern Day Portscanner
 rustscan
+# cmd line benchmarking tool
 hyperfine
 docker-credential-helper
 docker

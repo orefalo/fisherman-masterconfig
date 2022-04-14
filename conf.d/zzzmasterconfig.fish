@@ -27,6 +27,7 @@ if status --is-interactive
     alias find=fd
     alias ping=prettyping
     alias ps=procs
+    alias pstree=procs --tree
     alias du="dust"
     alias df=duf
     alias cat='bat --style=header,grid'
