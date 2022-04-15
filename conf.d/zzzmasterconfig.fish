@@ -12,6 +12,7 @@ if status --is-interactive
     set -x PATH $PATH $HOME/.krew/bin
     set -x KUBECONFIG "$HOME/.kube/config:$HOME/.kube/config.snapcore"
     set -x SAM_CLI_TELEMETRY 0
+    set -x HOMEBREW_NO_ANALYTICS 1
 
     # my key aliases
     alias j=z
@@ -128,5 +129,4 @@ if status --is-interactive
     if test (type -t nvm) = "function"
       nvm use 
     end
-
 end
