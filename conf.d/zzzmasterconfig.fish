@@ -9,7 +9,7 @@ if status --is-interactive
     set -x LESS "--RAW-CONTROL-CHARS"
     set -x GREP_OPTIONS '--color=auto'
     set -x GREP_COLOR '1;33'
-    set -x PATH $PATH $HOME/.krew/bin
+    fish_add_path --path $HOME/.krew/bin
     set -x KUBECONFIG "$HOME/.kube/config:$HOME/.kube/config.snapcore"
     set -x SAM_CLI_TELEMETRY 0
     set -x HOMEBREW_NO_ANALYTICS 1
