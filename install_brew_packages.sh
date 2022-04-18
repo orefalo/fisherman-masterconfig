@@ -26,8 +26,12 @@ brew install popeye
 brew tap nats-io/nats-tools
 brew install nats-io/nats-tools/nats
 
-brew tap aws/tap
-brew install aws-sam-cli
+#brew tap aws/tap
+#brew install aws-sam-cli
+
+# a great DNS client
+brew tap natesales/repo https://github.com/natesales/repo
+brew install natesales/repo/q
 
 for i in (cat brew-packages.txt)
 
