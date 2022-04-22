@@ -2,6 +2,8 @@
 #awscli
 #aws-shell
 
+planetscale/tap/pscale
+
 # color output for docker
 dldash/core/docker-color-output
 # a better dig
