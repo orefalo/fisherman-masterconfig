@@ -4,6 +4,8 @@
 
 planetscale/tap/pscale
 
+# a got commit msg helper
+commitzen
 # color output for docker
 dldash/core/docker-color-output
 # a better dig
