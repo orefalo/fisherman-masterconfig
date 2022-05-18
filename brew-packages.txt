@@ -115,7 +115,8 @@ rustscan
 # cmd line benchmarking tool
 hyperfine
 docker-credential-helper
-docker
+# installed via the docker odx installer
+#docker
 # 4 kns kctx interactive mode
 fzf
 # fx
