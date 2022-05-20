@@ -14,8 +14,7 @@ husky
 tsup
 graphql-schema-linter
 get-graphql-schema
-#@graphql-inspector/cli
-#graphql
+cz-customizable
 
 #spoof
 #@microsoft/rush
