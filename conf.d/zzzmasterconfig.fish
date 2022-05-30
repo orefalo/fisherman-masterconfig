@@ -91,6 +91,7 @@ if status --is-interactive
     alias dps="docker ps | docker-color-output"
     alias dcps="docker-compose ps -a | docker-color-output"
     alias dpi="docker images | docker-color-output"
+    alias dpiarch="docker image inspect --format '{{.ID}} {{.RepoTags}} {{.Architecture}}' (docker image ls -q)"
     alias dshell="docker run -it --rm --entrypoint /bin/sh"
     alias dtop=lazydocker
     alias dclean="docker rmi -f (docker images -f "dangling=true" -q)"
