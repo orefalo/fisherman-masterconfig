@@ -4,7 +4,7 @@ typescript
 typesync
 eslint
 prettier
-ksuid-cli
+nanoid
 hiper
 svgo
 lerna
