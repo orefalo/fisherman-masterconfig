@@ -83,8 +83,10 @@ dive
 # wrk2 is installed from the .sh
 # load testing
 hey
-# load testing
+# load testing (constant rate)
 vegeta
+# load testing (max tps load tester)
+wrk
 kubernetes-cli
 helm
 kubectx
