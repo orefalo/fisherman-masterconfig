@@ -5,7 +5,6 @@ typesync
 eslint
 prettier
 nanoid
-hiper
 svgo
 lerna
 http-server
