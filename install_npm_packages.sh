@@ -1,7 +1,8 @@
 #!/usr/bin/env fish
 # source it from fish
 
-npm i -g yarn
+npm i -g pnpm
+pnpm setup
 
 for i in (cat npm-packages.txt)
 
@@ -9,7 +10,7 @@ for i in (cat npm-packages.txt)
 		echo Skipping $i
 	else if test "(string length $i)" != "0"
 		echo $i
-		yarn global add (string trim $i)
+		pnpm i -g (string trim $i)
 	end
 
 end
