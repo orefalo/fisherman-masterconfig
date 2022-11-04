@@ -89,11 +89,13 @@ docker-clean
 dive
 # wrk2 is installed from the .sh
 # load testing
-hey
+# hey
+# oha is a great wrk2 alternative
+oha
 # load testing (constant rate)
-vegeta
+# vegeta
 # load testing (max tps load tester)
-wrk
+# wrk
 kubernetes-cli
 helm
 kubectx
@@ -126,4 +128,5 @@ docker-credential-helper
 #docker
 # 4 kns kctx interactive mode
 fzf
-# fx
+# a json viewer for the cli
+fx
