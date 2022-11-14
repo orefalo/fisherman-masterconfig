@@ -7,8 +7,9 @@ brew tap homebrew/cask-fonts
 brew install --cask font-meslo-lg-nerd-font
 
 # load tester
-brew tap jabley/homebrew-wrk2
-brew install --HEAD wrk2
+# oha is much much better
+# brew tap jabley/homebrew-wrk2
+# brew install --HEAD wrk2
 
 # shows k8s resource usage
 brew tap robscott/tap
