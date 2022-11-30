@@ -27,8 +27,9 @@ if status --is-interactive
     alias tree="broot"
     alias find=fd
     alias ping=prettyping
-    alias ps=procs
-    alias pstree="procs --tree"
+    # I don't like procs for this use case
+    # alias ps=procs
+    # alias pstree="procs --tree"
     alias du="dust"
     alias df=duf
     alias cat='bat --style=header,grid'
@@ -37,6 +38,8 @@ if status --is-interactive
     alias spot=rg
     alias diff=difftastic
     alias httpie=xh
+
+    alias unalias="functions -e "
 
     alias h=helm
     alias hl="helm ls -A"
