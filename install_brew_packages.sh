@@ -5,6 +5,10 @@ brew tap homebrew/cask-fonts
 # don't use the -mono version, icons are off, too small
 # and don't forget to configure iTerm to use the font
 brew install --cask font-meslo-lg-nerd-font
+brew install --cask iina
+brew install --cask suspicious-package
+brew install --cask syntax-highlight
+brew install --cask aerial
 
 # load tester
 # oha is much much better
