@@ -9,6 +9,7 @@ brew install --cask iina
 brew install --cask suspicious-package
 brew install --cask syntax-highlight
 brew install --cask aerial
+brew install --cask aural
 
 # load tester
 # oha is much much better
