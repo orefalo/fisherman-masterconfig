@@ -11,3 +11,4 @@ markcial/cprintf
 jorgebucaran/nvm.fish
 jorgebucaran/autopair.fish
 jorgebucaran/getopts.fish
+axkirillov/tokyonight-fish

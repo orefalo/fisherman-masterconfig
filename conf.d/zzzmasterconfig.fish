@@ -3,6 +3,9 @@ if status --is-interactive
     #set grc_wrap_commands "cat cvs df diff dig gcc g++ ifconfig make mount mtr netstat ping ps tail traceroute wdiff"
 
     # colors
+
+    theme_tokyonight night
+
     #set -x LSCOLORS 'GxfxhxhxcxegedaCaCgxgx'
     #set -x CLICOLOR 1
     set -x MAVEN_COLOR true
