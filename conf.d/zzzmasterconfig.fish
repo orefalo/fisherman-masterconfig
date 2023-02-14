@@ -18,6 +18,8 @@ if status --is-interactive
     set -x HOMEBREW_NO_ANALYTICS 1
 
     # my key aliases
+    alias ..='cd ..'
+    alias ...='cd ../..'
     alias j=z
     alias ls="lsd --group-dirs first"
     alias ll="lsd --group-dirs first -la"
@@ -41,6 +43,10 @@ if status --is-interactive
     alias spot=rg
     alias diff=difftastic
     alias httpie=xh
+    alias publicip='curl ifconfig.me'
+    #alias cp='rsync --progress -avz --ignore-existing'
+    alias update='brew update;brew upgrade;brew autoremove;brew cleanup; pnpm update -g'
+    alias cleanup="command find . -type f -name '*.DS_Store' -ls -delete"
 
     alias unalias="functions -e "
 
