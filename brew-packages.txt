@@ -2,8 +2,22 @@
 #awscli
 #aws-shell
 
+# a good load tester
+ddosify/tap/ddosify
+#
+robscott/tap/kube-capacity
+#
+tinygo-org/tools/tinygo
+#
+derailed/k9s/k9s
+#
+derailed/popeye/popeye
+#
+nats-io/nats-tools/nats
+#
+natesales/repo/q
+#
 planetscale/tap/pscale
-
 # cli benchmark tool
 hyperfine
 # color output for docker
@@ -52,7 +66,7 @@ wget
 ffmpeg
 netcat 
 nmap 
-#iftop
+
 jq
 yq 
 telnet
@@ -101,21 +115,24 @@ oha
 kubernetes-cli
 helm
 kubectx
-#hyperkit
 stern
-#linkerd
 helmsman
 terraform
 aerial
 plantuml
-#brooklyn
 transmission
 syntax-highlight
 imageoptim
-#tinypng4mac
 iina
+
+#hyperkit
+#tinypng4mac
 #skitch
 #emby-server
+#linkerd
+#brooklyn
+#iftop
+
 suspicious-package
 # a better du
 dust

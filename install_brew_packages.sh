@@ -17,27 +17,27 @@ brew install --cask aural
 # brew install --HEAD wrk2
 
 # shows k8s resource usage
-brew tap robscott/tap
-brew install kube-capacity
+# brew tap robscott/tap
+# brew install kube-capacity
 
-brew tap tinygo-org/tools
-brew install tinygo
+# brew tap tinygo-org/tools
+# brew install tinygo
 
-brew tap derailed/k9s
-brew install k9s
+# brew tap derailed/k9s
+# brew install k9s
 
-brew tap derailed/popeye
-brew install popeye
+# brew tap derailed/popeye
+# brew install popeye
 
-brew tap nats-io/nats-tools
-brew install nats-io/nats-tools/nats
+# brew tap nats-io/nats-tools
+# brew install nats-io/nats-tools/nats
 
 #brew tap aws/tap
 #brew install aws-sam-cli
 
 # a great DNS client
-brew tap natesales/repo https://github.com/natesales/repo
-brew install natesales/repo/q
+# brew tap natesales/repo https://github.com/natesales/repo
+# brew install natesales/repo/q
 
 for i in (cat brew-packages.txt)
 
