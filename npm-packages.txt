@@ -1,10 +1,12 @@
 #yarn
 #npm-check
+# generates images of your code
+carbon-now-cli
 typescript
 typesync
 #eslint
 #prettier
-nanoid
+#nanoid
 svgo
 #lerna
 http-server

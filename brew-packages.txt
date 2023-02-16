@@ -2,6 +2,14 @@
 #awscli
 #aws-shell
 
+# file dupes finder
+jdupes
+# a better wget, suppors http/s,s/ftp, torrent
+aria2
+# a universal db cli
+xo/xo/usql
+# a redis cli
+iredis
 # a good load tester
 ddosify/tap/ddosify
 #
