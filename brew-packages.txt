@@ -1,130 +1,172 @@
-#awslogs
-#awscli
-#aws-shell
+## DB CLI =====
 
-# file dupes finder
-jdupes
-# a better wget, suppors http/s,s/ftp, torrent
-aria2
 # a universal db cli
 xo/xo/usql
 # a redis cli
 iredis
-# a good load tester
-ddosify/tap/ddosify
-#
-robscott/tap/kube-capacity
-#
-tinygo-org/tools/tinygo
-#
-derailed/k9s/k9s
-#
-derailed/popeye/popeye
-#
-nats-io/nats-tools/nats
-#
-natesales/repo/q
-#
-planetscale/tap/pscale
-# cli benchmark tool
-hyperfine
-# color output for docker
-dldash/core/docker-color-output
-# a better dig
-dog
-# replaced with xh + alias
-# httpie
-xh
-# chart & k8s yaml linter
-kube-linter
-# a better diff
-difftastic
-# a better top
-zenith
-choose
-git-delta
-duf
-# https://github.com/MitMaro/git-interactive-rebase-tool
-interactive-rebase-tool
-# like z just better
-jump
-# cli prompt
-starship
-# modern ps replacement
-procs
 # a better psql
 pgcli
 # a better cli for mysql & mariadb
 mycli
-# Dockerfile linter
-hodalint
-# find replacement
-fd
-sd 
-# hex viewer
-hexyl
-mkcert
-git
-# prefer nvm.fish
-# node
-vim
-fish
-openssl
-wget 
-ffmpeg
-netcat 
-nmap 
 
-jq
-yq 
-telnet
-grc
-graphviz
-# md for cli
-glow
-nmap
-# replaceed with glow
-#mdcat
-xmp
-# za compression format
-xz
-#htop
-# a better mysql cli
-mycli
-# a better ls
-lsd
-rargs
-# cli file sharing
-croc
-# better ping
-prettyping
-# better grep
-ripgrep
-golang
-# better cat
-bat
-# replaced with difftastic
-# icdiff
-difftastic
-maven
-ant
-docker-ls
-docker-clean
-dive
-# wrk2 is installed from the .sh
-# load testing
-# hey
+## LOAD TESTING =====
+
+# a good load tester
+ddosify/tap/ddosify
 # oha is a great wrk2 alternative
 oha
-# load testing (constant rate)
+
+# those are old alternatives
+# hey
 # vegeta
-# load testing (max tps load tester)
 # wrk
+# wrk2 
+
+## PROCESS MGMT =====
+
+# modern ps replacement
+procs
+# a better top
+zenith
+# outdated
+#htop
+
+## K8s =====
+
+derailed/k9s/k9s
+robscott/tap/kube-capacity
 kubernetes-cli
 helm
 kubectx
 stern
 helmsman
+derailed/popeye/popeye
+# chart & k8s yaml linter
+kube-linter
+
+## DOCKER =====
+
+# color output for docker
+dldash/core/docker-color-output
+# Dockerfile linter
+hodalint
+docker-ls
+docker-clean
+dive
+docker-credential-helper
+
+## GOLANG =====
+
+tinygo-org/tools/tinygo
+golang
+
+## JAVA =====
+
+maven
+ant
+
+### JSON & YAML =====
+
+# a json viewer for the cli
+fx
+jq
+yq
+
+## GIT =====
+
+git
+# https://github.com/MitMaro/git-interactive-rebase-tool
+interactive-rebase-tool
+git-delta
+# a better diff
+difftastic
+# replaced with difftastic
+# icdiff
+
+## SSL =====
+
+mkcert
+openssl
+
+## FETCHER =====
+
+# replaced with xh + alias
+# httpie
+xh
+# a better wget, suppors http/s,s/ftp, torrent
+aria2
+# to replace with aria2
+# wget 
+
+## CLI & SUBSTITUTIONS =====
+
+vim
+fish
+# a better dig
+dog
+choose
+# a better find
+fd
+sd
+# that's a better du -f
+dust
+# a better du
+duf
+# better ping
+prettyping
+# better grep
+ripgrep
+# better cat
+bat
+# a better ls
+lsd
+# a better tree
+broot
+
+## CLI ENHANCEMENTS =====
+
+# great color prompt
+starship
+# cli benchmark tool
+hyperfine
+# hex viewer
+hexyl
+# like z just better
+jump
+# markdown for cli
+glow
+# Modern Day Portscanner
+rustscan
+# 4 kns kctx interactive mode
+fzf
+# za compression format
+xz
+# cli file sharing
+croc
+# terminal recorder
+asciinema
+# file dupes finder
+jdupes
+# colorizer
+grc
+
+## OTHERS =====
+
+# edge queue on steroids
+nats-io/nats-tools/nats
+# a tiny dns client
+natesales/repo/q
+# cli to access planetscale
+planetscale/tap/pscale
+# AwS
+#awslogs
+#awscli
+#aws-shell
+
+ffmpeg
+rargs
+telnet
+graphviz
 terraform
 aerial
 plantuml
@@ -132,28 +174,4 @@ transmission
 syntax-highlight
 imageoptim
 iina
-
-#hyperkit
-#tinypng4mac
-#skitch
-#emby-server
-#linkerd
-#brooklyn
-#iftop
-
 suspicious-package
-# a better du
-dust
-# New way to see and navigate directory trees
-broot
-# Modern Day Portscanner
-rustscan
-# cmd line benchmarking tool
-hyperfine
-docker-credential-helper
-# installed via the docker odx installer
-#docker
-# 4 kns kctx interactive mode
-fzf
-# a json viewer for the cli
-fx

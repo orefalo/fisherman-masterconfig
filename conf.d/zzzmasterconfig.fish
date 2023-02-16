@@ -35,8 +35,8 @@ if status --is-interactive
     # I don't like procs for this use case
     # alias ps=procs
     # alias pstree="procs --tree"
-    alias du="dust"
-    alias df=duf
+    alias du=duf
+    alias duf=dust
     alias cat='bat --style=header,grid'
     alias more=cat
     alias mroe=cat
