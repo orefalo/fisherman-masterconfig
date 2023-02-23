@@ -153,6 +153,8 @@ grc
 ## OTHERS =====
 
 # edge queue on steroids
+nats-server
+# nats jetstream cli tool (ie. nats bench)
 nats-io/nats-tools/nats
 # a tiny dns client
 natesales/repo/q
