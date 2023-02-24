@@ -43,7 +43,7 @@ for i in (cat brew-packages.txt)
 
 	if test (string sub -l 1 "$i") = "#"
 		echo Skipping $i
-	else if test "(string length $i)" != "0"
+	else if test -n "$i"
 		echo $i
 		brew install (string trim $i)
 	end
