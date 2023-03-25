@@ -11,3 +11,5 @@ view-utilization
 whoami
 images
 tree
+colorize-applied
+sick-pods
