@@ -56,7 +56,6 @@ if status --is-interactive
     alias kd="kubectl describe"
     alias kdp="kubectl describe pod"
     alias kds="kubectl describe service"
-    alias kp="kube-prompt"
     alias kg="kubectl get"
     alias kgp="kubectl get pods -o wide"
     alias kgs="kubectl get services -o wide"
@@ -75,6 +74,7 @@ if status --is-interactive
     alias kpf="kubectl port-forward"
     alias kopen="kubectl open-svc"
     alias ktop="k9s"
+    alias kfree="kubectl view-utilization -h"
     alias kcapacity="kube-capacity"
     alias kctx="kubectx"
     alias krew="kubectl krew"
@@ -83,7 +83,9 @@ if status --is-interactive
     alias kls="kubectl get-all"
     alias kwhoami="kubectl whoami"
     alias klistimages="kubectl images"
-    alias kfree="kubectl view-utilization -h"
+    alias klistapis="kubectl api-resources -o wide"
+    alias kupdate="k outdated"
+
     # kshell podname /bin/sh
     alias kshell="kubectl iexec"
     alias krbac="kubectl access-matrix"
