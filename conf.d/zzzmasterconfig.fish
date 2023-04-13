@@ -113,7 +113,7 @@ if status --is-interactive
     # alias pgstop="brew services stop postgresql"
     # alias pgtop=pg_top
 
-    alias start_minikube="minikube start --vm-driver=hyperkit --memory=6144 --cpus=4 --disk-size=50g && eval (command minikube docker-env) && minikube addons enable ingress"
+    alias start_minikube="minikube start --driver qemu --memory=4G --cpus=4 --disk-size=50g && eval (command minikube docker-env) && minikube addons enable ingress"
     alias stop_minikube="minikube stop && eval (minikube docker-env -u)"
     alias docker-env="eval (command minikube docker-env)"
 
