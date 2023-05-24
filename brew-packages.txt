@@ -140,7 +140,9 @@ glow
 # Modern Day Portscanner
 rustscan
 # 4 kns kctx interactive mode
-fzf
+# fzf -> replaced with fzy
+# a good fuzzy searcher
+fzy
 # za compression format
 xz
 # cli file sharing
