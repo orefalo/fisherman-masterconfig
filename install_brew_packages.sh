@@ -10,6 +10,7 @@ brew install --cask suspicious-package
 brew install --cask syntax-highlight
 brew install --cask aerial
 brew install --cask aural
+brew install --cask sloth
 
 # load tester
 # oha is much much better
