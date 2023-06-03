@@ -136,6 +136,7 @@ if status --is-interactive
 
     if command -v jump >/dev/null
       status --is-interactive; and source (jump shell fish | psub)
+      alias j=jump
     end
 
 
