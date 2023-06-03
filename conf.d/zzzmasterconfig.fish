@@ -134,9 +134,8 @@ if status --is-interactive
         starship init fish | source
     end
 
-    if command -v jump >/dev/null
-      status --is-interactive; and source (jump shell fish | psub)
-      alias j=jump
+    if test (command -v jump >/dev/null) -a (status --is-interactive)
+      jump shell fish | source
     end
 
 
