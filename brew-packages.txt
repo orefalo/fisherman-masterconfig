@@ -43,10 +43,18 @@ helmsman
 derailed/popeye/popeye
 # chart & k8s yaml linter
 kube-linter
-minikube
-qemu
 
 ## DOCKER =====
+
+# colima is better
+#minikube
+#qemu
+
+# run this command to complete setup mkdir -p ~/.docker/cli-plugins && ln -sfn $(brew --prefix)/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose
+colima
+docker
+docker-compose
+docker-credential-helper
 
 # color output for docker
 dldash/core/docker-color-output
@@ -55,7 +63,6 @@ hodalint
 docker-ls
 docker-clean
 dive
-docker-credential-helper
 
 ## GOLANG =====
 
