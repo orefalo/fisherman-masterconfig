@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cp starship.toml ~/.config/
+cp configs/starship/starship.toml ~/.config/
 

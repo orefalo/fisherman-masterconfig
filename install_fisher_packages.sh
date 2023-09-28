@@ -3,7 +3,7 @@
 
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 
-for i in (cat fisher-packages.txt)
+for i in (cat configs/fisher/fisher-packages.txt)
 
 	if test (string sub -l 1 "$i") = "#"
 		echo Skipping $i

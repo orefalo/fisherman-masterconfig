@@ -4,7 +4,7 @@
 npm i -g pnpm
 pnpm setup
 
-for i in (cat npm-packages.txt)
+for i in (cat configs/npm/npm-packages.txt)
 
 	if test (string sub -l 1 "$i") = "#"
 		echo Skipping $i

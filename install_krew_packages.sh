@@ -6,7 +6,7 @@ brew install krew
 
 kubectl krew upgrade
 
-for i in (cat krew-packages.txt)
+for i in (cat configs/krew/krew-packages.txt)
 
 	if test (string sub -l 1 "$i") = "#"
 		echo Skipping $i

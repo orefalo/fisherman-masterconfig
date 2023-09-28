@@ -8,7 +8,7 @@ brew install --cask font-meslo-lg-nerd-font
 brew install --cask iina
 brew install --cask suspicious-package
 brew install --cask syntax-highlight
-brew install --cask aerial
+# brew install --cask aerial
 brew install --cask aural
 brew install --cask sloth
 
@@ -40,7 +40,7 @@ brew install --cask sloth
 # brew tap natesales/repo https://github.com/natesales/repo
 # brew install natesales/repo/q
 
-for i in (cat brew-packages.txt)
+for i in (cat ./configs/brew/brew-packages.txt)
 
 	if test (string sub -l 1 "$i") = "#"
 		echo Skipping $i
