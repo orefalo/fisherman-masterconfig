@@ -127,10 +127,6 @@ if status --is-interactive
     # alias pgstop="brew services stop postgresql"
     # alias pgtop=pg_top
 
-    #alias start_minikube="minikube start --driver qemu --memory=4G --cpus=4 --disk-size=50g && eval (command minikube docker-env) && minikube addons enable ingress"
-    #alias stop_minikube="minikube stop && eval (minikube docker-env -u)"
-    #alias docker-env="eval (command minikube docker-env)"
-
     alias start_minikube="colima start -c 4 -m 6 -k"
     alias stop_minikube="colima stop"
 
@@ -151,10 +147,6 @@ if status --is-interactive
     if test (command -v jump >/dev/null) -a (status --is-interactive)
       jump shell fish | source
     end
-
-    # if command -v zoxide >/dev/null
-    #   status --is-interactive; and source (zoxide init fish | psub)
-    # end
 
     # Activate version from nearest .nvmrc file
     if test (type -t nvm) = "function"
