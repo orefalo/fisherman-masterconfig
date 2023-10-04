@@ -131,7 +131,7 @@ if status --is-interactive
     #alias stop_minikube="minikube stop && eval (minikube docker-env -u)"
     #alias docker-env="eval (command minikube docker-env)"
 
-    alias start_minikube="colima start -cpu 4 -m 6 -k"
+    alias start_minikube="colima start -c 4 -m 6 -k"
     alias stop_minikube="colima stop"
 
     # fixes my typos
