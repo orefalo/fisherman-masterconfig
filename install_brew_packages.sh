@@ -12,11 +12,6 @@ brew install --cask syntax-highlight
 brew install --cask aural
 brew install --cask sloth
 
-# load tester
-# oha is much much better
-# brew tap jabley/homebrew-wrk2
-# brew install --HEAD wrk2
-
 # shows k8s resource usage
 # brew tap robscott/tap
 # brew install kube-capacity
@@ -30,7 +25,8 @@ brew install --cask sloth
 # brew tap derailed/popeye
 # brew install popeye
 
-# brew tap nats-io/nats-tools
+brew tap nats-io/nats-tools
+# the below is in the install file
 # brew install nats-io/nats-tools/nats
 
 #brew tap aws/tap
