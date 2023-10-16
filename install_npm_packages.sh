@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 # source it from fish
 
-npm i -g pnpm
+command npm i -g pnpm
 pnpm setup
 
 for i in (cat configs/npm/npm-packages.txt)
