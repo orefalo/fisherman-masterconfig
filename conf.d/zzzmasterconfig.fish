@@ -124,8 +124,8 @@ if status --is-interactive
     # alias pgstop="brew services stop postgresql"
     # alias pgtop=pg_top
 
-    alias start_minikube="colima start -c 4 -m 6 -k"
-    alias stop_minikube="colima stop"
+    alias start_docker="colima start -c 4 -m 6 -k"
+    alias stop_docker="colima stop"
 
     # fixes my typos
     alias gti=git
