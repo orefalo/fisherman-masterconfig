@@ -54,8 +54,8 @@ if status --is-interactive
     alias httpie=xh
     alias publicip='curl ifconfig.me'
     #alias cp='rsync --progress -avz --ignore-existing'
-    alias update='brew update;brew upgrade;brew uninstall --ignore-dependencies node;brew uninstall --ignore-dependencies openjdk; brew uninstall --ignore-dependencies temurin;brew autoremove;brew cleanup; pnpm update -g'
-    alias cleanup="command find . -type f -name '*.DS_Store' -ls -delete"
+    alias update='brew update;brew upgrade;brew uninstall -q --ignore-dependencies node;brew uninstall -q --ignore-dependencies openjdk; brew uninstall -q --ignore-dependencies temurin;brew autoremove;brew cleanup; pnpm update -g'
+    alias mrproper="command find . -type f -name '*.DS_Store' -ls -delete; command find . -type d -name 'node_modules' -ls -delete; "
 
     alias unalias="functions -e "
 
