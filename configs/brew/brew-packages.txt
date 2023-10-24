@@ -173,6 +173,9 @@ bruceadams/utilities/yj
 # code -> screenshot.png
 screenshot
 
+# bandwhich is a CLI utility for displaying current network utilization by process, connection and remote IP or hostname.
+bandwhich
+
 # regex builder! https://github.com/pemistahl/grex
 grex
 
