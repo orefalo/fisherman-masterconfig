@@ -12,3 +12,6 @@ jorgebucaran/nvm.fish
 jorgebucaran/autopair.fish
 jorgebucaran/getopts.fish
 axkirillov/tokyonight-fish
+nickeb96/puffer-fish
+fishingline/safe-rm
+
