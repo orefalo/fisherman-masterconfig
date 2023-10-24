@@ -161,6 +161,21 @@ jdupes
 # colorizer
 grc
 
+# better nmap
+rustscan
+
+# cli git recorder
+t-rec
+
+# json <-> yaml
+bruceadams/utilities/yj
+
+# code -> screenshot.png
+screenshot
+
+# regex builder! https://github.com/pemistahl/grex
+grex
+
 ## OTHERS =====
 
 # edge queue on steroids

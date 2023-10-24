@@ -95,6 +95,8 @@ if status --is-interactive
     alias klistapis="kubectl api-resources -o wide"
     alias kupdate="k outdated"
 
+    alias nmap=rustscan
+
     # kshell podname /bin/sh
     alias kshell="kubectl iexec"
     alias krbac="kubectl access-matrix"
