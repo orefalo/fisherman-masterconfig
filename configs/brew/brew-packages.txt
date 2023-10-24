@@ -86,9 +86,9 @@ yq
 git
 # https://github.com/MitMaro/git-interactive-rebase-tool
 interactive-rebase-tool
-git-delta
 # a better diff
-difftastic
+git-delta
+# difftastic
 # replaced with difftastic
 # icdiff
 
