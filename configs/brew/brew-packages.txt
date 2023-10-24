@@ -171,7 +171,7 @@ t-rec
 bruceadams/utilities/yj
 
 # code -> screenshot.png
-screenshot
+silicon
 
 # bandwhich is a CLI utility for displaying current network utilization by process, connection and remote IP or hostname.
 bandwhich
