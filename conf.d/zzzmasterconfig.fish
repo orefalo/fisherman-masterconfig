@@ -50,7 +50,7 @@ if status --is-interactive
     alias more=cat
     alias mroe=cat
     alias spot=rg
-    alias diff=difftastic
+    alias diff=delta
     alias httpie=xh
     alias publicip='curl ifconfig.me'
     #alias cp='rsync --progress -avz --ignore-existing'
