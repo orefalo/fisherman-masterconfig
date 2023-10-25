@@ -16,6 +16,7 @@ if status --is-interactive
     set -x KUBECONFIG "$HOME/.kube/config:$HOME/.kube/config.snapcore"
     set -x SAM_CLI_TELEMETRY 0
     set -x HOMEBREW_NO_ANALYTICS 1
+    set -x BAT_THEME "Dracula"
 
     # set -x LESS_TERMCAP_mb $'\e[1;31m'      # begin bold
     # set -x LESS_TERMCAP_md $'\e[1;34m'      # begin blink
