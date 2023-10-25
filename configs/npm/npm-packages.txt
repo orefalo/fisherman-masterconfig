@@ -1,7 +1,5 @@
 #yarn
 #npm-check
-# generates images of your code
-carbon-now-cli
 typescript
 typesync
 #eslint
@@ -9,8 +7,8 @@ typesync
 #nanoid
 svgo
 #lerna
-http-server
-js-to-ts-converter
+#http-server
+#js-to-ts-converter
 #husky
 tsup
 graphql-schema-linter
@@ -18,7 +16,7 @@ graphql-schema-diff
 get-graphql-schema
 cz-customizable
 
-#spoof
+spoof
 #@microsoft/rush
 #graphql-cli 
 #graphql-cli-get-raw-schema 
