@@ -9,7 +9,7 @@ brew install --cask iina
 brew install --cask suspicious-package
 brew install --cask syntax-highlight
 # brew install --cask aerial
-brew install --cask aural
+#brew install --cask aural
 brew install --cask sloth
 
 # shows k8s resource usage
@@ -39,9 +39,9 @@ brew tap nats-io/nats-tools
 for i in (cat ./configs/brew/brew-packages.txt)
 
 	if test (string sub -l 1 "$i") = "#"
-		echo Skipping $i
+		cprintf "<fg:yellow>!! Skipping %s</fg>" $i
 	else if test -n "$i"
-		echo $i
+		cprintf "Installing <fg:cyan>%s...</fg>" $i
 		brew install (string trim $i)
 	end
 
