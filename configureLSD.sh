@@ -1,5 +1,5 @@
 #!/bin/sh
 
-mkdir -p ~/.config/lsd/themes
+mkdir -p ~/.config/lsd/
 cp configs/lsd/config.yaml ~/.config/lsd/
-cp configs/lsd/dracula.yaml ~/.config/lsd/themes/
+cp configs/lsd/colors.yaml ~/.config/lsd/
