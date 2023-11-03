@@ -134,6 +134,8 @@ broot
 
 ## CLI ENHANCEMENTS =====
 
+# remove dev junk - https://github.com/tbillington/kondo
+kondo
 # great color prompt
 starship
 # cli benchmark tool
