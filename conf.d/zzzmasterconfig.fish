@@ -139,7 +139,7 @@ if status --is-interactive
     alias tfp="terraform plan | scenery"
     alias tf=terraform
 
-    alias npm=pnpm
+    #alias npm=pnpm
     alias wrk2=oha
 
     # thats the best cli prompt

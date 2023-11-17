@@ -1,5 +1,3 @@
-// Settings in here override those in "Default/Preferences.sublime-settings",
-// and are overridden in turn by syntax-specific settings.
 {
 	"save_on_focus_lost":true,
 	"show_encoding":true,
@@ -7,6 +5,6 @@
 	"hardware_acceleration": "opengl",
 	"ignored_packages":
 	[
-		"Vintage",
-	],
+		"Vintage"
+	]
 }
