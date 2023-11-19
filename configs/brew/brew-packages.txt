@@ -183,6 +183,8 @@ grex
 
 ## OTHERS =====
 
+# img to txt cli
+chafa
 # edge queue on steroids
 nats-server
 # nats jetstream cli tool (ie. nats bench)
