@@ -111,6 +111,7 @@ aria2
 
 ## CLI & SUBSTITUTIONS =====
 
+gum
 vim
 fish
 # a better dig
