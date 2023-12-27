@@ -85,6 +85,8 @@ jaq
 
 ## GIT =====
 
+# git information summary
+onefetch
 git
 # https://github.com/MitMaro/git-interactive-rebase-tool
 interactive-rebase-tool
