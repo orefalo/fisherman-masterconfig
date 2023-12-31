@@ -139,6 +139,11 @@ broot
 
 ## CLI ENHANCEMENTS =====
 
+# grep alternatives
+ugrep
+regex
+
+
 # remove dev junk - https://github.com/tbillington/kondo
 kondo
 # great color prompt

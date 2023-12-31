@@ -38,6 +38,7 @@ if status --is-interactive
     alias sl=ls
     alias dig=dog
     alias jq=jaq
+    alias grep=ugrep
     # broot bellow is a better tree alternative
     #alias tree="lsd --tree --group-dirs first --depth=4"
     alias tree="broot"
