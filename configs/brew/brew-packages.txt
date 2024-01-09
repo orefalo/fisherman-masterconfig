@@ -143,6 +143,8 @@ broot
 ugrep
 regex
 
+# a great editor
+ox
 
 # remove dev junk - https://github.com/tbillington/kondo
 kondo
