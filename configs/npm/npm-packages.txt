@@ -16,6 +16,9 @@ graphql-schema-diff
 get-graphql-schema
 cz-customizable
 
+# code complexity calculator
+sabik
+
 spoof
 #@microsoft/rush
 #graphql-cli 
