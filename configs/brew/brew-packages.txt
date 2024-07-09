@@ -204,6 +204,9 @@ grex
 
 ## OTHERS =====
 
+# cli progress in one line
+kattouf/progressline/progressline
+
 # img to txt cli
 chafa
 # edge queue on steroids
@@ -219,6 +222,7 @@ planetscale/tap/pscale
 #awscli
 #aws-shell
 
+only-switch
 ffmpeg
 rargs
 telnet
