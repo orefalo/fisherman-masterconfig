@@ -107,7 +107,7 @@ if status --is-interactive
 
     # specific osx aliases
     if test (uname) = "Darwin"
-        alias subl=code
+        # alias subl=code
         #set -x EDITOR "subl -w"
         set -x EDITOR "code"
         alias top=zenith
