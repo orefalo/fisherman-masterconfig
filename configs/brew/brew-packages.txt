@@ -124,7 +124,7 @@ vim
 fish
 # a better dig
 dog
-choose
+# choose
 # a better find
 fd
 sd
@@ -216,7 +216,7 @@ nats-io/nats-tools/nats
 # a tiny dns client
 natesales/repo/q
 # cli to access planetscale
-planetscale/tap/pscale
+# planetscale/tap/pscale
 # AwS
 #awslogs
 #awscli
