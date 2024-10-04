@@ -9,14 +9,14 @@ if status --is-interactive
     #set -x LSCOLORS 'GxfxhxhxcxegedaCaCgxgx'
     #set -x CLICOLOR 1
     set -x MAVEN_COLOR true
-    set -x LESS "--RAW-CONTROL-CHARS"
+    set -x LESS --RAW-CONTROL-CHARS
     set -x GREP_OPTIONS '--color=auto'
     set -x GREP_COLOR '1;33'
     fish_add_path --path $HOME/.krew/bin
     set -x KUBECONFIG "$HOME/.kube/config:$HOME/.kube/config.snapcore"
     set -x SAM_CLI_TELEMETRY 0
     set -x HOMEBREW_NO_ANALYTICS 1
-    set -x BAT_THEME "Dracula"
+    set -x BAT_THEME Dracula
 
     # set -x LESS_TERMCAP_mb $'\e[1;31m'      # begin bold
     # set -x LESS_TERMCAP_md $'\e[1;34m'      # begin blink
@@ -62,7 +62,7 @@ if status --is-interactive
     alias mrproper=kondo
 
     alias unalias="functions -e "
-
+    
     alias h=helm
     alias hl="helm ls -A"
     alias k="kubectl"
@@ -77,7 +77,7 @@ if status --is-interactive
     alias kge="kubectl get event"
     # kga --since 5m
     alias kga="kubectl get-all"
-    alias kgi="kubectl get ingress -o wide"   
+    alias kgi="kubectl get ingress -o wide"
     alias kgna="kubectl get nodes -A -o wide"
     alias kgda="kubectl get deployments -A -o wide"
     alias kgpa="kubectl get pods -A -o wide"
@@ -106,10 +106,10 @@ if status --is-interactive
     alias krbac="kubectl access-matrix"
 
     # specific osx aliases
-    if test (uname) = "Darwin"
+    if test (uname) = Darwin
         # alias subl=code
         #set -x EDITOR "subl -w"
-        set -x EDITOR "code"
+        set -x EDITOR code
         alias top=zenith
         alias diff=difftastic
         alias preview="open -a '$PREVIEW'"
@@ -150,11 +150,11 @@ if status --is-interactive
     end
 
     if test (command -v jump >/dev/null) -a (status --is-interactive)
-      jump shell fish | source
+        jump shell fish | source
     end
 
     # Activate version from nearest .nvmrc file
-    if test (type -t nvm) = "function"
-      nvm use 
+    if test (type -t nvm) = function
+        nvm use
     end
 end
