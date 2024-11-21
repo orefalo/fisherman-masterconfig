@@ -184,6 +184,7 @@ jdupes
 # colorizer
 grc
 
+
 # better nmap
 rustscan
 
@@ -207,6 +208,9 @@ grex
 # cli progress in one line
 kattouf/progressline/progressline
 
+#pipe viewer, and progress
+pv
+
 # img to txt cli
 chafa
 # edge queue on steroids
@@ -222,7 +226,7 @@ natesales/repo/q
 #awscli
 #aws-shell
 
-only-switch
+# only-switch
 ffmpeg
 rargs
 telnet
