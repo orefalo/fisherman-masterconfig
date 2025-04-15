@@ -32,7 +32,7 @@ zenith
 
 ## K8s =====
 
-derailed/k9s/k9s
+k9s
 robscott/tap/kube-capacity
 kubernetes-cli
 helm
@@ -40,7 +40,7 @@ kubectx
 stern
 # a superset of helm with mighty powers
 helmsman
-derailed/popeye/popeye
+popeye
 # chart & k8s yaml linter
 kube-linter
 
@@ -191,8 +191,8 @@ rustscan
 # cli git recorder
 t-rec
 
-# json <-> yaml
-bruceadams/utilities/yj
+# json <-> yaml <-> tom
+yj
 
 # code -> screenshot.png
 silicon
@@ -206,7 +206,7 @@ grex
 ## OTHERS =====
 
 # cli progress in one line
-kattouf/progressline/progressline
+progressline
 
 #pipe viewer, and progress
 pv
