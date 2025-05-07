@@ -16,6 +16,8 @@ ddosify/tap/ddosify
 # oha is a great wrk2 alternative
 oha
 
+blendle/blendle/kns
+
 # those are old alternatives
 # hey
 # vegeta
