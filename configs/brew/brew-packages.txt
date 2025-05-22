@@ -233,7 +233,7 @@ ffmpeg
 rargs
 telnet
 graphviz
-terraform
+hashicorp/tap/terraform
 aerial
 plantuml
 transmission
