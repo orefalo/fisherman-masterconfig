@@ -142,7 +142,7 @@ if status --is-interactive
     alias tf=terraform
 
     #alias npm=pnpm
-    alias wrk2=oha
+    # alias wrk2=oha
 
     # thats the best cli prompt
     if test -x (which starship)

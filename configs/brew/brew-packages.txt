@@ -13,16 +13,10 @@ mycli
 
 # a good load tester
 ddosify/tap/ddosify
-# oha is a great wrk2 alternative
+# oha is a great wrk2 alternative, now there is even wrk3
 oha
 
 blendle/blendle/kns
-
-# those are old alternatives
-# hey
-# vegeta
-# wrk
-# wrk2 
 
 ## PROCESS MGMT =====
 
