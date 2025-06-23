@@ -40,6 +40,11 @@ popeye
 # chart & k8s yaml linter
 kube-linter
 
+# an better alternative to helm 4
+nelm
+# from the same vendor, a consistent cicd pipeline
+werf
+
 ## DOCKER =====
 
 # colima is better
