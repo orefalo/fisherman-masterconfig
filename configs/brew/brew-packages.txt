@@ -206,6 +206,9 @@ grex
 
 ## OTHERS =====
 
+# a tui for ldap
+ericschmar/tap/moribito
+
 # cli progress in one line
 progressline
 
