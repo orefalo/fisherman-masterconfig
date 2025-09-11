@@ -1,9 +1,10 @@
 {
-    "auths": {
-        "https://index.docker.io/v1/": {},
-        "registry.gitlab.com": {}
-    },
-    "credsStore": "osxkeychain",
-    "experimental": "disabled",
-    "stackOrchestrator": "swarm"
+  "auths": {
+    "https://index.docker.io/v1/": {},
+    "registry.gitlab.com": {}
+  },
+  "credsStore": "osxkeychain",
+  "experimental": "disabled",
+  "stackOrchestrator": "swarm",
+  "cliPluginsExtraDirs": ["/opt/homebrew/lib/docker/cli-plugins"]
 }
