@@ -57,7 +57,7 @@ if status --is-interactive
     alias httpie=xh
     alias publicip='curl ifconfig.me'
     #alias cp='rsync --progress -avz --ignore-existing'
-    alias update-casks="brew outdated --cask --greedy --verbose; brew outdated --cask | xargs brew cask reinstall"
+    alias update-casks="brew outdated --cask --greedy --verbose; brew upgrade --cask --greedy"
     alias update="brew update;brew upgrade;brew uninstall -q --ignore-dependencies node;brew uninstall -q --ignore-dependencies openjdk; brew uninstall -q --ignore-dependencies temurin; update-casks; brew autoremove;brew cleanup"
     #alias mrproper="fd -t f .DS_Store -x rm {}; fd --exclude '.vscode/*' -t d node_modules -x rm -rf {}"
     alias mrproper=kondo
