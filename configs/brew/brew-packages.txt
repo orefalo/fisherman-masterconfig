@@ -113,7 +113,7 @@ xh
 # a better wget, suppors http/s,s/ftp, torrent
 aria2
 # to replace with aria2
-# wget 
+# wget
 
 ## CLI & SUBSTITUTIONS =====
 
@@ -183,7 +183,7 @@ asciinema
 # file dupes finder
 jdupes
 # colorizer
-grc
+# grc - retired for rust package cgrc
 
 
 # better nmap
