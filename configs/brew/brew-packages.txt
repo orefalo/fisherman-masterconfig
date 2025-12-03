@@ -1,5 +1,8 @@
 ## DB CLI =====
 
+# a better jq, sql based
+kiki-ki/tap/qo
+
 # a universal db cli
 xo/xo/usql
 # a redis cli
