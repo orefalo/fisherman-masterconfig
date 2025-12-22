@@ -25,9 +25,9 @@ blendle/blendle/kns
 
 # modern ps replacement
 procs
-# a better top
-zenith
-#htop
+# zenith
+# htop
+mactop
 
 ## K8s =====
 
