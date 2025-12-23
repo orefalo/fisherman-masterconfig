@@ -137,7 +137,8 @@ dust
 # a better du
 duf
 # better ping
-prettyping
+# prettyping
+gping
 # better grep
 ripgrep
 # better cat

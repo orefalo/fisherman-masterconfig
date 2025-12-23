@@ -1,13 +1,8 @@
 if status --is-interactive
-    # not used anymore 'fisher grc' takes care of it
-    #set grc_wrap_commands "cat cvs df diff dig gcc g++ ifconfig make mount mtr netstat ping ps tail traceroute wdiff"
 
-    # colors
-
+    # theme
     theme_tokyonight night
 
-    #set -x LSCOLORS 'GxfxhxhxcxegedaCaCgxgx'
-    #set -x CLICOLOR 1
     set -x MAVEN_COLOR true
     set -x LESS --RAW-CONTROL-CHARS
     set -x GREP_OPTIONS '--color=auto'
@@ -17,15 +12,6 @@ if status --is-interactive
     set -x SAM_CLI_TELEMETRY 0
     set -x HOMEBREW_NO_ANALYTICS 1
     set -x BAT_THEME Dracula
-
-    # set -x LESS_TERMCAP_mb $'\e[1;31m'      # begin bold
-    # set -x LESS_TERMCAP_md $'\e[1;34m'      # begin blink
-    # set -x LESS_TERMCAP_so $'\e[01;45;37m'  # begin reverse video
-    # set -x LESS_TERMCAP_us $'\e[01;36m'     # begin underline
-    # set -x LESS_TERMCAP_me $'\e[0m'         # reset bold/blink
-    # set -x LESS_TERMCAP_se $'\e[0m'         # reset reverse video
-    # set -x LESS_TERMCAP_ue $'\e[0m'         # reset underline
-    # set -x GROFF_NO_SGR 1                   # for konsole
 
     # my key aliases
     alias ..='cd ..'
@@ -43,7 +29,7 @@ if status --is-interactive
     #alias tree="lsd --tree --group-dirs first --depth=4"
     alias tree="broot"
     alias find=fd
-    alias ping=prettyping
+    alias ping=gping
     # I don't like procs for this use case
     # alias ps=procs
     # alias pstree="procs --tree"
@@ -142,8 +128,8 @@ if status --is-interactive
     alias tfp="terraform plan | scenery"
     alias tf=terraform
 
-    #alias npm=pnpm
-    # alias wrk2=oha
+    alias wrk2=oha
+    alias netstat=snitch
 
     # thats the best cli prompt
     if test -x (which starship)
