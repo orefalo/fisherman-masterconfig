@@ -2,9 +2,8 @@
 
 # a better jq, sql based
 kiki-ki/tap/qo
-
 # a universal db cli
-xo/xo/usql
+# xo/xo/usql
 # a redis cli
 iredis
 # a better psql
@@ -19,18 +18,17 @@ ddosify/tap/ddosify
 # oha is a great wrk2 alternative, now there is even wrk3
 oha
 
-blendle/blendle/kns
-
 ## PROCESS MGMT =====
 
 # modern ps replacement
 procs
-# zenith
-# htop
+# a better top
 mactop
 
 ## K8s =====
 
+# ns switched
+blendle/blendle/kns
 k9s
 robscott/tap/kube-capacity
 kubernetes-cli
@@ -50,10 +48,6 @@ werf
 
 ## DOCKER =====
 
-# colima is better
-#minikube
-#qemu
-
 # run this command to complete setup mkdir -p ~/.docker/cli-plugins && ln -sfn $(brew --prefix)/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose
 colima
 docker
@@ -71,7 +65,7 @@ dive
 
 ## GOLANG =====
 
-tinygo-org/tools/tinygo
+#tinygo-org/tools/tinygo
 golang
 
 ## JAVA =====
@@ -91,16 +85,14 @@ jaq
 
 ## GIT =====
 
-# git information summary
-onefetch
 git
 # https://github.com/MitMaro/git-interactive-rebase-tool
 interactive-rebase-tool
 # a better diff
-git-delta
-# difftastic
 # replaced with difftastic
 # icdiff
+# difftastic
+git-delta
 
 ## SSL =====
 
@@ -108,18 +100,13 @@ git-delta
 mkcert
 openssl
 
-## FETCHER =====
+## CLI & SUBSTITUTIONS =====
 
 # replaced with xh + alias
-# httpie
+# httpie - a better curl
 xh
 # a better wget, suppors http/s,s/ftp, torrent
 aria2
-# to replace with aria2
-# wget
-
-## CLI & SUBSTITUTIONS =====
-
 # widget library for cli
 gum
 # a vi replacement
@@ -140,7 +127,12 @@ duf
 # prettyping
 gping
 # better grep
-ripgrep
+# ripgrep
+# grep alternatives
+ugrep
+regex
+# a better xargs
+rargs
 # better cat
 bat
 # a better ls
@@ -152,13 +144,6 @@ broot
 
 # regex rename
 rnr
-
-# grep alternatives
-ugrep
-regex
-
-# a great editor
-#ox
 
 # remove dev junk - https://github.com/tbillington/kondo
 kondo
@@ -188,23 +173,16 @@ asciinema
 jdupes
 # colorizer
 # grc - retired for rust package cgrc
-
-
 # better nmap
 rustscan
-
 # cli git recorder
 t-rec
-
 # json <-> yaml <-> tom
 yj
-
 # code -> screenshot.png
 silicon
-
 # bandwhich is a CLI utility for displaying current network utilization by process, connection and remote IP or hostname.
 bandwhich
-
 # regex builder! https://github.com/pemistahl/grex
 grex
 
@@ -225,22 +203,13 @@ chafa
 nats-server
 # nats jetstream cli tool (ie. nats bench)
 nats-io/nats-tools/nats
-# a tiny dns client
-natesales/repo/q
-# cli to access planetscale
-# planetscale/tap/pscale
-# AwS
-#awslogs
-#awscli
-#aws-shell
 
 # only-switch
 ffmpeg
-rargs
 telnet
-graphviz
+# graphviz
 hashicorp/tap/terraform
-aerial
+# aerial
 plantuml
 transmission
 syntax-highlight
