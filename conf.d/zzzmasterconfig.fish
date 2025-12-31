@@ -38,7 +38,7 @@ if status --is-interactive
     alias cat='bat --style=header,grid'
     alias more=cat
     alias mroe=cat
-    alias spot=rg
+    alias spot=ugrep
     alias diff=delta
     alias httpie=xh
     alias publicip='curl ifconfig.me'

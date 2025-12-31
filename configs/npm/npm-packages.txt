@@ -33,8 +33,7 @@ spoof
 #fuge
 #pegjs
 #get-graphql-schema
-#replaced by rg
-#spot
+#spot - replaced by rg, then replaced by ugrep
 #http bench
 #ndb
 #graphqurl
