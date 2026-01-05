@@ -1,5 +1,8 @@
 ## DB CLI =====
 
+# search social life
+sherlock
+
 # a better jq, sql based
 kiki-ki/tap/qo
 # a universal db cli
