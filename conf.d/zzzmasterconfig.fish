@@ -131,6 +131,8 @@ if status --is-interactive
     alias wrk2=oha
     alias netstat=snitch
 
+    alias nvm=fnm
+
     # thats the best cli prompt
     if test -x (which starship)
         starship init fish | source
@@ -140,8 +142,4 @@ if status --is-interactive
         jump shell fish | source
     end
 
-    # Activate version from nearest .nvmrc file
-    if test (type -t nvm) = function
-        nvm use
-    end
 end

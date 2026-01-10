@@ -3,6 +3,9 @@
 # search social life
 sherlock
 
+# fnm is a better nvm in rsh
+fnm
+
 # a better jq, sql based
 kiki-ki/tap/qo
 # a universal db cli

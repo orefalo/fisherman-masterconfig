@@ -14,5 +14,4 @@ for i in (cat configs/fisher/fisher-packages.txt)
 
 end
 
-nvm install lts
 

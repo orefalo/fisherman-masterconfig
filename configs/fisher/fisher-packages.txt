@@ -8,7 +8,8 @@ brgmnn/fish-docker-compose
 evanlucas/fish-kubectl-completions
 patrickf3139/Colored-Man-Pages
 markcial/cprintf
-jorgebucaran/nvm.fish
+# fnm is just a better nvm
+# jorgebucaran/nvm.fish
 jorgebucaran/autopair.fish
 jorgebucaran/getopts.fish
 axkirillov/tokyonight-fish
