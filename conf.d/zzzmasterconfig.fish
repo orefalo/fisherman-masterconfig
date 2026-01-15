@@ -26,8 +26,8 @@ if status --is-interactive
     alias jq=jaq
     alias grep=ugrep
     # broot bellow is a better tree alternative
-    #alias tree="lsd --tree --group-dirs first --depth=4"
-    alias tree="broot"
+    alias tree="lsd --tree --group-dirs first --depth=2 2>/dev/null"
+    #alias tree="broot"
     alias find=fd
     alias ping=gping
     # I don't like procs for this use case

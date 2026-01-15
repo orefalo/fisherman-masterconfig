@@ -147,7 +147,7 @@ bat
 # a better ls
 lsd
 # a better tree
-broot
+# broot # not a big fan
 
 ## CLI ENHANCEMENTS =====
 
