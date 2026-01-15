@@ -133,6 +133,8 @@ if status --is-interactive
 
     alias nvm=fnm
 
+    alias man=tldr
+
     # thats the best cli prompt
     if test -x (which starship)
         starship init fish | source

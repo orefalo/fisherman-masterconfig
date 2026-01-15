@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# update your bash! OSX bash is VERY old! `brew install bash``
+# update your bash! OSX bash is VERY old! `brew install bash`
 #
 # Siddharth Dushantha 2025
 # Modified for macOS by using lsof instead of ss
@@ -100,7 +100,15 @@ list_open_ports() {
     fi
 
     if [[ -n "$filter" ]]; then
-        output=$(awk -F'\t' "\$${valid_filters[$filter_key]} ~ /$filter_value/" <<<"$output")
+        col="${valid_filters[$filter_key]}"
+
+        # If value is wrapped in /.../ treat it as a regex; otherwise exact match
+        if [[ "$filter_value" == /*/ ]] && [[ "${#filter_value}" -ge 2 ]]; then
+            pattern="${filter_value:1:${#filter_value}-2}"
+            output=$(awk -F'\t' -v c="$col" -v re="$pattern" '$c ~ re' <<<"$output")
+        else
+            output=$(awk -F'\t' -v c="$col" -v val="$filter_value" '$c == val' <<<"$output")
+        fi
     fi
 
     [[ -z "$output" ]] && exit

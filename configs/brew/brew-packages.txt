@@ -3,6 +3,9 @@
 # search social life
 sherlock
 
+# better than man! installs tldr (which is not maintained anymore)
+tlrc
+
 # fnm is a better nvm in rsh
 fnm
 
