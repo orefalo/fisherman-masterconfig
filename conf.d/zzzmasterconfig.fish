@@ -19,15 +19,12 @@ if status --is-interactive
     alias j=z
     alias ls="lsd --group-dirs first"
     alias ll="lsd --group-dirs first -la"
-    alias l='ls -l'
-    alias lt='ls --tree --depth=3'
+    alias l='lsd -l'
+    alias tree="lsd --tree --group-dirs first --depth=2 2>/dev/null"
     alias sl=ls
     alias dig=dog
     alias jq=jaq
     alias grep=ugrep
-    # broot bellow is a better tree alternative
-    alias tree="lsd --tree --group-dirs first --depth=2 2>/dev/null"
-    #alias tree="broot"
     alias find=fd
     alias ping=gping
     # I don't like procs for this use case
