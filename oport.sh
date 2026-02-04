@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
-# update your bash! OSX bash is VERY old! `brew install bash`
 #
 # Siddharth Dushantha 2025
 # Modified for macOS by using lsof instead of ss
+#
+# https://gist.github.com/mortenscheel/c6d2b98d8b36c209058d18aeb6545217
 #
 # Wrapper around 'lsof' for a cleaner output of listening ports.
 #
@@ -22,7 +23,7 @@ AVAILABLE FILTERS
   port    Filter by port number
   proc    Filter by process name
   pid     Filter by process ID
-  ip      Filter by IP 
+  ip      Filter by IP
   user    Filter by owning user
 
 FILTER SYNTAX
@@ -69,10 +70,10 @@ list_open_ports() {
             process = $1
             pid = $2
             user = $3
-            
+
             # Decode \x20 hex sequences to spaces
             gsub(/\\x20/, " ", process)
-            
+
             # Extract IP and port from the NAME column (format: *:port or IP:port)
             split($9, addr, ":")
             if (length(addr) == 2) {
@@ -84,11 +85,11 @@ list_open_ports() {
                 port = parts[n]
                 ip = substr($9, 1, length($9) - length(port) - 1)
             }
-            
+
             # Clean up IP address
             if (ip == "*") ip = "0.0.0.0"
             gsub(/\[|\]/, "", ip)  # Remove brackets from IPv6
-            
+
             # Use tab as delimiter to preserve spacing
             print port "\t" process "\t" pid "\t" ip "\t" user
         }' | sort -n -u
