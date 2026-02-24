@@ -225,3 +225,6 @@ syntax-highlight
 imageoptim
 iina
 suspicious-package
+
+#quicklook
+thumbhost3mf
