@@ -228,3 +228,6 @@ suspicious-package
 
 #quicklook
 thumbhost3mf
+
+# process information tui
+witr

@@ -12,6 +12,7 @@ brew install --cask syntax-highlight
 # brew install --cask aerial
 #brew install --cask aural
 brew install --cask sloth
+brew install --cask nuage
 
 # shows k8s resource usage
 # brew tap robscott/tap
@@ -19,12 +20,6 @@ brew install --cask sloth
 
 # brew tap tinygo-org/tools
 # brew install tinygo
-
-# brew tap derailed/k9s
-# brew install k9s
-
-# brew tap derailed/popeye
-# brew install popeye
 
 brew tap nats-io/nats-tools
 # the below is in the install file
