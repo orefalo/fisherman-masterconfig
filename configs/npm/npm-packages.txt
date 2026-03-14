@@ -16,6 +16,9 @@ graphql-schema-diff
 get-graphql-schema
 cz-customizable
 
+# mrproper for code tmp artifacts
+dustoff
+
 # code complexity calculator
 sabik
 
