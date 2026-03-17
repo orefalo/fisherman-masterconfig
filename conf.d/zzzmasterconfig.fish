@@ -141,4 +141,12 @@ if status --is-interactive
         jump shell fish | source
     end
 
+    # Disable shell integration that enables the Kitty protocol
+    if test "$TERM_PROGRAM" = "vscode"
+        set -gx KEYBOARD_PROTOCOL none
+        
+        # Disable Kitty keyboard protocol escape sequences
+        printf "\e[>4;0m"
+    end
+
 end
