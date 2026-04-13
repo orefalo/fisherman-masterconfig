@@ -213,6 +213,9 @@ nats-server
 # nats jetstream cli tool (ie. nats bench)
 nats-io/nats-tools/nats
 
+# a better whois/dns/mail/ssl/seo record
+retlehs/tap/quien
+
 # only-switch
 ffmpeg
 telnet
