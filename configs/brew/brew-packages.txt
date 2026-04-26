@@ -109,6 +109,10 @@ git-delta
 mkcert
 openssl
 
+
+# OSX system cleaner (ala cleanmymac)
+mole
+
 ## CLI & SUBSTITUTIONS =====
 
 # replaced with xh + alias
