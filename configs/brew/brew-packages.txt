@@ -196,6 +196,10 @@ yj
 silicon
 # bandwhich is a CLI utility for displaying current network utilization by process, connection and remote IP or hostname.
 bandwhich
+
+# a better network observability
+matthart1983/tap/netwatch
+
 # regex builder! https://github.com/pemistahl/grex
 grex
 
