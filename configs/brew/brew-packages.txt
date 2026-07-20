@@ -205,6 +205,9 @@ grex
 
 ## OTHERS =====
 
+# a tui to troubleshoot network connections
+heymaikol/tap/network-doctor
+
 # a tui for ldap
 ericschmar/tap/moribito
 
