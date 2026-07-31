@@ -239,9 +239,13 @@ syntax-highlight
 imageoptim
 iina
 suspicious-package
+fontgoggles
 
 #quicklook
 thumbhost3mf
 
 # process information tui
 witr
+
+font-fuggles
+
