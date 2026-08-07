@@ -1,3 +1,2 @@
 #!/bin/sh
-echo 'package-lock=false' >> ~/.npmrc
-npm config set package-lock false
+npm config set min-release-age 7200
