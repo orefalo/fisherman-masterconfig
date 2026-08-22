@@ -45,6 +45,8 @@ if status --is-interactive
     #alias mrproper="fd -t f .DS_Store -x rm {}; fd --exclude '.vscode/*' -t d node_modules -x rm -rf {}"
     alias mrproper=kondo
 
+    alias oport=lsoff
+
     alias unalias="functions -e "
 
     alias h=helm

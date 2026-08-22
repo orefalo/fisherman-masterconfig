@@ -1,0 +1,400 @@
+tap "alielsokary/tap", trusted: { casks: ["caskhub"] }
+tap "angristan/tap"
+tap "blendle/blendle", trusted: true
+tap "charmbracelet/tap", trusted: true
+tap "dldash/core", trusted: true
+tap "ericschmar/tap"
+tap "getanteon/tap", "https://github.com/getanteon/homebrew-tap.git", trusted: true
+tap "hashicorp/tap", trusted: true
+tap "heymaikol/tap"
+tap "kiki-ki/tap", trusted: true
+tap "lbrndnr/tap", trusted: { casks: ["nuage"] }
+tap "matthart1983/tap", trusted: true
+tap "robscott/tap", trusted: true
+tap "vitobotta/tap", trusted: true
+tap "wouterdebie/tap"
+tap "yutat23/tap", trusted: true
+tap "zml/zml"
+# Record and share terminal sessions
+brew "asciinema"
+# Spell checker with better logic than ispell
+brew "aspell"
+# Macro processing language
+brew "m4"
+# Automatic configure script builder
+brew "autoconf"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Command-line interface for SQLite
+brew "sqlite"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Terminal bandwidth utilization tool
+brew "bandwhich"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Garbage collector for C and C++
+brew "bdw-gc"
+# Parser generator
+brew "bison"
+# Versatile and fast Unicode/ASCII/ANSI graphics renderer
+brew "chafa"
+# Cross-platform make
+brew "cmake"
+# Create and run Linux containers using lightweight virtual machines
+brew "container"
+# Fast implementation of conditional random fields
+brew "crfsuite"
+# Securely send things from one computer to another
+brew "croc"
+# Kubernetes Query Language
+brew "cyphernetes"
+# Diff that understands syntax
+brew "difftastic"
+# Tool for exploring each layer in a docker image
+brew "dive"
+# Clean Docker containers, images, networks, and volumes
+brew "docker-clean"
+# Platform keystore credential helper for Docker
+brew "docker-credential-helper"
+# Disk Usage/Free Utility - a better 'df' alternative
+brew "duf"
+# More intuitive version of du in rust
+brew "dust"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# Fast Lexical Analyzer, generates Scanners (tokenizers)
+brew "flex"
+# Fast and simple Node.js version manager
+brew "fnm"
+# Library for manipulating fonts
+brew "fonttools"
+# Terminal JSON viewer
+brew "fx"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Fast, simple fuzzy text selector with an advanced scoring algorithm
+brew "fzy"
+# Distributed revision control system
+brew "git"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
+# Extensions to follow Vincent Driessen's branching model
+brew "git-flow"
+# Native sequence editor for Git interactive rebase
+brew "git-interactive-rebase-tool"
+# Git extension for versioning large files
+brew "git-lfs"
+# Render markdown on the CLI
+brew "glow"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Fast linters runner for Go
+brew "golangci-lint"
+# Tool to list and diagnose Go processes currently running on your system
+brew "gops"
+# Ping, but with a graph
+brew "gping"
+# Command-line tool for generating regular expressions
+brew "grex"
+# Kubernetes package manager
+brew "helm"
+# Command-line hex viewer
+brew "hexyl"
+# Command-line benchmarking tool
+brew "hyperfine"
+# Generic library support script
+brew "libtool"
+# JQ clone focussed on correctness, speed, and simplicity
+brew "jaq"
+# Duplicate file finder and an enhanced fork of 'fdupes'
+brew "jdupes"
+# Helps you navigate your file system faster by learning your habits
+brew "jump"
+# Utility to create k3s clusters on any local or remote VM
+brew "k3sup"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "k9s"
+# Save disk space by cleaning non-essential files from software projects
+brew "kondo"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Package manager for kubectl plugins
+brew "krew"
+# Static analysis tool for Kubernetes YAML files and Helm charts
+brew "kube-linter"
+# Tool that can switch between kubectl contexts easily and create aliases
+brew "kubectx"
+# Lazier way to manage everything docker
+brew "lazydocker"
+# Asynchronous event library
+brew "libevent"
+# Postgres C API library
+brew "libpq"
+# Library for USB device access
+brew "libusb"
+# Clone of ls with colorful output, file type icons, and more
+brew "lsd"
+# Apple Silicon Monitor Top written in Go Lang
+brew "mactop"
+# Utility for directing compilation
+brew "make"
+# Simple tool to make locally trusted development certificates
+brew "mkcert"
+# Deep clean and optimize your Mac
+brew "mole"
+# Kubernetes deployment tool that manages and deploys Helm Charts
+brew "nelm"
+# HTTP load generator, inspired by rakyll/hey with tui animation
+brew "oha"
+# Command-line Git information tool
+brew "onefetch"
+# Program to perform pattern matching on text
+brew "peg"
+# Monitor PostgreSQL processes
+brew "pg_top"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
+# Kubernetes cluster resource sanitizer
+brew "popeye"
+# Object-relational database system
+brew "postgresql@18", link: true
+# Modern replacement for ps written in Rust
+brew "procs"
+# Track commands progress in a compact one-line format
+brew "progressline"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
+# Show ps output as a tree
+brew "pstree"
+# Monitor data's progress through a pipe
+brew "pv"
+# Tools for and transforming and inspecting PDF files
+brew "qpdf"
+# Better WHOIS and domain intelligence toolkit
+brew "quien"
+# Util like xargs + awk with pattern matching support
+brew "rargs"
+# Command-line tool to batch rename files and directories
+brew "rnr"
+# Safe, concurrent, practical language
+brew "rust"
+# Bash completion for rustc
+brew "rustc-completion"
+# Rust toolchain installer
+brew "rustup"
+# Intuitive find & replace CLI
+brew "sd"
+# Hunt down social media accounts by username
+brew "sherlock"
+# Create beautiful image of your source code
+brew "silicon"
+# Prettier way to inspect network connections
+brew "snitch"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Tail multiple Kubernetes pods & their containers
+brew "stern"
+# Blazingly fast terminal recorder that generates animated gif images for the web
+brew "t-rec"
+# User interface to the TELNET protocol
+brew "telnet"
+# Official tldr client written in Rust
+brew "tlrc"
+# Upgrade all the things
+brew "topgrade"
+# Ultra fast grep with query UI, fuzzy search, archive search, and more
+brew "ugrep"
+# Vi 'workalike' with many additional features
+brew "vim"
+# Consistent delivery tool for Kubernetes
+brew "werf"
+# Internet file retriever
+brew "wget"
+# Why is this running?
+brew "witr"
+# Friendly and fast tool for sending HTTP requests
+brew "xh"
+# CLI to convert between YAML, TOML, JSON and HCL
+brew "yj"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
+# Quick Kubernetes Namespace and Context Switchers
+brew "blendle/blendle/kns"
+# AI on the command line
+brew "charmbracelet/tap/mods"
+# This package allows to colorize docker output
+brew "dldash/core/docker-color-output"
+# LDAP CLI Explorer - Interactive terminal-based LDAP client with TUI
+brew "ericschmar/tap/moribito", trusted: true
+# Terraform
+brew "hashicorp/tap/terraform"
+# Query JSON data with SQL
+brew "kiki-ki/tap/qo"
+# Real-time network diagnostics in your terminal — zero config, instant visibility
+brew "matthart1983/tap/netwatch"
+# kube-capacity provides an overview of the resource requests, limits, and utilization in a Kubernetes cluster
+brew "robscott/tap/kube-capacity"
+# This is a CLI tool to quickly create and manage Kubernetes clusters in Hetzner Cloud using the lightweight Kubernetes distribution k3s from Rancher.
+brew "vitobotta/tap/hetzner_k3s"
+# CLI/TUI for listing listening TCP/UDP ports
+brew "yutat23/tap/lsoff"
+# ZML's high-performance, OpenAI-compatible LLM server
+brew "zml/zml/llmd", trusted: true
+# Application launcher and productivity software
+cask "alfred"
+# Configure Gatekeeper, unquarantine and self-sign apps
+cask "alienator88-sentinel"
+# Utility to create and modify archives
+cask "betterzip"
+# Compare files and folders
+cask "beyond-compare"
+# Native GUI for Homebrew casks
+cask "caskhub"
+# Synchronisation and backup tool
+cask "chronosync"
+# Terminal-based AI coding assistant
+cask "claude-code"
+# UI for Apple's container platform
+cask "wouterdebie/tap/davit", trusted: true
+# Downloads videos from different websites
+cask "downie"
+# Online diagram software
+cask "drawio"
+# Web browser
+cask "firefox"
+cask "font-fuggles"
+cask "font-meslo-lg-nerd-font"
+# Font viewer for various font formats
+cask "fontgoggles"
+# Free and open-source media player
+cask "iina"
+# Tool to optimise images to a smaller size
+cask "imageoptim"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Keyboard customiser
+cask "karabiner-elements"
+# GUI replacement for the Java command-line utilities keytool and jarsigner
+cask "keystore-explorer"
+# Utility that shows the latest app updates
+cask "latest"
+# Menu bar app that monitors thermal throttling
+cask "angristan/tap/macthrottle", trusted: true
+# Tool to create bootable USB installers
+cask "macusb"
+# Network information and diagnostics utility
+cask "neo-network-utility"
+# Terminal UI that diagnoses network connectivity and explains where the connection breaks
+cask "heymaikol/tap/network-doctor", trusted: true
+# Simple application that will prevent iTunes or Apple Music from launching
+cask "notunes"
+# Free and open-source SoundCloud client
+cask "nuage"
+# LLM server built on MLX
+cask "osaurus"
+# PDF reader, editor and annotator
+cask "pdf-expert"
+# Colour picker for colours onscreen
+cask "pika"
+# Used to access context-specific actions when text is selected
+cask "popclip"
+# Screen recorder and editor
+cask "screenkite"
+# Displays all open files and sockets in use by all running processes
+cask "sloth"
+# Standalone cli for the Soulver calculation engine
+cask "soulver-cli"
+# Spam filtering extension for e-mail clients
+cask "spamsieve"
+# Music streaming service
+cask "spotify"
+# Video game digital distribution service
+cask "steam"
+# Customise mouse buttons, wheels and cursor speed
+cask "steermouse"
+# Subtitle editor
+cask "subtitle-edit"
+# Application for inspecting installer packages
+cask "suspicious-package"
+# Sync and backup service to Synology NAS drives
+cask "synology-drive"
+# Quicklook extension for source files
+cask "syntax-highlight"
+# Messaging app with a focus on speed and security
+cask "telegram"
+# Finder thumbnail provider for some .gcode, .bgcode and .3mf files
+cask "thumbhost3mf"
+# Automatic time-tracking application
+cask "timemator"
+# Open-source BitTorrent client
+cask "transmission"
+# File transfer application
+cask "transmit"
+# Configurable document editor that supports Markdown
+cask "typora"
+# Virtualization tool
+cask "virtualbuddy@beta"
+# Open-source code editor
+cask "visual-studio-code"
+# Native desktop client for WhatsApp
+cask "whatsapp"
+# Multiplayer code editor
+cask "zed"
+# OpenJDK distribution from Azul
+cask "zulu@17"
+vscode "alefragnani.numbered-bookmarks"
+vscode "anthropic.claude-code"
+vscode "biomejs.biome"
+vscode "bradlc.vscode-tailwindcss"
+vscode "chrisdias.vscode-opennewinstance"
+vscode "christian-kohler.path-intellisense"
+vscode "dbaeumer.vscode-eslint"
+vscode "enkia.tokyo-night"
+vscode "inlang.vs-code-extension"
+vscode "ms-playwright.playwright"
+vscode "oxc.oxc-vscode"
+vscode "pflannery.vscode-versionlens"
+vscode "rhalaly.scope-to-this"
+vscode "rioedwards.css-controls"
+vscode "roonie007.hide-files"
+vscode "svelte.svelte-vscode"
+vscode "thang-nm.flow-icons"
+go "github.com/okamyuji/wrk3"
+cargo "cgrc"
+cargo "iris-cli"
+cargo "openentropy-cli"
+krew "access-matrix"
+krew "ca-cert"
+krew "colorize-applied"
+krew "cost"
+krew "datree"
+krew "deprecations"
+krew "df-pv"
+krew "gadget"
+krew "get-all"
+krew "iexec"
+krew "images"
+krew "oidc-login"
+krew "open-svc"
+krew "oulogin"
+krew "outdated"
+krew "rolesum"
+krew "sick-pods"
+krew "tree"
+krew "view-utilization"
+krew "who-can"
+krew "whoami"
+npm "corepack"
