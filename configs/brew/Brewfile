@@ -8,13 +8,22 @@ tap "getanteon/tap", "https://github.com/getanteon/homebrew-tap.git", trusted: t
 tap "hashicorp/tap", trusted: true
 tap "heymaikol/tap"
 tap "kiki-ki/tap", trusted: true
-tap "lbrndnr/tap", trusted: { casks: ["nuage"] }
+tap "lerboe/tap", "https://github.com/lerboe/homebrew-tap.git"
 tap "matthart1983/tap", trusted: true
+tap "onizuka893/tap", "https://github.com/Onizuka893/homebrew-tap"
+tap "ricardodantas/tap"
 tap "robscott/tap", trusted: true
+tap "sdenike/tap", trusted: { casks: ["textmate-revived"] }
 tap "vitobotta/tap", trusted: true
-tap "wouterdebie/tap"
+tap "wouterdebie/tap", trusted: { casks: ["davit"] }
 tap "yutat23/tap", trusted: true
 tap "zml/zml"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Command-line interface for SQLite
+brew "sqlite"
+# Download with resuming and segmented downloading
+brew "aria2"
 # Record and share terminal sessions
 brew "asciinema"
 # Spell checker with better logic than ispell
@@ -25,16 +34,6 @@ brew "m4"
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
-# Command-line interface for SQLite
-brew "sqlite"
-# General-purpose data compression with high compression ratio
-brew "xz"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.14"
-# Official Amazon AWS command-line interface
-brew "awscli"
 # Terminal bandwidth utilization tool
 brew "bandwhich"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -45,6 +44,8 @@ brew "bat"
 brew "bdw-gc"
 # Parser generator
 brew "bison"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
 # Cross-platform make
@@ -79,6 +80,8 @@ brew "fish"
 brew "flex"
 # Fast and simple Node.js version manager
 brew "fnm"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
 # Library for manipulating fonts
 brew "fonttools"
 # Terminal JSON viewer
@@ -207,6 +210,8 @@ brew "snitch"
 brew "starship"
 # Tail multiple Kubernetes pods & their containers
 brew "stern"
+# Cross-platform system diagnostics TUI
+brew "syswatch"
 # Blazingly fast terminal recorder that generates animated gif images for the web
 brew "t-rec"
 # User interface to the TELNET protocol
@@ -245,6 +250,8 @@ brew "hashicorp/tap/terraform"
 brew "kiki-ki/tap/qo"
 # Real-time network diagnostics in your terminal — zero config, instant visibility
 brew "matthart1983/tap/netwatch"
+# Terminal-based automated file organizer inspired by Hazel
+brew "ricardodantas/tap/hazelnut", trusted: true
 # kube-capacity provides an overview of the resource requests, limits, and utilization in a Kubernetes cluster
 brew "robscott/tap/kube-capacity"
 # This is a CLI tool to quickly create and manage Kubernetes clusters in Hetzner Cloud using the lightweight Kubernetes distribution k3s from Rancher.
@@ -267,8 +274,8 @@ cask "caskhub"
 cask "chronosync"
 # Terminal-based AI coding assistant
 cask "claude-code"
-# UI for Apple's container platform
-cask "wouterdebie/tap/davit", trusted: true
+# GUI for Apple's container CLI
+cask "davit"
 # Downloads videos from different websites
 cask "downie"
 # Online diagram software
@@ -291,6 +298,10 @@ cask "karabiner-elements"
 cask "keystore-explorer"
 # Utility that shows the latest app updates
 cask "latest"
+# A keyboard-driven TUI MQTT client, in the spirit of lazygit
+cask "onizuka893/tap/lazymqtt", trusted: true
+# Host-based application firewall
+cask "little-snitch"
 # Menu bar app that monitors thermal throttling
 cask "angristan/tap/macthrottle", trusted: true
 # Tool to create bootable USB installers
@@ -299,8 +310,6 @@ cask "macusb"
 cask "neo-network-utility"
 # Terminal UI that diagnoses network connectivity and explains where the connection breaks
 cask "heymaikol/tap/network-doctor", trusted: true
-# Simple application that will prevent iTunes or Apple Music from launching
-cask "notunes"
 # Free and open-source SoundCloud client
 cask "nuage"
 # LLM server built on MLX
@@ -351,8 +360,6 @@ cask "virtualbuddy@beta"
 cask "visual-studio-code"
 # Native desktop client for WhatsApp
 cask "whatsapp"
-# Multiplayer code editor
-cask "zed"
 # OpenJDK distribution from Azul
 cask "zulu@17"
 vscode "alefragnani.numbered-bookmarks"
@@ -397,4 +404,3 @@ krew "tree"
 krew "view-utilization"
 krew "who-can"
 krew "whoami"
-npm "corepack"
