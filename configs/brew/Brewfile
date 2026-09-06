@@ -4,12 +4,14 @@ tap "blendle/blendle", trusted: true
 tap "charmbracelet/tap", trusted: true
 tap "dldash/core", trusted: true
 tap "ericschmar/tap"
+tap "ganeshmshetty/tap"
 tap "getanteon/tap", "https://github.com/getanteon/homebrew-tap.git", trusted: true
 tap "hashicorp/tap", trusted: true
 tap "heymaikol/tap"
 tap "kiki-ki/tap", trusted: true
 tap "lerboe/tap", "https://github.com/lerboe/homebrew-tap.git"
 tap "matthart1983/tap", trusted: true
+tap "mfsoft-dev/tap"
 tap "onizuka893/tap", "https://github.com/Onizuka893/homebrew-tap"
 tap "ricardodantas/tap"
 tap "robscott/tap", trusted: true
@@ -306,16 +308,22 @@ cask "little-snitch"
 cask "angristan/tap/macthrottle", trusted: true
 # Tool to create bootable USB installers
 cask "macusb"
+# Native dual-pane file workspace for huge files and infrastructure
+cask "mfsoft-dev/tap/mfcommander", trusted: true
 # Network information and diagnostics utility
 cask "neo-network-utility"
-# Terminal UI that diagnoses network connectivity and explains where the connection breaks
+# Terminal UI that diagnoses network connectivity and names the layer where the connection breaks
 cask "heymaikol/tap/network-doctor", trusted: true
 # Free and open-source SoundCloud client
 cask "nuage"
+# Instant actions for selected text on macOS
+cask "ganeshmshetty/tap/openclip", trusted: true
 # LLM server built on MLX
 cask "osaurus"
 # PDF reader, editor and annotator
 cask "pdf-expert"
+# Offline Music Player
+cask "petrichor"
 # Colour picker for colours onscreen
 cask "pika"
 # Used to access context-specific actions when text is selected
