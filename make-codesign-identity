@@ -1,0 +1,102 @@
+#!/usr/bin/env fish
+# Create a self-signed code signing identity and import it into the login keychain.
+#
+# Usage: make-codesign-identity [-n NAME] [-d DAYS] [-t] [-f]
+#   -n, --name   Certificate common name (default: "My Code Signing")
+#   -d, --days   Validity in days (default: 3650)
+#   -t, --trust  Also mark the certificate as trusted for code signing (prompts for auth)
+#   -f, --force  Create even if an identity with this name already exists
+
+argparse 'n/name=' 'd/days=!_validate_int --min 1' t/trust f/force h/help -- $argv
+or exit 1
+
+if set -q _flag_help
+    sed -n '2,9s/^# \{0,1\}//p' (status filename)
+    exit 0
+end
+
+set -l name "My Code Signing"
+set -q _flag_name; and set name $_flag_name
+set -l days 3650
+set -q _flag_days; and set days $_flag_days
+set -l keychain ~/Library/Keychains/login.keychain-db
+
+for cmd in openssl security codesign
+    if not command -q $cmd
+        echo "error: '$cmd' not found" >&2
+        exit 1
+    end
+end
+
+set -l tmp (mktemp -d)
+function _cleanup --on-event fish_exit --inherit-variable tmp
+    rm -rf $tmp
+end
+
+if not set -q _flag_force; and security find-certificate -c "$name" $keychain >/dev/null 2>&1
+    if not set -q _flag_trust
+        echo "error: a certificate named '$name' already exists in the login keychain (use -t to trust it, -f to create another)" >&2
+        exit 1
+    end
+    echo "Certificate '$name' already exists; trusting it for code signing (you may be prompted)..."
+    security find-certificate -c "$name" -p $keychain >$tmp/cs.crt
+    and security add-trusted-cert -r trustRoot -p codeSign -k $keychain $tmp/cs.crt
+    or begin
+        echo "error: could not set trust" >&2
+        exit 1
+    end
+    security find-identity -v -p codesigning | string match -e -- "$name"
+    exit 0
+end
+
+printf '%s\n' \
+    '[req]' \
+    'distinguished_name = dn' \
+    'x509_extensions = ext' \
+    'prompt = no' \
+    '[dn]' \
+    "CN = $name" \
+    '[ext]' \
+    'basicConstraints = critical,CA:false' \
+    'keyUsage = critical,digitalSignature' \
+    'extendedKeyUsage = critical,codeSigning' >$tmp/cs.cnf
+
+echo "Generating key and certificate for '$name' ($days days)..."
+openssl req -x509 -newkey rsa:2048 -nodes -days $days \
+    -keyout $tmp/cs.key -out $tmp/cs.crt -config $tmp/cs.cnf 2>/dev/null
+or begin
+    echo "error: certificate generation failed" >&2
+    exit 1
+end
+
+# OpenSSL 3 defaults to PKCS#12 algorithms that `security import` rejects.
+set -l legacy
+string match -q 'OpenSSL 3*' (openssl version); and set legacy -legacy
+
+set -l pass (openssl rand -hex 16)
+openssl pkcs12 -export $legacy -inkey $tmp/cs.key -in $tmp/cs.crt \
+    -name "$name" -out $tmp/cs.p12 -passout pass:$pass
+or begin
+    echo "error: PKCS#12 export failed" >&2
+    exit 1
+end
+
+echo "Importing into $keychain..."
+security import $tmp/cs.p12 -k $keychain -P $pass -T /usr/bin/codesign
+or begin
+    echo "error: keychain import failed" >&2
+    exit 1
+end
+
+if set -q _flag_trust
+    echo "Trusting certificate for code signing (you may be prompted)..."
+    security add-trusted-cert -r trustRoot -p codeSign -k $keychain $tmp/cs.crt
+    or echo "warning: could not set trust; codesign may report the identity as untrusted" >&2
+end
+
+echo
+security find-identity -v -p codesigning | string match -e -- "$name"
+or echo "note: identity is not trusted yet; run: make-codesign-identity -n \"$name\" -t"
+
+echo
+echo "Sign with: codesign --force --sign \"$name\" /path/to/binary"
