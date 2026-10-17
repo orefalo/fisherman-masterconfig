@@ -75,6 +75,8 @@ brew "dive"
 brew "docker-clean"
 # Platform keystore credential helper for Docker
 brew "docker-credential-helper"
+# Command-line DNS Client for Humans
+brew "doggo"
 # Embeddable SQL OLAP Database Management System
 brew "duckdb"
 # Disk Usage/Free Utility - a better 'df' alternative
@@ -185,6 +187,8 @@ brew "pnpm"
 brew "popeye"
 # Object-relational database system
 brew "postgresql@18", link: true
+# Convert bitmaps to vector graphics
+brew "potrace"
 # Modern replacement for ps written in Rust
 brew "procs"
 # Track commands progress in a compact one-line format

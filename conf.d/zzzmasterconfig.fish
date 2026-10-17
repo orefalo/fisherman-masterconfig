@@ -22,7 +22,7 @@ if status --is-interactive
     alias l='lsd -l'
     alias tree="lsd --tree --group-dirs first --depth=2 2>/dev/null"
     alias sl=ls
-    alias dig=dog
+    alias dig=doggo
     alias jq=jaq
     alias grep=ugrep
     alias find=fd
