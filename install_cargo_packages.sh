@@ -8,5 +8,4 @@ CONFIG=`cgrc --location-user`
 mkdir -p $CONFIG
 cp -R configs/cgrc/* $CONFIG
 
-
 cargo install --git https://github.com/tolgaouz/oxvelte.git

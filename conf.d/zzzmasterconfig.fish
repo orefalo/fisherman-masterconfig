@@ -96,7 +96,7 @@ if status --is-interactive
         # alias subl=code
         #set -x EDITOR "subl -w"
         set -x EDITOR code
-        alias top=mactop
+        alias top=macmon
         alias diff=difftastic
         alias preview="open -a '$PREVIEW'"
         alias mou="open -a Typora"

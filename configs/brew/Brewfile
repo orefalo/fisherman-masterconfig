@@ -1,18 +1,21 @@
+tap "1architect/macspace"
+tap "ad-repo/nullplayer", trusted: { casks: ["nullplayer"] }
 tap "alielsokary/tap", trusted: { casks: ["caskhub"] }
 tap "angristan/tap"
 tap "blendle/blendle", trusted: true
 tap "charmbracelet/tap", trusted: true
 tap "dldash/core", trusted: true
 tap "ericschmar/tap"
-tap "ganeshmshetty/tap"
 tap "getanteon/tap", "https://github.com/getanteon/homebrew-tap.git", trusted: true
 tap "hashicorp/tap", trusted: true
-tap "heymaikol/tap"
-tap "kiki-ki/tap", trusted: true
-tap "lerboe/tap", "https://github.com/lerboe/homebrew-tap.git"
+tap "lerboe/tap", "https://github.com/lerboe/homebrew-tap.git", trusted: true
+tap "lovach/lunavect", "https://github.com/lovach/Lunavect", trusted: { casks: ["lunavect"] }
+tap "matlegault/lumae"
 tap "matthart1983/tap", trusted: true
-tap "mfsoft-dev/tap"
-tap "onizuka893/tap", "https://github.com/Onizuka893/homebrew-tap"
+tap "mfsoft-dev/tap", trusted: { casks: ["mfcommander"] }
+tap "mrrockysl/muro", "https://github.com/MrRockySL/homebrew-muro"
+tap "onizuka893/tap", "https://github.com/Onizuka893/homebrew-tap", trusted: { casks: ["lazymqtt"] }
+tap "orneryd/nornicdb"
 tap "ricardodantas/tap"
 tap "robscott/tap", trusted: true
 tap "sdenike/tap", trusted: { casks: ["textmate-revived"] }
@@ -20,8 +23,6 @@ tap "vitobotta/tap", trusted: true
 tap "wouterdebie/tap", trusted: { casks: ["davit"] }
 tap "yutat23/tap", trusted: true
 tap "zml/zml"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
 # Command-line interface for SQLite
 brew "sqlite"
 # Download with resuming and segmented downloading
@@ -40,12 +41,16 @@ brew "automake"
 brew "bandwhich"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Garbage collector for C and C++
 brew "bdw-gc"
 # Parser generator
 brew "bison"
+# Incredibly fast JavaScript runtime, bundler, test runner, and package manager
+brew "bun"
 # General-purpose data compression with high compression ratio
 brew "xz"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
@@ -62,12 +67,16 @@ brew "croc"
 brew "cyphernetes"
 # Diff that understands syntax
 brew "difftastic"
+# Cross-platform disk diagnostics TUI
+brew "diskwatch"
 # Tool for exploring each layer in a docker image
 brew "dive"
 # Clean Docker containers, images, networks, and volumes
 brew "docker-clean"
 # Platform keystore credential helper for Docker
 brew "docker-credential-helper"
+# Embeddable SQL OLAP Database Management System
+brew "duckdb"
 # Disk Usage/Free Utility - a better 'df' alternative
 brew "duf"
 # More intuitive version of du in rust
@@ -82,8 +91,6 @@ brew "fish"
 brew "flex"
 # Fast and simple Node.js version manager
 brew "fnm"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.14"
 # Library for manipulating fonts
 brew "fonttools"
 # Terminal JSON viewer
@@ -96,8 +103,6 @@ brew "fzy"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
-# Extensions to follow Vincent Driessen's branching model
-brew "git-flow"
 # Native sequence editor for Git interactive rebase
 brew "git-interactive-rebase-tool"
 # Git extension for versioning large files
@@ -152,6 +157,8 @@ brew "libpq"
 brew "libusb"
 # Clone of ls with colorful output, file type icons, and more
 brew "lsd"
+# Sudoless performance monitoring for Apple Silicon processors
+brew "macmon"
 # Apple Silicon Monitor Top written in Go Lang
 brew "mactop"
 # Utility for directing compilation
@@ -172,6 +179,8 @@ brew "peg"
 brew "pg_top"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
+# Fast, disk space efficient package manager
+brew "pnpm"
 # Kubernetes cluster resource sanitizer
 brew "popeye"
 # Object-relational database system
@@ -186,6 +195,8 @@ brew "protobuf"
 brew "pstree"
 # Monitor data's progress through a pipe
 brew "pv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
 # Tools for and transforming and inspecting PDF files
 brew "qpdf"
 # Better WHOIS and domain intelligence toolkit
@@ -248,10 +259,10 @@ brew "dldash/core/docker-color-output"
 brew "ericschmar/tap/moribito", trusted: true
 # Terraform
 brew "hashicorp/tap/terraform"
-# Query JSON data with SQL
-brew "kiki-ki/tap/qo"
 # Real-time network diagnostics in your terminal — zero config, instant visibility
-brew "matthart1983/tap/netwatch"
+brew "matthart1983/tap/netwatch", trusted: true
+# Graph, vector, and historical truth in one database
+brew "orneryd/nornicdb/nornicdb", trusted: true
 # Terminal-based automated file organizer inspired by Hazel
 brew "ricardodantas/tap/hazelnut", trusted: true
 # kube-capacity provides an overview of the resource requests, limits, and utilization in a Kubernetes cluster
@@ -259,7 +270,7 @@ brew "robscott/tap/kube-capacity"
 # This is a CLI tool to quickly create and manage Kubernetes clusters in Hetzner Cloud using the lightweight Kubernetes distribution k3s from Rancher.
 brew "vitobotta/tap/hetzner_k3s"
 # CLI/TUI for listing listening TCP/UDP ports
-brew "yutat23/tap/lsoff"
+brew "yutat23/tap/lsoff", trusted: true
 # ZML's high-performance, OpenAI-compatible LLM server
 brew "zml/zml/llmd", trusted: true
 # Application launcher and productivity software
@@ -298,26 +309,22 @@ cask "iterm2"
 cask "karabiner-elements"
 # GUI replacement for the Java command-line utilities keytool and jarsigner
 cask "keystore-explorer"
-# Utility that shows the latest app updates
-cask "latest"
-# A keyboard-driven TUI MQTT client, in the spirit of lazygit
-cask "onizuka893/tap/lazymqtt", trusted: true
 # Host-based application firewall
 cask "little-snitch"
+# Screen recorder and editor for software demos
+cask "matlegault/lumae/lumae", trusted: true
+# System Data and Apple Intelligence cleaner
+cask "1architect/macspace/macspace", trusted: true
 # Menu bar app that monitors thermal throttling
 cask "angristan/tap/macthrottle", trusted: true
 # Tool to create bootable USB installers
 cask "macusb"
-# Native dual-pane file workspace for huge files and infrastructure
-cask "mfsoft-dev/tap/mfcommander", trusted: true
+# Native live video wallpapers with multi-display support
+cask "mrrockysl/muro/muro", trusted: true
 # Network information and diagnostics utility
 cask "neo-network-utility"
-# Terminal UI that diagnoses network connectivity and names the layer where the connection breaks
-cask "heymaikol/tap/network-doctor", trusted: true
-# Free and open-source SoundCloud client
-cask "nuage"
-# Instant actions for selected text on macOS
-cask "ganeshmshetty/tap/openclip", trusted: true
+# Light-weight native SoundCloud app
+cask "lerboe/tap/nuage", trusted: true
 # LLM server built on MLX
 cask "osaurus"
 # PDF reader, editor and annotator
@@ -326,8 +333,6 @@ cask "pdf-expert"
 cask "petrichor"
 # Colour picker for colours onscreen
 cask "pika"
-# Used to access context-specific actions when text is selected
-cask "popclip"
 # Screen recorder and editor
 cask "screenkite"
 # Displays all open files and sockets in use by all running processes
@@ -372,7 +377,6 @@ cask "whatsapp"
 cask "zulu@17"
 vscode "alefragnani.numbered-bookmarks"
 vscode "anthropic.claude-code"
-vscode "biomejs.biome"
 vscode "bradlc.vscode-tailwindcss"
 vscode "chrisdias.vscode-opennewinstance"
 vscode "christian-kohler.path-intellisense"
@@ -391,6 +395,7 @@ go "github.com/okamyuji/wrk3"
 cargo "cgrc"
 cargo "iris-cli"
 cargo "openentropy-cli"
+cargo "oxvelte", source: "https://github.com/tolgaouz/oxvelte.git"
 krew "access-matrix"
 krew "ca-cert"
 krew "colorize-applied"
@@ -412,3 +417,5 @@ krew "tree"
 krew "view-utilization"
 krew "who-can"
 krew "whoami"
+npm "cossui-svelte"
+npm "pnpm"
