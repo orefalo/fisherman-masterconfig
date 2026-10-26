@@ -3,7 +3,7 @@ tap "ad-repo/nullplayer", trusted: { casks: ["nullplayer"] }
 tap "alielsokary/tap", trusted: { casks: ["caskhub"] }
 tap "angristan/tap"
 tap "blendle/blendle", trusted: true
-tap "charmbracelet/tap", trusted: true
+tap "crmne/tap"
 tap "dldash/core", trusted: true
 tap "ericschmar/tap"
 tap "getanteon/tap", "https://github.com/getanteon/homebrew-tap.git", trusted: true
@@ -18,7 +18,9 @@ tap "onizuka893/tap", "https://github.com/Onizuka893/homebrew-tap", trusted: { c
 tap "orneryd/nornicdb"
 tap "ricardodantas/tap"
 tap "robscott/tap", trusted: true
+tap "robworks-code/tap"
 tap "sdenike/tap", trusted: { casks: ["textmate-revived"] }
+tap "tuguidragos/tap"
 tap "vitobotta/tap", trusted: true
 tap "wouterdebie/tap", trusted: { casks: ["davit"] }
 tap "yutat23/tap", trusted: true
@@ -235,8 +237,6 @@ brew "t-rec"
 brew "telnet"
 # Official tldr client written in Rust
 brew "tlrc"
-# Upgrade all the things
-brew "topgrade"
 # Ultra fast grep with query UI, fuzzy search, archive search, and more
 brew "ugrep"
 # Vi 'workalike' with many additional features
@@ -255,8 +255,6 @@ brew "yj"
 brew "yq"
 # Quick Kubernetes Namespace and Context Switchers
 brew "blendle/blendle/kns"
-# AI on the command line
-brew "charmbracelet/tap/mods"
 # This package allows to colorize docker output
 brew "dldash/core/docker-color-output"
 # LDAP CLI Explorer - Interactive terminal-based LDAP client with TUI
@@ -271,6 +269,8 @@ brew "orneryd/nornicdb/nornicdb", trusted: true
 brew "ricardodantas/tap/hazelnut", trusted: true
 # kube-capacity provides an overview of the resource requests, limits, and utilization in a Kubernetes cluster
 brew "robscott/tap/kube-capacity"
+# Dynamic CLI + TUI for managing Claude Code MCP servers, plugins, and per-project overrides
+brew "robworks-code/tap/ccmcp", trusted: true
 # This is a CLI tool to quickly create and manage Kubernetes clusters in Hetzner Cloud using the lightweight Kubernetes distribution k3s from Rancher.
 brew "vitobotta/tap/hetzner_k3s"
 # CLI/TUI for listing listening TCP/UDP ports
@@ -297,12 +297,12 @@ cask "davit"
 cask "downie"
 # Online diagram software
 cask "drawio"
+# Drag and drop file shelf
+cask "droppy"
 # Web browser
 cask "firefox"
 cask "font-fuggles"
 cask "font-meslo-lg-nerd-font"
-# Font viewer for various font formats
-cask "fontgoggles"
 # Free and open-source media player
 cask "iina"
 # Tool to optimise images to a smaller size
@@ -329,22 +329,30 @@ cask "mrrockysl/muro/muro", trusted: true
 cask "neo-network-utility"
 # Light-weight native SoundCloud app
 cask "lerboe/tap/nuage", trusted: true
+# Keyboard configurator for NuPhy devices
+cask "nuphyio"
 # LLM server built on MLX
 cask "osaurus"
 # PDF reader, editor and annotator
 cask "pdf-expert"
+# App uninstaller and disk space cleaner, with system tweaks and Terminal setup
+cask "tuguidragos/tap/peel", trusted: true
 # Offline Music Player
 cask "petrichor"
 # Colour picker for colours onscreen
 cask "pika"
 # Screen recorder and editor
 cask "screenkite"
+# Store SSH keys in the Secure Enclave
+cask "secretive"
 # Displays all open files and sockets in use by all running processes
 cask "sloth"
 # Standalone cli for the Soulver calculation engine
 cask "soulver-cli"
 # Spam filtering extension for e-mail clients
 cask "spamsieve"
+# Native Spotify client
+cask "crmne/tap/spotifast", trusted: true
 # Music streaming service
 cask "spotify"
 # Video game digital distribution service
@@ -395,31 +403,9 @@ vscode "rioedwards.css-controls"
 vscode "roonie007.hide-files"
 vscode "svelte.svelte-vscode"
 vscode "thang-nm.flow-icons"
+go "github.com/rogeriojunior31/lazyagents"
 go "github.com/okamyuji/wrk3"
 cargo "cgrc"
 cargo "iris-cli"
 cargo "openentropy-cli"
 cargo "oxvelte", source: "https://github.com/tolgaouz/oxvelte.git"
-krew "access-matrix"
-krew "ca-cert"
-krew "colorize-applied"
-krew "cost"
-krew "datree"
-krew "deprecations"
-krew "df-pv"
-krew "gadget"
-krew "get-all"
-krew "iexec"
-krew "images"
-krew "oidc-login"
-krew "open-svc"
-krew "oulogin"
-krew "outdated"
-krew "rolesum"
-krew "sick-pods"
-krew "tree"
-krew "view-utilization"
-krew "who-can"
-krew "whoami"
-npm "cossui-svelte"
-npm "pnpm"
